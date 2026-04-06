@@ -79,3 +79,18 @@ Le serveur reçoit du modérateur/TV qu'on lance la piste 1.
 | `score_update`| Serveur | TV, Mobile | Le classement change |
 
 Cette documentation servira de référence tout au long des itérations pour inclure des bases de données locales (ex: SQLite) si le stockage temporaire doit persister à d'éventuels re-démarrages.
+
+## Déploiement en Production
+
+Pour mettre le jeu en ligne de manière performante et gratuite, l'architecture a été conçue pour séparer le calcul temps-réel de la distribution statique :
+
+### 1. Le Serveur (Render.com)
+Le dossier `/server` est hébergé via **Render (Web Service)**.
+- Un fichier `render.yaml` situé à la racine automatise l'Infrastructure "as Code".
+- Render exécute `npm install` (ce qui installe les dépendances des Workspaces y compris `shared`) puis `ts-node src/index.ts` dans le dossier serveur.
+- Dès que le serveur est allumé, il obtient une URL publique (ex: `https://blindtest-xxxx.onrender.com`).
+
+### 2. Les Applications Clientes (Vercel)
+Les dossiers `/tv-app` et `/mobile-app` sont déployés sur **Vercel** en tant que deux projets distincts.
+- **Variables d'environnement** : Vercel injecte la variable `VITE_SERVER_URL` qui fait pointer le client React vers l'URL Socket du backend Render.
+- **Root Directory** : Chaque projet Vercel a pour base son dossier respectif (`tv-app` ou `mobile-app`). Vercel se charge de transpiler le React en fichiers HTML/CSS/JS statiques diffusés ultra-rapidement via CDN mondial.
