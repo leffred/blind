@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.css2?family=Outfit:wght@400;700;900&display=swap');
+
+:root {
+  --primary: #FF2A85;
+  --secondary: #2AFFF2;
+  --bg-dark: #120A2B;
+  --text-light: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent; /* Remove button flash on mobile */
+  user-select: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  font-family: 'Outfit', sans-serif;
+}

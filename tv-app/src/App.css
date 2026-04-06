@@ -1,0 +1,104 @@
+.app-container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/tv_bg.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 900;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  margin: 0;
+  background: linear-gradient(to right, var(--secondary), var(--primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.room-panel {
+  background: var(--glass-bg);
+  border: 2px solid var(--glass-border);
+  padding: 20px 40px;
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+.room-panel p {
+  margin: 0;
+  font-size: 1.5rem;
+  opacity: 0.8;
+}
+
+.room-code {
+  margin: 10px 0 0;
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: 5px;
+  color: var(--secondary);
+}
+
+.main-area {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-top: 40px;
+}
+
+.track-info {
+  background: var(--glass-bg);
+  border: 2px solid var(--glass-border);
+  border-radius: 30px;
+  padding: 40px;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.track-info h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.buzzed-text {
+  font-size: 4rem;
+  font-weight: 900;
+  color: var(--primary);
+  text-transform: uppercase;
+  animation: pulseBuzzer 1s infinite alternate;
+}
+
+@keyframes pulseBuzzer {
+  from { transform: scale(1); }
+  to { transform: scale(1.1); }
+}

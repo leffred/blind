@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.css2?family=Outfit:wght@400;700;900&display=swap');
+
+:root {
+  --primary: #FF2A85;
+  --secondary: #2AFFF2;
+  --bg-dark: #120A2B;
+  --text-light: #ffffff;
+  --text-dark: #1a1a1a;
+  
+  --glass-bg: rgba(18, 10, 43, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.2);
+}
+
+body {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  overflow: hidden; /* TV mode */
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}

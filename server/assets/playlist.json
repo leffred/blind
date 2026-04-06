@@ -1,0 +1,530 @@
+[
+    {
+        "id": "t1775479167808_0",
+        "title": "Le Banana Split",
+        "artist": "Lio",
+        "url_audio": "/audio/1980-Lio-LeBananaSplit.m4a",
+        "startTime": 0,
+        "options": [
+            "Renaud",
+            "Jul",
+            "Francis Cabrel",
+            "Lio"
+        ],
+        "answer": "Lio",
+        "year": 1980,
+        "origin": "FR"
+    },
+    {
+        "id": "t1775479168693_1",
+        "title": "T'es OK, T'es Bath",
+        "artist": "Ottawan",
+        "url_audio": "/audio/1980-Ottawan-TesOKTesBath.m4a",
+        "startTime": 0,
+        "options": [
+            "Ottawan",
+            "Alain Souchon",
+            "Louane",
+            "Céline Dion"
+        ],
+        "answer": "Ottawan",
+        "year": 1980,
+        "origin": "FR"
+    },
+    {
+        "id": "t1775479169449_2",
+        "title": "Marche à l'ombre",
+        "artist": "Renaud",
+        "url_audio": "/audio/1980-Renaud-Marchelombre.m4a",
+        "startTime": 0,
+        "options": [
+            "Johnny Hallyday",
+            "Julien Clerc",
+            "Renaud",
+            "Mylène Farmer"
+        ],
+        "answer": "Renaud",
+        "year": 1980,
+        "origin": "FR"
+    },
+    {
+        "id": "t1775479170135_3",
+        "title": "Back In Black",
+        "artist": "AC/DC",
+        "url_audio": "/audio/1980-ACDC-BackInBlack.m4a",
+        "startTime": 0,
+        "options": [
+            "Stromae",
+            "Jean-Jacques Goldman",
+            "Céline Dion",
+            "AC/DC"
+        ],
+        "answer": "AC/DC",
+        "year": 1980,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1775479170882_4",
+        "title": "Chacun fait (c'qui lui plaît)",
+        "artist": "Chagrin d'amour",
+        "url_audio": "/audio/1981-Chagrindamour-Chacunfaitcquiluiplat.m4a",
+        "startTime": 0,
+        "options": [
+            "Chagrin d'amour",
+            "M. Pokora",
+            "Jean-Jacques Goldman",
+            "Francis Cabrel"
+        ],
+        "answer": "Chagrin d'amour",
+        "year": 1981,
+        "origin": "FR"
+    },
+    {
+        "id": "t1775479171592_5",
+        "title": "Reality",
+        "artist": "Richard Sanderson",
+        "url_audio": "/audio/1981-RichardSanderson-Reality.m4a",
+        "startTime": 0,
+        "options": [
+            "Mylène Farmer",
+            "Julien Clerc",
+            "Richard Sanderson",
+            "Kendji Girac"
+        ],
+        "answer": "Richard Sanderson",
+        "year": 1981,
+        "origin": "FR"
+    },
+    {
+        "id": "t1775479172333_6",
+        "title": "L'Aventurier",
+        "artist": "Indochine",
+        "url_audio": "/audio/1982-Indochine-LAventurier.m4a",
+        "startTime": 0,
+        "options": [
+            "Patrick Bruel",
+            "Michel Sardou",
+            "Indochine",
+            "Alain Souchon"
+        ],
+        "answer": "Indochine",
+        "year": 1982,
+        "origin": "FR"
+    },
+    {
+        "id": "t1775479173063_7",
+        "title": "Africa",
+        "artist": "Rose Laurens",
+        "url_audio": "/audio/1982-RoseLaurens-Africa.m4a",
+        "startTime": 0,
+        "options": [
+            "Rose Laurens",
+            "Francis Cabrel",
+            "Alain Souchon",
+            "Kendji Girac"
+        ],
+        "answer": "Rose Laurens",
+        "year": 1982,
+        "origin": "FR"
+    },
+    {
+        "id": "t1775479173745_8",
+        "title": "Billie Jean",
+        "artist": "Michael Jackson",
+        "url_audio": "/audio/1982-MichaelJackson-BillieJean.m4a",
+        "startTime": 0,
+        "options": [
+            "Michael Jackson",
+            "Julien Clerc",
+            "Serge Gainsbourg",
+            "Johnny Hallyday"
+        ],
+        "answer": "Michael Jackson",
+        "year": 1982,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1775479174389_9",
+        "title": "Alexandrie Alexandra",
+        "artist": "Claude François",
+        "url_audio": "/audio/1983-ClaudeFranois-AlexandrieAlexandra.m4a",
+        "startTime": 0,
+        "options": [
+            "Claude François",
+            "Alain Souchon",
+            "Indochine",
+            "Johnny Hallyday"
+        ],
+        "answer": "Claude François",
+        "year": 1983,
+        "origin": "FR"
+    },
+    {
+        "id": "t1775479175007_10",
+        "title": "L'Aziza",
+        "artist": "Daniel Balavoine",
+        "url_audio": "/audio/1983-DanielBalavoine-LAziza.m4a",
+        "startTime": 0,
+        "options": [
+            "Angèle",
+            "Francis Cabrel",
+            "Jean-Jacques Goldman",
+            "Daniel Balavoine"
+        ],
+        "answer": "Daniel Balavoine",
+        "year": 1983,
+        "origin": "FR"
+    },
+    {
+        "id": "t1775479175768_11",
+        "title": "Holiday",
+        "artist": "Madonna",
+        "url_audio": "/audio/1983-Madonna-Holiday.m4a",
+        "startTime": 0,
+        "options": [
+            "Alain Souchon",
+            "Soprano",
+            "Indochine",
+            "Madonna"
+        ],
+        "answer": "Madonna",
+        "year": 1983,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1775479176426_12",
+        "title": "Les Démons de minuit",
+        "artist": "Emile & Images",
+        "url_audio": "/audio/1984-EmileImages-LesDmonsdeminuit.m4a",
+        "startTime": 0,
+        "options": [
+            "Emile & Images",
+            "Serge Gainsbourg",
+            "Johnny Hallyday",
+            "Renaud"
+        ],
+        "answer": "Emile & Images",
+        "year": 1984,
+        "origin": "FR"
+    },
+    {
+        "id": "t1775479177137_13",
+        "title": "Toute première fois",
+        "artist": "Jeanne Mas",
+        "url_audio": "/audio/1984-JeanneMas-Toutepremirefois.m4a",
+        "startTime": 0,
+        "options": [
+            "Julien Clerc",
+            "Jeanne Mas",
+            "Angèle",
+            "Alain Souchon"
+        ],
+        "answer": "Jeanne Mas",
+        "year": 1984,
+        "origin": "FR"
+    },
+    {
+        "id": "t1775479177806_14",
+        "title": "Je te donne",
+        "artist": "Jean-Jacques Goldman",
+        "url_audio": "/audio/1985-JeanJacquesGoldman-Jetedonne.m4a",
+        "startTime": 0,
+        "options": [
+            "Jean-Jacques Goldman",
+            "Alain Souchon",
+            "Florent Pagny",
+            "Indochine"
+        ],
+        "answer": "Jean-Jacques Goldman",
+        "year": 1985,
+        "origin": "FR"
+    },
+    {
+        "id": "t1775479178566_15",
+        "title": "Voyage Voyage",
+        "artist": "Desireless",
+        "url_audio": "/audio/1985-Desireless-VoyageVoyage.m4a",
+        "startTime": 0,
+        "options": [
+            "Orelsan",
+            "M. Pokora",
+            "Stromae",
+            "Desireless"
+        ],
+        "answer": "Desireless",
+        "year": 1985,
+        "origin": "FR"
+    },
+    {
+        "id": "t1775479179547_16",
+        "title": "Take On Me",
+        "artist": "a-ha",
+        "url_audio": "/audio/1985-aha-TakeOnMe.m4a",
+        "startTime": 0,
+        "options": [
+            "Vianney",
+            "Francis Cabrel",
+            "Jean-Jacques Goldman",
+            "a-ha"
+        ],
+        "answer": "a-ha",
+        "year": 1985,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1775479180149_17",
+        "title": "Désenchantée",
+        "artist": "Mylène Farmer",
+        "url_audio": "/audio/1990-MylneFarmer-Dsenchante.m4a",
+        "startTime": 0,
+        "options": [
+            "Angèle",
+            "Francis Cabrel",
+            "Mylène Farmer",
+            "Louane"
+        ],
+        "answer": "Mylène Farmer",
+        "year": 1990,
+        "origin": "FR"
+    },
+    {
+        "id": "t1775479180754_18",
+        "title": "Tomber la chemise",
+        "artist": "Zebda",
+        "url_audio": "/audio/1990-Zebda-Tomberlachemise.m4a",
+        "startTime": 0,
+        "options": [
+            "Jean-Jacques Goldman",
+            "Angèle",
+            "Serge Gainsbourg",
+            "Zebda"
+        ],
+        "answer": "Zebda",
+        "year": 1990,
+        "origin": "FR"
+    },
+    {
+        "id": "t1775479181362_19",
+        "title": "Smells Like Teen Spirit",
+        "artist": "Nirvana",
+        "url_audio": "/audio/1990-Nirvana-SmellsLikeTeenSpirit.m4a",
+        "startTime": 0,
+        "options": [
+            "Julien Clerc",
+            "Angèle",
+            "Stromae",
+            "Nirvana"
+        ],
+        "answer": "Nirvana",
+        "year": 1990,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1775479182011_20",
+        "title": "Pour que tu m'aimes encore",
+        "artist": "Céline Dion",
+        "url_audio": "/audio/1995-ClineDion-Pourquetumaimesencore.m4a",
+        "startTime": 0,
+        "options": [
+            "Stromae",
+            "Renaud",
+            "Orelsan",
+            "Céline Dion"
+        ],
+        "answer": "Céline Dion",
+        "year": 1995,
+        "origin": "FR"
+    },
+    {
+        "id": "t1775479182865_21",
+        "title": "Gangsta's Paradise",
+        "artist": "Coolio",
+        "url_audio": "/audio/1995-Coolio-GangstasParadise.m4a",
+        "startTime": 0,
+        "options": [
+            "Renaud",
+            "Vianney",
+            "Johnny Hallyday",
+            "Coolio"
+        ],
+        "answer": "Coolio",
+        "year": 1995,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1775479183593_22",
+        "title": "Moi... Lolita",
+        "artist": "Alizée",
+        "url_audio": "/audio/2000-Alize-MoiLolita.m4a",
+        "startTime": 0,
+        "options": [
+            "Angèle",
+            "Orelsan",
+            "Alizée",
+            "Alain Souchon"
+        ],
+        "answer": "Alizée",
+        "year": 2000,
+        "origin": "FR"
+    },
+    {
+        "id": "t1775479184294_23",
+        "title": "Ces soirées-là",
+        "artist": "Yannick",
+        "url_audio": "/audio/2000-Yannick-Cessoiresl.m4a",
+        "startTime": 0,
+        "options": [
+            "Yannick",
+            "Alain Souchon",
+            "Patrick Bruel",
+            "Céline Dion"
+        ],
+        "answer": "Yannick",
+        "year": 2000,
+        "origin": "FR"
+    },
+    {
+        "id": "t1775479185181_24",
+        "title": "The Real Slim Shady",
+        "artist": "Eminem",
+        "url_audio": "/audio/2000-Eminem-TheRealSlimShady.m4a",
+        "startTime": 0,
+        "options": [
+            "Eminem",
+            "Alain Souchon",
+            "Kendji Girac",
+            "Johnny Hallyday"
+        ],
+        "answer": "Eminem",
+        "year": 2000,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1775479185759_25",
+        "title": "Alors on danse",
+        "artist": "Stromae",
+        "url_audio": "/audio/2010-Stromae-Alorsondanse.m4a",
+        "startTime": 0,
+        "options": [
+            "Stromae",
+            "Soprano",
+            "Jean-Jacques Goldman",
+            "Michel Sardou"
+        ],
+        "answer": "Stromae",
+        "year": 2010,
+        "origin": "FR"
+    },
+    {
+        "id": "t1775479186346_26",
+        "title": "Je veux",
+        "artist": "Zaz",
+        "url_audio": "/audio/2010-Zaz-Jeveux.m4a",
+        "startTime": 0,
+        "options": [
+            "Johnny Hallyday",
+            "Florent Pagny",
+            "Michel Sardou",
+            "Zaz"
+        ],
+        "answer": "Zaz",
+        "year": 2010,
+        "origin": "FR"
+    },
+    {
+        "id": "t1775479187262_27",
+        "title": "Rolling in the Deep",
+        "artist": "Adele",
+        "url_audio": "/audio/2010-Adele-RollingintheDeep.m4a",
+        "startTime": 0,
+        "options": [
+            "Jul",
+            "Renaud",
+            "Julien Clerc",
+            "Adele"
+        ],
+        "answer": "Adele",
+        "year": 2010,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1775479187920_28",
+        "title": "Balance ton quoi",
+        "artist": "Angèle",
+        "url_audio": "/audio/2020-Angle-Balancetonquoi.m4a",
+        "startTime": 0,
+        "options": [
+            "Renaud",
+            "Patrick Bruel",
+            "Serge Gainsbourg",
+            "Angèle"
+        ],
+        "answer": "Angèle",
+        "year": 2020,
+        "origin": "FR"
+    },
+    {
+        "id": "t1775479188576_29",
+        "title": "La Fièvre",
+        "artist": "Julien Doré",
+        "url_audio": "/audio/2020-JulienDor-LaFivre.m4a",
+        "startTime": 0,
+        "options": [
+            "Vianney",
+            "Stromae",
+            "Julien Doré",
+            "Orelsan"
+        ],
+        "answer": "Julien Doré",
+        "year": 2020,
+        "origin": "FR"
+    },
+    {
+        "id": "t1775479189493_30",
+        "title": "Stupid Love",
+        "artist": "Lady Gaga",
+        "url_audio": "/audio/2020-LadyGaga-StupidLove.m4a",
+        "startTime": 0,
+        "options": [
+            "Johnny Hallyday",
+            "Lady Gaga",
+            "Céline Dion",
+            "Jul"
+        ],
+        "answer": "Lady Gaga",
+        "year": 2020,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1775479190111_31",
+        "title": "Le Feu",
+        "artist": "Vianney",
+        "url_audio": "/audio/2023-Vianney-LeFeu.m4a",
+        "startTime": 0,
+        "options": [
+            "Stromae",
+            "Alain Souchon",
+            "Angèle",
+            "Vianney"
+        ],
+        "answer": "Vianney",
+        "year": 2023,
+        "origin": "FR"
+    },
+    {
+        "id": "t1775479190916_32",
+        "title": "Anti-Hero",
+        "artist": "Taylor Swift",
+        "url_audio": "/audio/2023-TaylorSwift-AntiHero.m4a",
+        "startTime": 0,
+        "options": [
+            "Mylène Farmer",
+            "Taylor Swift",
+            "Alain Souchon",
+            "Jean-Jacques Goldman"
+        ],
+        "answer": "Taylor Swift",
+        "year": 2023,
+        "origin": "INTL"
+    }
+]
