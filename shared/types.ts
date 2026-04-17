@@ -7,6 +7,10 @@ export interface Player {
     guessedArtist?: boolean;
     guessedTitle?: boolean;
     vote?: PlayerVote; // Les votes soumis en salle d'attente
+    scoreHistory?: number[]; // Historique des scores après chaque piste
+    reactionTimes?: number[]; // En millisecondes, utile pour la stat moyenne
+    averageSpeed?: number;
+    tensionMedal?: boolean; // Vrai si a volé le top 3
 }
 
 export type GameMode = 
@@ -23,12 +27,14 @@ export interface PlayerVote {
     decades: number[];
     origins: ('FR' | 'INTL')[];
     modes: GameMode[];
+    trackLimit: number; // 10 | 20 | 50
 }
 
 export interface RoomSettings {
     decades: number[];
     origins: ('FR' | 'INTL')[];
     mode: GameMode;
+    trackLimit: number;
 }
 
 export interface Track {

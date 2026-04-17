@@ -48,7 +48,18 @@ async function run() {
   
   // Si on passe une année en argument, on filtre : ex `npm run fetch-music 1980`
   const targetYear = process.argv[2];
-  const listToProcess = targetYear ? songs.filter(s => s.year === parseInt(targetYear)) : songs;
+  let listToProcess = targetYear ? songs.filter(s => s.year === parseInt(targetYear)) : songs;
+
+  // Déduplication basée sur artiste + titre
+  const uniqueSongsMap = new Map<string, any>();
+  for (const s of listToProcess) {
+    const key = `${s.artist.toLowerCase()}--${s.title.toLowerCase()}`;
+    if (!uniqueSongsMap.has(key)) {
+      uniqueSongsMap.set(key, s);
+    }
+  }
+  listToProcess = Array.from(uniqueSongsMap.values());
+  console.log(`Base de données dédupliquée : ${listToProcess.length} titres uniques à analyser.`);
 
   let existingPlaylist: any[] = [];
   if (fs.existsSync(PLAYLIST_PATH)) {

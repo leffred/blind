@@ -93,6 +93,7 @@ export const handleStartGame = (io: Server, socket: Socket, data: any) => {
     let finalDecades = [1980, 1990, 2000, 2010, 2020];
     let finalOrigins: ('FR' | 'INTL')[] = ['FR', 'INTL'];
     let finalMode: any = 'CLASSIC';
+    let finalLimit = 20;
 
     if (allVotes.length > 0) {
         // --- Modes ---
@@ -141,6 +142,27 @@ export const handleStartGame = (io: Server, socket: Socket, data: any) => {
         if (votedOrigins.length > 0) {
             finalOrigins = votedOrigins;
         }
+
+        // --- Track Limit ---
+        const limitTallies: Record<number, number> = {};
+        allVotes.forEach(v => {
+            if (v?.trackLimit) {
+                limitTallies[v.trackLimit] = (limitTallies[v.trackLimit] || 0) + 1;
+            }
+        });
+        let maxLimitVotes = 0;
+        let topLimits: number[] = [];
+        for (const [limit, count] of Object.entries(limitTallies)) {
+            if (count > maxLimitVotes) {
+                maxLimitVotes = count;
+                topLimits = [Number(limit)];
+            } else if (count === maxLimitVotes) {
+                topLimits.push(Number(limit));
+            }
+        }
+        if (topLimits.length > 0) {
+            finalLimit = topLimits[Math.floor(Math.random() * topLimits.length)];
+        }
     }
 
     if (finalMode === 'RANDOM_GLOBAL') {
@@ -151,7 +173,8 @@ export const handleStartGame = (io: Server, socket: Socket, data: any) => {
     room.settings = {
         decades: finalDecades,
         origins: finalOrigins,
-        mode: finalMode as any
+        mode: finalMode as any,
+        trackLimit: finalLimit
     };
 
     const filters = { decades: finalDecades, origins: finalOrigins };
@@ -171,8 +194,8 @@ export const handleStartGame = (io: Server, socket: Socket, data: any) => {
         return;
     }
 
-    // Shuffle (Mélange aléatoire)
-    room.playlist = filteredTracks.sort(() => Math.random() - 0.5).map((track: any) => {
+    // Shuffle (Mélange aléatoire) et limite avec finalLimit
+    room.playlist = filteredTracks.sort(() => Math.random() - 0.5).slice(0, finalLimit).map((track: any) => {
         if (!track.titleOptions) {
             const decoys = allTracks
                 .filter((t: any) => t.title !== track.title)
@@ -183,6 +206,13 @@ export const handleStartGame = (io: Server, socket: Socket, data: any) => {
         }
         return track;
     });
+    
+    // Initialiser scoreHistory et stats pour tous les joueurs
+    Object.values(room.players).forEach(p => {
+        p.scoreHistory = [0];
+        p.reactionTimes = [];
+    });
+
     room.status = 'STARTING';
     
     // Broadcast STARTING to display the video
@@ -210,6 +240,7 @@ export const handleStartGame = (io: Server, socket: Socket, data: any) => {
         }
         
         roomState.currentTrackMode = currentMode as any;
+        (roomState as any).trackStartTime = Date.now();
 
         // Broadcast next track info
         io.to(roomCode).emit(SocketEvents.NEXT_TRACK, { track, currentMode });
@@ -253,8 +284,8 @@ export const handleAnswer = (io: Server, socket: Socket, payload: AnswerPayload)
 
     // Calcul de points: 1000 - (ms depuis le début) / 10
     let points = 0;
-    if (isCorrect && room.trackStartedTimestamp) {
-        const delay = timestamp - room.trackStartedTimestamp; // en millisecondes
+    if (isCorrect && (room as any).trackStartTime) {
+        const delay = Date.now() - (room as any).trackStartTime; // en millisecondes
         points = Math.max(10, 1000 - Math.floor(delay / 10));
     } else if (!isCorrect) {
         if (mode === 'CASUAL') {
@@ -273,6 +304,11 @@ export const handleAnswer = (io: Server, socket: Socket, payload: AnswerPayload)
         room.players[playerId].score += points;
         if (isCorrect && type === 'ARTIST') room.players[playerId].guessedArtist = true;
         if (isCorrect && type === 'TITLE') room.players[playerId].guessedTitle = true;
+
+        if (isCorrect) {
+            if (!room.players[playerId].reactionTimes) room.players[playerId].reactionTimes = [];
+            room.players[playerId].reactionTimes.push(Date.now() - ((room as any).trackStartTime || timestamp));
+        }
     }
 
     // Informe tout le monde du nouveau score
@@ -294,6 +330,12 @@ export const handleAnswer = (io: Server, socket: Socket, payload: AnswerPayload)
         const winnerName = winnerId ? room.players[winnerId].name : undefined;
         // On déclenche le fade out
         io.to(roomCode).emit(SocketEvents.FADE_OUT_AUDIO, {});
+
+        // Update score history
+        Object.values(room.players).forEach(p => {
+            if (!p.scoreHistory) p.scoreHistory = [0];
+            p.scoreHistory.push(p.score);
+        });
 
         room.currentTrackIndex++;
 
@@ -321,10 +363,37 @@ export const handleAnswer = (io: Server, socket: Socket, payload: AnswerPayload)
         } else {
             // Fin de la playlist
             setTimeout(() => {
-                if (room) room.status = 'WAITING'; // Ou 'FINISHED'
-                io.to(roomCode).emit(SocketEvents.ROOM_JOINED, { roomCode, state: 'WAITING' });
-                console.log(`Room [${roomCode}] : Fin de la playlist`);
-            }, 5000);
+                if (room) {
+                    room.status = 'FINISHED';
+
+                    // Calcul de la Tension & Vitesse
+                    const sortedPlayers = Object.values(room.players).sort((a,b) => b.score - a.score);
+                    // Check tension: est-ce qu'avant le dernier round le numéro 1 a été chipé par l'actuel numéro 1 ?
+                    if (sortedPlayers.length > 1) {
+                        const first = sortedPlayers[0];
+                        const historyLength = first.scoreHistory?.length || 0;
+                        if (historyLength > 2) {
+                            const prevFirstScore = first.scoreHistory![historyLength - 2];
+                            const second = sortedPlayers[1];
+                            const prevSecondScore = second.scoreHistory![historyLength - 2];
+                            // Si le deuxième avait un score supérieur avant la dernière manche, belle remontada !
+                            if (prevSecondScore > prevFirstScore) {
+                                first.tensionMedal = true;
+                            }
+                        }
+                    }
+
+                    Object.values(room.players).forEach(p => {
+                        if (p.reactionTimes && p.reactionTimes.length > 0) {
+                            p.averageSpeed = Math.round(p.reactionTimes.reduce((a,b)=>a+b, 0) / p.reactionTimes.length);
+                        }
+                    });
+
+                    // Emit GAME_FINISHED with final players state
+                    io.to(roomCode).emit(SocketEvents.GAME_FINISHED, { players: room.players });
+                    console.log(`Room [${roomCode}] : Fin de la playlist - GAME_FINISHED`);
+                }
+            }, 5000); // Court délai avant podium
         }
     }
 };
@@ -360,6 +429,7 @@ const startNextTrack = (io: Server, roomCode: string) => {
     }
     
     nextRoom.currentTrackMode = currentMode as any;
+    (nextRoom as any).trackStartTime = Date.now();
 
     io.to(roomCode).emit(SocketEvents.NEXT_TRACK, { track: nextTrack, currentMode });
     io.to(roomCode).emit(SocketEvents.PLAY_AUDIO, {});

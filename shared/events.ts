@@ -26,4 +26,7 @@ export const SocketEvents = {
     // Votes
     VOTE: 'vote', // Un joueur met à jour son bulletin de vote
     VOTE_UPDATE: 'vote_update', // Le serveur broadcast l'état des votes à la TV
+    
+    // Fin de partie
+    GAME_FINISHED: 'game_finished', // La partie est terminée, affichage du Podium
 };

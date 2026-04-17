@@ -30,6 +30,8 @@ function App() {
   
   const [roomCode, setRoomCode] = useState('');
   const [playerId] = useState(getLocalPlayerId());
+  
+  const [players, setPlayers] = useState<Record<string, any>>({});
 
   const [hasAnsweredArtist, setHasAnsweredArtist] = useState(false);
   const [artistIncorrect, setArtistIncorrect] = useState(false);
@@ -48,6 +50,7 @@ function App() {
   const [voteDecades, setVoteDecades] = useState<number[]>([1980, 1990, 2000, 2010, 2020]);
   const [voteOrigins, setVoteOrigins] = useState<string[]>(['FR', 'INTL']);
   const [voteModes, setVoteModes] = useState<string[]>(['CLASSIC']);
+  const [voteTrackLimit, setVoteTrackLimit] = useState<number>(20);
 
   const [globalArtists, setGlobalArtists] = useState<string[]>([]);
   const [globalTitles, setGlobalTitles] = useState<string[]>([]);
@@ -58,10 +61,11 @@ function App() {
       socket.emit(SocketEvents.VOTE, {
         decades: voteDecades,
         origins: voteOrigins,
-        modes: voteModes
+        modes: voteModes,
+        trackLimit: voteTrackLimit
       });
     }
-  }, [voteDecades, voteOrigins, voteModes, socket, status]);
+  }, [voteDecades, voteOrigins, voteModes, voteTrackLimit, socket, status]);
 
   // SHUFFLE MODE: Melange les options toutes les 1.5s
   useEffect(() => {
@@ -133,10 +137,16 @@ function App() {
     });
 
     s.on(SocketEvents.SCORE_UPDATE, (data) => {
+      setPlayers(data.players || {});
       if (data.lastAnswer && data.lastAnswer.playerId === playerId && !data.lastAnswer.isCorrect) {
         if (data.lastAnswer.type === 'ARTIST') setArtistIncorrect(true);
         if (data.lastAnswer.type === 'TITLE') setTitleIncorrect(true);
       }
+    });
+
+    s.on(SocketEvents.GAME_FINISHED, (data) => {
+      setStatus('FINISHED');
+      setPlayers(data.players || {});
     });
 
     return () => {
@@ -277,6 +287,21 @@ function App() {
             </div>
 
             <div style={{ background: 'rgba(255,255,255,0.1)', padding: '15px', borderRadius: '15px' }}>
+              <h3 style={{ margin: '0 0 10px 0', fontSize: '1.1rem' }}>Durée (Nb Musiques)</h3>
+              <div style={{ display: 'flex', gap: '10px' }}>
+                <button
+                  onClick={() => setVoteTrackLimit(10)}
+                  style={{ flex: 1, padding: '10px', borderRadius: '8px', border: 'none', background: voteTrackLimit === 10 ? '#ffb347' : 'rgba(0,0,0,0.3)', color: 'white', fontWeight: 'bold' }}>Courte (10)</button>
+                <button 
+                  onClick={() => setVoteTrackLimit(20)}
+                  style={{ flex: 1, padding: '10px', borderRadius: '8px', border: 'none', background: voteTrackLimit === 20 ? '#00ff88' : 'rgba(0,0,0,0.3)', color: 'white', fontWeight: 'bold' }}>Normale (20)</button>
+                <button 
+                  onClick={() => setVoteTrackLimit(50)}
+                  style={{ flex: 1, padding: '10px', borderRadius: '8px', border: 'none', background: voteTrackLimit === 50 ? '#ff0000' : 'rgba(0,0,0,0.3)', color: 'white', fontWeight: 'bold' }}>Marathon (50)</button>
+              </div>
+            </div>
+
+            <div style={{ background: 'rgba(255,255,255,0.1)', padding: '15px', borderRadius: '15px' }}>
               <h3 style={{ margin: '0 0 10px 0', fontSize: '1.1rem' }}>Mode de Jeu Principal</h3>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                 {[
@@ -410,6 +435,42 @@ function App() {
              )}
           </div>
         )}
+
+        {status === 'FINISHED' && (() => {
+          const sortedPlayers = Object.values(players).sort((a: any, b: any) => b.score - a.score);
+          const myRank = sortedPlayers.findIndex((p: any) => p.id === playerId) + 1;
+          const myScore = players[playerId]?.score || 0;
+          return (
+             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px', marginTop: '40px', textAlign: 'center' }}>
+               <h2 style={{ fontSize: '3rem', color: '#ffb347', textShadow: '0 2px 10px rgba(255,179,71,0.5)', margin: 0 }}>Terminé !</h2>
+               
+               <div style={{ background: 'rgba(255,255,255,0.1)', padding: '30px', borderRadius: '20px', width: '100%', maxWidth: '300px' }}>
+                 <p style={{ fontSize: '1.2rem', opacity: 0.8, margin: '0 0 10px 0' }}>Ton résultat</p>
+                 <div style={{ fontSize: '4rem', fontWeight: 900, color: '#fff' }}>#{myRank}</div>
+                 <div style={{ fontSize: '1.5rem', color: '#00ff88', marginTop: '10px' }}>{myScore} points</div>
+               </div>
+
+               <p style={{ opacity: 0.8, marginTop: '20px' }}>Regarde le grand écran pour le Podium détaillé !</p>
+               
+               <button 
+                  onClick={() => window.location.reload()}
+                  style={{
+                    padding: '15px 30px', 
+                    fontSize: '1.2rem', 
+                    borderRadius: '50px',
+                    border: 'none',
+                    background: 'white',
+                    color: 'black',
+                    fontWeight: 'bold',
+                    cursor: 'pointer',
+                    marginTop: '20px'
+                  }}
+                >
+                  RETOURNER AU SALON
+                </button>
+             </div>
+          );
+        })()}
 
       </div>
     </div>

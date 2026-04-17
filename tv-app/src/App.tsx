@@ -4,6 +4,8 @@ import { SocketEvents, Player, GameStatus, Track } from 'shared';
 import { ScoreBoard } from './components/ScoreBoard';
 import { AudioPlayer, AudioPlayerRef } from './components/AudioPlayer';
 import { Glitter } from './components/Glitter';
+import { Podium } from './components/Podium';
+import { ScoreChart } from './components/ScoreChart';
 import { QRCodeSVG } from 'qrcode.react';
 import './App.css';
 
@@ -133,6 +135,11 @@ function App() {
 
     s.on(SocketEvents.FADE_OUT_AUDIO, () => {
       audioRef.current?.fadeOut();
+    });
+
+    s.on(SocketEvents.GAME_FINISHED, (data) => {
+      setPlayers(data.players);
+      setStatus('FINISHED');
     });
 
     return () => {
@@ -284,6 +291,14 @@ function App() {
                     {renderProgressBar('FR 🥐', votes.filter(v => v.origins?.includes('FR')).length, activePlayersCount)}
                     {renderProgressBar('INTL 🌍', votes.filter(v => v.origins?.includes('INTL')).length, activePlayersCount)}
                   </div>
+                  
+                  {/* Colonne Durée */}
+                  <div style={{ flex: 1, borderLeft: '1px solid rgba(255,255,255,0.1)', paddingLeft: '15px' }}>
+                    <h3 style={{ textTransform: 'uppercase', color: '#00ff88', borderBottom: '1px solid #00ff88', paddingBottom: '5px', marginBottom: '10px', fontSize: '1.2rem', whiteSpace: 'nowrap' }}>Durée</h3>
+                    {renderProgressBar('Courte (10)', votes.filter(v => v.trackLimit === 10).length, activePlayersCount)}
+                    {renderProgressBar('Normale (20)', votes.filter(v => v.trackLimit === 20 || !v.trackLimit).length, activePlayersCount)}
+                    {renderProgressBar('Marathon (50)', votes.filter(v => v.trackLimit === 50).length, activePlayersCount)}
+                  </div>
                 </div>
 
                 <div style={{ alignSelf: 'center', marginTop: '10px' }}>
@@ -312,9 +327,26 @@ function App() {
             
             {status === 'PLAYING' && trackInfo && (
                <h2>🎵 En cours de lecture 🎵</h2>
-            )}
+             )}
+             
+             {status === 'FINISHED' && (
+               <div style={{
+                 position: 'absolute', top: 0, left: 0, right: 0, bottom: 0,
+                 background: 'var(--bg-gradient)', display: 'flex', flexDirection: 'column', 
+                 justifyContent: 'space-between', padding: '50px 100px', zIndex: 10
+               }}>
+                 <h1 style={{ fontSize: '4rem', fontWeight: 900, textAlign: 'center', marginBottom: '10px' }}>
+                   La Partie est Terminée !
+                 </h1>
+                 <Podium players={Object.values(players)} />
+                 <ScoreChart players={Object.values(players)} />
+                 <div style={{ textAlign: 'center', marginTop: '20px' }}>
+                   <p style={{ fontSize: '1.5rem', opacity: 0.8 }}>Relancez le jeu depuis vos téléphones pour faire une revanche !</p>
+                 </div>
+               </div>
+             )}
 
-            {status === 'TRACK_END' && (
+             {['WAITING', 'PLAYING', 'TRACK_END'].includes(status) && (
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px', background: 'rgba(0,0,0,0.8)', padding: '30px', borderRadius: '15px' }}>
                 <h2 style={{ fontSize: '2.5rem', margin: 0, textTransform: 'uppercase', color: '#ffb347' }}>
                    {winnerName ? `Bravo ${winnerName} a trouvé la combinaison gagnante ! 🏆` : "Terminé !"}
