@@ -22,6 +22,7 @@ function App() {
   const [nextTrackAt, setNextTrackAt] = useState<number | null>(null);
   const [timeLeft, setTimeLeft] = useState<number>(0);
   const [winnerName, setWinnerName] = useState<string | null>(null);
+  const [isAmbienceMuted, setIsAmbienceMuted] = useState<boolean>(false);
   
   const audioRef = useRef<AudioPlayerRef>(null);
   const elevatorAudioRef = useRef<HTMLAudioElement | null>(null);
@@ -32,6 +33,8 @@ function App() {
       elevatorAudioRef.current.loop = true;
       elevatorAudioRef.current.volume = 0.3;
     }
+
+    elevatorAudioRef.current.muted = isAmbienceMuted;
 
     const playElevator = () => {
       elevatorAudioRef.current?.play().catch(() => {
@@ -56,7 +59,7 @@ function App() {
     return () => {
       document.removeEventListener('click', handleInteract);
     };
-  }, [status]);
+  }, [status, isAmbienceMuted]);
 
   useEffect(() => {
     if (status === 'TRACK_END' && nextTrackAt) {
@@ -151,9 +154,33 @@ function App() {
       <div className="overlay" />
       <div className="content">
         <header className="header">
-          <h1 className="title">BLINDTEST LIVE</h1>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
+            <h1 className="title">BLINDTEST LIVE</h1>
+            
+            {/* Mute Button */}
+            <button 
+              onClick={() => setIsAmbienceMuted(m => !m)}
+              style={{
+                background: 'rgba(255,255,255,0.1)',
+                border: 'none',
+                color: 'white',
+                fontSize: '2rem',
+                cursor: 'pointer',
+                padding: '10px 15px',
+                borderRadius: '50%',
+                backdropFilter: 'blur(10px)',
+                transition: 'transform 0.2s'
+              }}
+              onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.1)'}
+              onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+              title="Musique d'attente"
+            >
+              {isAmbienceMuted ? '🔇' : '🔊'}
+            </button>
+          </div>
+          
           {roomCode && (
-            <div className="room-panel">
+            <div className="room-panel" style={{ alignSelf: 'flex-start' }}>
               <p>Rejoins via ton tel</p>
               <div className="room-code">{roomCode}</div>
               <div style={{ marginTop: '15px', background: 'white', padding: '10px', borderRadius: '10px', display: 'inline-block' }}>
