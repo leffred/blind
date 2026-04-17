@@ -3,7 +3,7 @@ import http from 'http';
 import { Server, Socket } from 'socket.io';
 import cors from 'cors';
 import { SocketEvents } from 'shared';
-import { handlePlayerJoin, handleAnswer, handleDisconnect, handleStartGame, handleReadyNext, handleVote } from './gameEngine';
+import { handlePlayerJoin, handleAnswer, handleDisconnect, handleStartGame, handleReadyNext, handleVote, handleAudioStarted } from './gameEngine';
 
 import path from 'path';
 
@@ -35,12 +35,8 @@ io.on('connection', (socket: Socket) => {
         handleVote(io, socket, data);
     });
 
-    // Événement reçu de la TV quand le son démarre
     socket.on(SocketEvents.AUDIO_STARTED, (data) => {
-        const { roomCode, trackStartedTimestamp } = data;
-        // On informe les téléphones pour démarrer le QCM avec timestamp sync
-        io.to(roomCode).emit(SocketEvents.AUDIO_STARTED, { trackStartedTimestamp });
-        console.log(`Room [${roomCode}] : Musique démarrée`);
+        handleAudioStarted(io, socket, data);
     });
 
     // Un joueur répond (QCM)

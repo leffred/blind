@@ -418,3 +418,14 @@ export const handleVote = (io: Server, socket: Socket, data: any) => {
         io.to(roomCode).emit(SocketEvents.VOTE_UPDATE, { votes: allVotes });
     }
 };
+
+export const handleAudioStarted = (io: Server, socket: Socket, data: any) => {
+    const { roomCode, trackStartedTimestamp } = data;
+    const room = rooms.get(roomCode);
+    if (room) {
+        room.trackStartedTimestamp = trackStartedTimestamp;
+    }
+    // On informe les téléphones pour démarrer le QCM avec timestamp sync
+    io.to(roomCode).emit(SocketEvents.AUDIO_STARTED, { trackStartedTimestamp });
+    console.log(`Room [${roomCode}] : Musique démarrée (timestamp enregistré: ${trackStartedTimestamp})`);
+};
