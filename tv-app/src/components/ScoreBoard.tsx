@@ -9,7 +9,7 @@ export function ScoreBoard({ players }: ScoreBoardProps) {
   const sortedPlayers = Object.values(players).sort((a, b) => b.score - a.score);
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '15px', width: '400px' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '15px', width: '400px', maxHeight: '100%', overflowY: 'auto', paddingRight: '15px' }}>
       <AnimatePresence>
         {sortedPlayers.map((p, index) => (
           <motion.div

@@ -22,7 +22,7 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding: 40px;
+  padding: 5vh 5vw; /* Mieux gérer les safe areas (overscan) sur TV */
 }
 
 .header {
@@ -68,26 +68,32 @@
   flex: 1;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 60px;
-  margin-top: 40px;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 30px;
+  margin-top: 20px;
+  position: relative;
+  min-height: 0;
 }
 
 .track-info {
   background: var(--glass-bg);
   border: 2px solid var(--glass-border);
   border-radius: 30px;
-  padding: 40px;
-  width: 100%;
-  max-width: 800px;
+  padding: 20px;
+  flex: 1;
+  max-width: 900px;
   text-align: center;
   backdrop-filter: blur(10px);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
 }
 
 .track-info h2 {
   font-size: 3rem;
   margin-bottom: 20px;
+  background: linear-gradient(to right, var(--text-light), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .buzzed-text {
@@ -95,7 +101,8 @@
   font-weight: 900;
   color: var(--primary);
   text-transform: uppercase;
-  animation: pulseBuzzer 1s infinite alternate;
+  animation: pulseBuzzer 0.5s infinite alternate;
+  text-shadow: 0 0 20px var(--primary);
 }
 
 @keyframes pulseBuzzer {

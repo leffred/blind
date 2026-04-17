@@ -1,5 +1,5 @@
 import { Server, Socket } from 'socket.io';
-import { Room, GameStatus, SocketEvents, Player, BuzzPayload, AnswerPayload } from 'shared';
+import { Room, GameStatus, SocketEvents, Player, AnswerPayload } from 'shared';
 import fs from 'fs';
 import path from 'path';
 
@@ -7,6 +7,9 @@ import path from 'path';
 const rooms: Map<string, Room> = new Map();
 // Mapping SocketID -> PlayerId & RoomCode
 const activeSockets: Map<string, { playerId: string, roomCode: string }> = new Map();
+
+// Storage for timeouts to be able to cancel them
+const roomTimeouts: Map<string, NodeJS.Timeout> = new Map();
 
 // Outil de génération de code aléatoire
 const generateRoomCode = () => {
@@ -32,7 +35,13 @@ export const handlePlayerJoin = (io: Server, socket: Socket, data: any) => {
             players: {},
             currentTrackIndex: 0,
             playlist: getDemoPlaylist(),
-            status: 'WAITING'
+            status: 'WAITING',
+            readyPlayers: [],
+            playersAnswered: [],
+            playersAnsweredArtist: [],
+            playersAnsweredTitle: [],
+            artistGuessed: false,
+            titleGuessed: false,
         };
         rooms.set(code, newRoom);
         socket.join(code);
@@ -71,7 +80,7 @@ export const handleStartGame = (io: Server, socket: Socket, data: any) => {
     if (!info) return;
     const { roomCode } = info;
     const room = rooms.get(roomCode);
-    if (!room || (room.status !== 'WAITING' && room.status !== 'BUZZED')) return;
+    if (!room || room.status !== 'WAITING') return;
 
     // Récupération des filtres
     const filters = data.filters || { decades: [1980, 1990, 2000, 2010, 2020], origins: ['FR', 'INTL'] };
@@ -92,9 +101,24 @@ export const handleStartGame = (io: Server, socket: Socket, data: any) => {
     }
 
     // Shuffle (Mélange aléatoire)
-    room.playlist = filteredTracks.sort(() => Math.random() - 0.5);
+    room.playlist = filteredTracks.sort(() => Math.random() - 0.5).map((track: any) => {
+        if (!track.titleOptions) {
+            const decoys = allTracks
+                .filter((t: any) => t.title !== track.title)
+                .sort(() => Math.random() - 0.5)
+                .slice(0, 3)
+                .map((t: any) => t.title);
+            track.titleOptions = [track.title, ...decoys].sort(() => Math.random() - 0.5);
+        }
+        return track;
+    });
     room.currentTrackIndex = 0;
     room.status = 'PLAYING';
+    room.playersAnswered = [];
+    room.playersAnsweredArtist = [];
+    room.playersAnsweredTitle = [];
+    room.artistGuessed = false;
+    room.titleGuessed = false;
     
     const track = room.playlist[room.currentTrackIndex];
     if(!track) return;
@@ -109,30 +133,30 @@ export const handleStartGame = (io: Server, socket: Socket, data: any) => {
 };
 
 
-export const handleBuzz = (io: Server, socket: Socket, payload: BuzzPayload) => {
-    const { roomCode, playerId, timestamp } = payload;
+export const handleAnswer = (io: Server, socket: Socket, payload: AnswerPayload) => {
+    const { roomCode, playerId, type, answer, timestamp } = payload;
     const room = rooms.get(roomCode);
     if (!room || room.status !== 'PLAYING') return;
 
-    // Logique simplifiée de timestamp: le premier buzz arrivé chez lui gagne le droit de répondre ou gagne des points.
-    // L'idéal est de compenser la latence, mais pour un MVP:
-    room.status = 'BUZZED';
-    
-    // On dit à la TV de stopper et afficher le joueur qui a buzzé
-    io.to(roomCode).emit(SocketEvents.BUZZ_LOCKED, { playerId, timestamp });
-    // Ordonne l'arrêt de la musique
-    io.to(roomCode).emit(SocketEvents.AUDIO_STOP, {});
-};
-
-export const handleAnswer = (io: Server, socket: Socket, payload: AnswerPayload) => {
-    const { roomCode, playerId, answer, timestamp } = payload;
-    const room = rooms.get(roomCode);
-    if (!room) return;
+    if (type === 'ARTIST') {
+        if (room.playersAnsweredArtist.includes(playerId)) return;
+        room.playersAnsweredArtist.push(playerId);
+    } else if (type === 'TITLE') {
+        if (room.playersAnsweredTitle.includes(playerId)) return;
+        room.playersAnsweredTitle.push(playerId);
+    }
 
     const track = room.playlist[room.currentTrackIndex];
     if (!track) return;
 
-    const isCorrect = answer === track.answer;
+    let isCorrect = false;
+    if (type === 'ARTIST') {
+        isCorrect = answer === track.answer;
+        if (isCorrect) room.artistGuessed = true;
+    } else {
+        isCorrect = answer === (track.titleAnswer || track.title);
+        if (isCorrect) room.titleGuessed = true;
+    }
     
     // Calcul de points: 1000 - (ms depuis le début) / 10
     let points = 0;
@@ -145,42 +169,116 @@ export const handleAnswer = (io: Server, socket: Socket, payload: AnswerPayload)
 
     if(room.players[playerId]){
         room.players[playerId].score += points;
+        if (isCorrect && type === 'ARTIST') room.players[playerId].guessedArtist = true;
+        if (isCorrect && type === 'TITLE') room.players[playerId].guessedTitle = true;
     }
 
     // Informe tout le monde du nouveau score
     io.to(roomCode).emit(SocketEvents.SCORE_UPDATE, { 
         players: room.players,
-        lastAnswer: { playerId, isCorrect, points }
+        lastAnswer: { playerId, isCorrect, points, type }
     });
 
-    // On déclenche le fade out
-    io.to(roomCode).emit(SocketEvents.FADE_OUT_AUDIO, {});
+    const connectedPlayersCount = Object.values(room.players).filter(p => p.connected).length;
 
-    // On change de track et on planifie la suite
-    room.currentTrackIndex++;
+    // Conditions de fin : quelqu'un a trouvé la combinaison gagnante, ou tout le monde a répondu (Artiste ET Titre)
+    const winnerId = Object.keys(room.players).find(id => room.players[id].guessedArtist && room.players[id].guessedTitle);
+    
+    const allAnsweredArtist = room.playersAnsweredArtist.length >= connectedPlayersCount;
+    const allAnsweredTitle = room.playersAnsweredTitle.length >= connectedPlayersCount;
+    const isFinished = winnerId !== undefined || (allAnsweredArtist && allAnsweredTitle);
 
-    if (room.currentTrackIndex < room.playlist.length) {
-        // Dans 5 secondes, on lance automatiquement la prochaine track
-        setTimeout(() => {
-            // Equivalent of handleStartGame logic to auto start
-            const nextRoom = rooms.get(roomCode);
-            if (!nextRoom) return;
-            nextRoom.status = 'PLAYING';
-            const nextTrack = nextRoom.playlist[nextRoom.currentTrackIndex];
-            if(!nextTrack) return;
+    if (isFinished) {
+        const winnerName = winnerId ? room.players[winnerId].name : undefined;
+        // On déclenche le fade out
+        io.to(roomCode).emit(SocketEvents.FADE_OUT_AUDIO, {});
+
+        room.currentTrackIndex++;
+
+        if (room.currentTrackIndex < room.playlist.length) {
+            room.status = 'TRACK_END';
+            room.readyPlayers = [];
+            room.nextTrackAt = Date.now() + 10000; // 10 secondes
             
-            io.to(roomCode).emit(SocketEvents.NEXT_TRACK, { track: nextTrack });
-            io.to(roomCode).emit(SocketEvents.PLAY_AUDIO, {});
-            console.log(`Room [${roomCode}] : Piste ${nextRoom.currentTrackIndex} auto-lancée`);
-        }, 5000);
-    } else {
-        // Fin de la playlist
-        setTimeout(() => {
-            const nextRoom = rooms.get(roomCode);
-            if (nextRoom) nextRoom.status = 'WAITING'; // Ou 'FINISHED'
-            io.to(roomCode).emit(SocketEvents.ROOM_JOINED, { roomCode, state: 'WAITING' });
-            console.log(`Room [${roomCode}] : Fin de la playlist`);
-        }, 5000);
+            io.to(roomCode).emit(SocketEvents.TRACK_END, {
+                nextTrackAt: room.nextTrackAt,
+                readyPlayers: room.readyPlayers,
+                winnerName
+            });
+
+            // Clear existing timeout if any
+            if (roomTimeouts.has(roomCode)) {
+                clearTimeout(roomTimeouts.get(roomCode)!);
+            }
+
+            const timeout = setTimeout(() => {
+                startNextTrack(io, roomCode);
+            }, 10000);
+            roomTimeouts.set(roomCode, timeout);
+            
+        } else {
+            // Fin de la playlist
+            setTimeout(() => {
+                if (room) room.status = 'WAITING'; // Ou 'FINISHED'
+                io.to(roomCode).emit(SocketEvents.ROOM_JOINED, { roomCode, state: 'WAITING' });
+                console.log(`Room [${roomCode}] : Fin de la playlist`);
+            }, 5000);
+        }
+    }
+};
+
+const startNextTrack = (io: Server, roomCode: string) => {
+    roomTimeouts.delete(roomCode);
+    
+    const nextRoom = rooms.get(roomCode);
+    if (!nextRoom) return;
+    
+    nextRoom.status = 'PLAYING';
+    nextRoom.readyPlayers = [];
+    nextRoom.playersAnswered = [];
+    nextRoom.playersAnsweredArtist = [];
+    nextRoom.playersAnsweredTitle = [];
+    nextRoom.artistGuessed = false;
+    nextRoom.titleGuessed = false;
+    nextRoom.nextTrackAt = undefined;
+    
+    // Reset player specific accuracy for the track
+    Object.values(nextRoom.players).forEach(p => {
+        p.guessedArtist = false;
+        p.guessedTitle = false;
+    });
+    
+    const nextTrack = nextRoom.playlist[nextRoom.currentTrackIndex];
+    if(!nextTrack) return;
+    
+    io.to(roomCode).emit(SocketEvents.NEXT_TRACK, { track: nextTrack });
+    io.to(roomCode).emit(SocketEvents.PLAY_AUDIO, {});
+    console.log(`Room [${roomCode}] : Piste ${nextRoom.currentTrackIndex} lancée !`);
+};
+
+export const handleReadyNext = (io: Server, socket: Socket, payload: { roomCode: string, playerId: string }) => {
+    const { roomCode, playerId } = payload;
+    const room = rooms.get(roomCode);
+    if (!room || room.status !== 'TRACK_END') return;
+
+    if (!room.readyPlayers.includes(playerId)) {
+        room.readyPlayers.push(playerId);
+        
+        io.to(roomCode).emit(SocketEvents.TRACK_END, {
+             nextTrackAt: room.nextTrackAt,
+             readyPlayers: room.readyPlayers
+        });
+    }
+
+    const connectedPlayers = Object.values(room.players).filter(p => p.connected);
+    const allReady = connectedPlayers.length > 0 && connectedPlayers.every(p => room.readyPlayers.includes(p.id));
+
+    if (allReady) {
+        console.log(`Room [${roomCode}] : Tout le monde est prêt, on zap le chrono !`);
+        if (roomTimeouts.has(roomCode)) {
+            clearTimeout(roomTimeouts.get(roomCode)!);
+        }
+        startNextTrack(io, roomCode);
     }
 };
 

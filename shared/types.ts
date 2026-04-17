@@ -4,6 +4,8 @@ export interface Player {
     score: number;
     avatarUrl?: string;
     connected: boolean;
+    guessedArtist?: boolean;
+    guessedTitle?: boolean;
 }
 
 export interface Track {
@@ -12,8 +14,10 @@ export interface Track {
     artist: string;
     url_audio: string;
     startTime: number;
-    options: string[]; // Options de réponse (si QCM)
-    answer: string; // Bonne réponse
+    options: string[]; // Options de réponse artiste
+    titleOptions?: string[]; // Options de réponse titre
+    answer: string; // Bonne réponse artiste
+    titleAnswer?: string; // Bonne réponse titre
     year?: number;
     origin?: 'FR' | 'INTL';
 }
@@ -29,21 +33,22 @@ export interface Room {
     playlist: Track[];
     status: GameStatus;
     trackStartedTimestamp?: number; // Pour le scoring
+    readyPlayers: string[]; // Joueurs ayant cliqué sur Prêt
+    nextTrackAt?: number; // Timestamp de lancement de la prochaine musique
+    playersAnswered: string[]; // backwards compat
+    playersAnsweredArtist: string[]; // Joueurs ayant déjà tenté le chanteur
+    playersAnsweredTitle: string[]; // Joueurs ayant déjà tenté le titre
+    artistGuessed?: boolean;
+    titleGuessed?: boolean;
 }
 
-export type GameStatus = 'WAITING' | 'PLAYING' | 'BUZZED' | 'SCORES' | 'FINISHED';
+export type GameStatus = 'WAITING' | 'PLAYING' | 'SCORES' | 'TRACK_END' | 'FINISHED';
 
-// Payload d'entrée de Buzz
-export interface BuzzPayload {
-    roomCode: string;
-    playerId: string;
-    timestamp: number; // Date.now() du mobile
-}
 
-// Payload QCM
 export interface AnswerPayload {
     roomCode: string;
     playerId: string;
+    type: 'ARTIST' | 'TITLE';
     answer: string;
     timestamp: number;
 }

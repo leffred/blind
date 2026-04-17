@@ -35,7 +35,7 @@ export const AudioPlayer = forwardRef<AudioPlayerRef, AudioPlayerProps>(
           
           let vol = audioRef.current.volume;
           const fadeAmount = 0.05; // 20 steps
-          const stepTime = 3000 / 20; // 150ms per step = 3 seconds total
+          const stepTime = 100; // 100ms per step = 2 seconds total
 
           fadeInterval.current = setInterval(() => {
             if (audioRef.current) {
@@ -65,9 +65,25 @@ export const AudioPlayer = forwardRef<AudioPlayerRef, AudioPlayerProps>(
             
         audioRef.current.src = url;
         audioRef.current.load();
+        audioRef.current.volume = 0; // Commencer à 0 pour le Fade In
         
         // Auto-play dès qu'on reçoit une nouvelle piste
         audioRef.current.play().then(() => {
+            // FADE IN progressif sur 1 seconde
+            if (fadeInterval.current) clearInterval(fadeInterval.current);
+            let vol = 0;
+            fadeInterval.current = setInterval(() => {
+                if (audioRef.current) {
+                    if (vol < 0.95) {
+                        vol += 0.1;
+                        audioRef.current.volume = vol;
+                    } else {
+                        audioRef.current.volume = 1;
+                        if(fadeInterval.current) clearInterval(fadeInterval.current);
+                    }
+                }
+            }, 100); // 10 steps = 1 seconde
+
             onAudioStarted(Date.now());
         }).catch(err => {
             console.error("Audio couldn't play (maybe 404 or policy), proceeding anyway to unblock game", err);

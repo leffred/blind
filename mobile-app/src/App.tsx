@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react';
 import { io, Socket } from 'socket.io-client';
-import { SocketEvents, GameStatus, BuzzPayload, AnswerPayload } from 'shared';
+import { SocketEvents, GameStatus, AnswerPayload } from 'shared';
+import { AnswerGrid } from './components/AnswerGrid';
 import './App.css';
 
-const SOCKET_URL = import.meta.env.VITE_SERVER_URL || 'http://localhost:3001';
+const LOCAL_IP = typeof __LOCAL_IP__ !== 'undefined' ? __LOCAL_IP__ : window.location.hostname;
+const SOCKET_URL = import.meta.env.VITE_SERVER_URL || `http://${LOCAL_IP}:3001`;
 
 // Helpers locaux
 const getLocalPlayerId = () => {
@@ -28,8 +30,27 @@ function App() {
   const [roomCode, setRoomCode] = useState('');
   const [playerId] = useState(getLocalPlayerId());
 
-  const [hasBuzzed, setHasBuzzed] = useState(false);
-  const [options, setOptions] = useState<string[]>([]); // Pour le QCM si besoin
+  const [hasAnsweredArtist, setHasAnsweredArtist] = useState(false);
+  const [artistIncorrect, setArtistIncorrect] = useState(false);
+  
+  const [hasAnsweredTitle, setHasAnsweredTitle] = useState(false);
+  const [titleIncorrect, setTitleIncorrect] = useState(false);
+  
+  const [artistOptions, setArtistOptions] = useState<string[]>([]);
+  const [titleOptions, setTitleOptions] = useState<string[]>([]);
+  
+  const [isReady, setIsReady] = useState(false);
+  const [nextTrackAt, setNextTrackAt] = useState<number | null>(null);
+  const [timeLeft, setTimeLeft] = useState<number>(0);
+
+  useEffect(() => {
+    if (status === 'TRACK_END' && nextTrackAt) {
+      const interval = setInterval(() => {
+        setTimeLeft(Math.max(0, Math.ceil((nextTrackAt - Date.now()) / 1000)));
+      }, 250);
+      return () => clearInterval(interval);
+    }
+  }, [status, nextTrackAt]);
 
   useEffect(() => {
     const s = io(SOCKET_URL, { autoConnect: false });
@@ -38,7 +59,10 @@ function App() {
     s.on(SocketEvents.ROOM_JOINED, (data) => {
       setRoomCode(data.roomCode);
       setStatus(data.state);
-      setHasBuzzed(false);
+      setHasAnsweredArtist(false);
+      setArtistIncorrect(false);
+      setHasAnsweredTitle(false);
+      setTitleIncorrect(false);
     });
 
     s.on(SocketEvents.ERROR, (data) => {
@@ -48,18 +72,30 @@ function App() {
 
     s.on(SocketEvents.NEXT_TRACK, (data) => {
       setStatus('WAITING');
-      setHasBuzzed(false);
-      setOptions(data.track.options || []);
+      setHasAnsweredArtist(false);
+      setArtistIncorrect(false);
+      setHasAnsweredTitle(false);
+      setTitleIncorrect(false);
+      setIsReady(false);
+      setArtistOptions(data.track.options || []);
+      setTitleOptions(data.track.titleOptions || []);
+    });
+
+    s.on(SocketEvents.TRACK_END, (data) => {
+      setStatus('TRACK_END');
+      setIsReady(false);
+      if (data.nextTrackAt) setNextTrackAt(data.nextTrackAt);
     });
 
     s.on(SocketEvents.AUDIO_STARTED, () => {
       setStatus('PLAYING');
+      setIsReady(false);
     });
 
-    s.on(SocketEvents.BUZZ_LOCKED, (data) => {
-      setStatus('BUZZED');
-      if (data.playerId !== playerId) {
-        setHasBuzzed(true); // Locked out
+    s.on(SocketEvents.SCORE_UPDATE, (data) => {
+      if (data.lastAnswer && data.lastAnswer.playerId === playerId && !data.lastAnswer.isCorrect) {
+        if (data.lastAnswer.type === 'ARTIST') setArtistIncorrect(true);
+        if (data.lastAnswer.type === 'TITLE') setTitleIncorrect(true);
       }
     });
 
@@ -84,30 +120,33 @@ function App() {
     }
   };
 
-  const handleBuzz = () => {
-    if (status !== 'PLAYING' || hasBuzzed) return;
-    
-    setHasBuzzed(true); // Eviter double tap
-    
-    const payload: BuzzPayload = {
-      roomCode,
-      playerId,
-      timestamp: Date.now() // Timestaming coté client pour gérer latence
-    };
-    socket?.emit(SocketEvents.BUZZ, payload);
-  };
 
-  const handleAnswer = (answer: string) => {
+
+  const handleAnswer = (type: 'ARTIST' | 'TITLE', answer: string) => {
     if (status !== 'PLAYING') return;
+
+    if (type === 'ARTIST') {
+        if (hasAnsweredArtist) return;
+        setHasAnsweredArtist(true);
+    } else {
+        if (hasAnsweredTitle) return;
+        setHasAnsweredTitle(true);
+    }
 
     const payload: AnswerPayload = {
       roomCode,
       playerId,
       timestamp: Date.now(),
+      type,
       answer
     };
     socket?.emit(SocketEvents.ANSWER, payload);
-    setStatus('WAITING'); // Attendre la suite
+  };
+
+  const handleReadyNext = () => {
+    if (status !== 'TRACK_END') return;
+    setIsReady(true);
+    socket?.emit(SocketEvents.READY_NEXT, { roomCode, playerId });
   };
 
   if (status === 'LOGIN') {
@@ -151,28 +190,94 @@ function App() {
         </div>
 
         {status === 'WAITING' && (
-          <h2>Prépare-toi...</h2>
-        )}
-
-        {(status === 'PLAYING' || status === 'BUZZED') && options.length === 0 && (
-          <div className="buzzer-container">
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px' }}>
+            <h2>Prépare-toi...</h2>
             <button 
-              className="buzzer-btn" 
-              onClick={handleBuzz}
-              disabled={status !== 'PLAYING' || hasBuzzed}
-            />
-            {status === 'BUZZED' && !hasBuzzed && <h3>À toi de répondre !</h3>}
+               onClick={() => socket?.emit(SocketEvents.START_GAME, {})}
+               style={{
+                 padding: '15px 30px', 
+                 fontSize: '1.2rem', 
+                 borderRadius: '50px',
+                 border: 'none',
+                 background: 'linear-gradient(45deg, #ff007f, #7f00ff)',
+                 color: 'white',
+                 boxShadow: '0 0 20px rgba(255, 0, 127, 0.5)',
+                 fontWeight: 'bold',
+                 cursor: 'pointer',
+                 marginTop: '20px'
+               }}
+            >
+              🔥 LANCER LE JEU
+            </button>
           </div>
         )}
 
-        {status === 'PLAYING' && options.length > 0 && (
-           <div className="options-grid">
-             {options.map((opt, i) => (
-                <button key={i} className="option-btn" onClick={() => handleAnswer(opt)}>
-                  {opt}
-                </button>
-             ))}
+        {status === 'PLAYING' && (
+           <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', flex: 1, paddingBottom: '10px' }}>
+             
+             {/* ZONE ARTISTE */}
+             <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
+               <h3 style={{ textAlign: 'center', marginBottom: '10px', fontSize: '1.2rem', color: '#aaffaa', margin: 0 }}>Qui chante ?</h3>
+               {!hasAnsweredArtist ? (
+                 <AnswerGrid options={artistOptions} onSelect={(res) => handleAnswer('ARTIST', res)} />
+               ) : (
+                 <div style={{ textAlign: 'center', padding: '15px', background: 'rgba(0,0,0,0.5)', borderRadius: '15px', marginTop: 'auto', marginBottom: 'auto' }}>
+                   {artistIncorrect ? "❌ Mauvais artiste (-200 pts)" : "⏳ Réponse Artiste envoyée..."}
+                 </div>
+               )}
+             </div>
+
+             {/* ZONE TITRE */}
+             <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
+               <h3 style={{ textAlign: 'center', marginBottom: '10px', fontSize: '1.2rem', color: '#aaffaa', margin: 0 }}>Quel est le titre ?</h3>
+               {!hasAnsweredTitle ? (
+                  <AnswerGrid options={titleOptions} onSelect={(res) => handleAnswer('TITLE', res)} isTitle />
+               ) : (
+                 <div style={{ textAlign: 'center', padding: '15px', background: 'rgba(0,0,0,0.5)', borderRadius: '15px', marginTop: 'auto', marginBottom: 'auto' }}>
+                   {titleIncorrect ? "❌ Mauvais titre (-200 pts)" : "⏳ Réponse Titre envoyée..."}
+                 </div>
+               )}
+             </div>
+
            </div>
+        )}
+
+        {status === 'TRACK_END' && (
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px', marginTop: '40px' }}>
+             <h2 style={{ fontSize: '2rem', textAlign: 'center', color: '#ffb347' }}>Manche Terminée</h2>
+             <p style={{ fontSize: '1.2rem', textAlign: 'center' }}>Prochain titre dans <strong>{timeLeft}</strong> secondes</p>
+             
+             {!isReady ? (
+                <button 
+                  onClick={handleReadyNext}
+                  style={{
+                    padding: '15px 40px', 
+                    fontSize: '1.5rem', 
+                    borderRadius: '50px',
+                    border: 'none',
+                    background: 'linear-gradient(45deg, #00ff88, #00b3ff)',
+                    color: 'white',
+                    boxShadow: '0 0 20px rgba(0, 255, 136, 0.5)',
+                    fontWeight: 'bold',
+                    cursor: 'pointer',
+                    marginTop: '20px'
+                  }}
+                >
+                  PRÊT POUR LA SUITE
+                </button>
+             ) : (
+                <div style={{ 
+                  marginTop: '20px', 
+                  padding: '15px 30px', 
+                  fontSize: '1.2rem', 
+                  background: 'rgba(255,255,255,0.1)', 
+                  borderRadius: '30px',
+                  color: '#aaa'
+                }}>
+                  En attente des autres joueurs...
+                </div>
+             )}
+          </div>
         )}
 
       </div>

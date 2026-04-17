@@ -2,8 +2,8 @@ services:
   - type: web
     name: blindtest-server
     env: node
-    buildCommand: npm install
-    startCommand: cd server && npm run start
+    buildCommand: npm install --include=dev && npm run build --workspace=server
+    startCommand: npm run start:prod --workspace=server
     envVars:
       - key: NODE_ENV
         value: production

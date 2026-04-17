@@ -15,8 +15,10 @@ export const SocketEvents = {
     FADE_OUT_AUDIO: 'fade_out_audio',
     
     // Actions joueurs
-    BUZZ: 'buzz',
-    BUZZ_LOCKED: 'buzz_locked', // Un joueur a buzzé, on bloque les autres
     ANSWER: 'answer',
     SCORE_UPDATE: 'score_update', // Mise à jour globale
+    
+    // Lifecycle de piste
+    READY_NEXT: 'ready_next', // Bouton "Prêt" pour le Mobile
+    TRACK_END: 'track_end', // Fin de piste, affiche 10s de délai
 };

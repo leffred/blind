@@ -11,7 +11,10 @@ const FAKE_ARTISTS = [
   "Céline Dion", "Julien Clerc", "Serge Gainsbourg", "Alain Souchon",
   "Francis Cabrel", "Florent Pagny", "Patrick Bruel", "Michel Sardou",
   "Indochine", "Telephone", "Stromae", "Angèle", "Louane", "Kendji Girac",
-  "M. Pokora", "Vianney", "Jul", "Orelsan", "Soprano"
+  "M. Pokora", "Vianney", "Jul", "Orelsan", "Soprano",
+  "Michael Jackson", "Madonna", "Queen", "The Beatles", "ABBA",
+  "Lady Gaga", "Eminem", "Rihanna", "Beyoncé", "Ed Sheeran",
+  "The Weeknd", "Dua Lipa", "Justin Bieber", "Katy Perry"
 ];
 
 const shuffle = <T>(array: T[]) => array.sort(() => Math.random() - 0.5);
