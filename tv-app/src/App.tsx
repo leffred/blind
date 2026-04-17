@@ -175,8 +175,8 @@ function App() {
       <Glitter isActive={true} isBuzzed={status === 'TRACK_END'} />
       <div className="overlay" />
       <div className="content">
-        <header className="header">
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
+        <header className="header" style={{ position: 'relative', marginBottom: '10px' }}>
+          <div style={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center', width: '100%', gap: '20px' }}>
             <h1 className="title">BLINDTEST LIVE</h1>
             
             {/* Mute Button */}
@@ -191,7 +191,8 @@ function App() {
                 padding: '10px 15px',
                 borderRadius: '50%',
                 backdropFilter: 'blur(10px)',
-                transition: 'transform 0.2s'
+                transition: 'transform 0.2s',
+                zIndex: 10
               }}
               onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.1)'}
               onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
@@ -202,17 +203,17 @@ function App() {
           </div>
           
           {roomCode && (
-            <div className="room-panel" style={{ alignSelf: 'flex-start' }}>
-              <p>Rejoins via ton tel</p>
-              <div className="room-code">{roomCode}</div>
-              <div style={{ marginTop: '15px', background: 'white', padding: '10px', borderRadius: '10px', display: 'inline-block' }}>
-                <QRCodeSVG value={MOBILE_APP_URL} size={120} />
+            <div className="room-panel" style={{ position: 'absolute', top: '-10px', right: '-10px', padding: '15px 25px', transform: 'scale(0.85)', transformOrigin: 'top right', zIndex: 10 }}>
+              <p style={{ fontSize: '1.2rem' }}>Rejoins via ton tel</p>
+              <div className="room-code" style={{ fontSize: '2.5rem', margin: '5px 0' }}>{roomCode}</div>
+              <div style={{ marginTop: '10px', background: 'white', padding: '10px', borderRadius: '10px', display: 'inline-block' }}>
+                <QRCodeSVG value={MOBILE_APP_URL} size={100} />
               </div>
             </div>
           )}
         </header>
 
-        <main className="main-area">
+        <main className="main-area" style={{ marginTop: '10px' }}>
           <ScoreBoard players={players} />
 
           <div className="track-info">
@@ -230,8 +231,8 @@ function App() {
                 <div style={{ display: 'flex', flexDirection: 'row', gap: '40px', width: '100%', marginTop: '10px' }}>
                   
                   {/* Colonne Modes */}
-                  <div style={{ flex: 1 }}>
-                    <h3 style={{ textTransform: 'uppercase', color: '#ff007f', borderBottom: '1px solid #ff007f', paddingBottom: '10px' }}>Mode de Jeu</h3>
+                  <div style={{ flex: 1, paddingRight: '20px' }}>
+                    <h3 style={{ textTransform: 'uppercase', color: '#ff007f', borderBottom: '1px solid #ff007f', paddingBottom: '5px', marginBottom: '10px', fontSize: '1.2rem' }}>Mode de Jeu</h3>
                     {Object.keys(modeLabels).map(modeId => {
                       const count = votes.filter(v => v.modes?.includes(modeId)).length;
                       if (count === 0 && votes.length > 0) return null; // Ne pas afficher les options à 0 si au moins un vote a été fait pour epurer la liste (ou non ? Mieux vaut tout afficher au début)
@@ -240,8 +241,8 @@ function App() {
                   </div>
 
                   {/* Colonne Décennies */}
-                  <div style={{ flex: 1 }}>
-                    <h3 style={{ textTransform: 'uppercase', color: '#00b3ff', borderBottom: '1px solid #00b3ff', paddingBottom: '10px' }}>Années</h3>
+                  <div style={{ flex: 1, borderLeft: '1px solid rgba(255,255,255,0.1)', paddingLeft: '20px' }}>
+                    <h3 style={{ textTransform: 'uppercase', color: '#00b3ff', borderBottom: '1px solid #00b3ff', paddingBottom: '5px', marginBottom: '10px', fontSize: '1.2rem' }}>Années</h3>
                     {[1980, 1990, 2000, 2010, 2020].map(d => {
                       const count = votes.filter(v => v.decades?.includes(d)).length;
                       return renderProgressBar(`${d}s`, count, activePlayersCount);
@@ -249,8 +250,8 @@ function App() {
                   </div>
 
                   {/* Colonne Origines */}
-                  <div style={{ flex: 1 }}>
-                    <h3 style={{ textTransform: 'uppercase', color: '#7f00ff', borderBottom: '1px solid #7f00ff', paddingBottom: '10px' }}>Origines</h3>
+                  <div style={{ flex: 1, borderLeft: '1px solid rgba(255,255,255,0.1)', paddingLeft: '20px' }}>
+                    <h3 style={{ textTransform: 'uppercase', color: '#7f00ff', borderBottom: '1px solid #7f00ff', paddingBottom: '5px', marginBottom: '10px', fontSize: '1.2rem' }}>Origines</h3>
                     {renderProgressBar('FR 🥐', votes.filter(v => v.origins?.includes('FR')).length, activePlayersCount)}
                     {renderProgressBar('INTL 🌍', votes.filter(v => v.origins?.includes('INTL')).length, activePlayersCount)}
                   </div>

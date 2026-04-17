@@ -22,7 +22,7 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding: 5vh 5vw; /* Mieux gérer les safe areas (overscan) sur TV */
+  padding: 3vh 4vw; /* Reduced paddings */
 }
 
 .header {
@@ -32,7 +32,7 @@
 }
 
 .title {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 900;
   text-shadow: 0 4px 10px rgba(0,0,0,0.5);
   margin: 0;
@@ -80,7 +80,7 @@
   background: var(--glass-bg);
   border: 2px solid var(--glass-border);
   border-radius: 30px;
-  padding: 20px;
+  padding: 15px;
   flex: 1;
   max-width: 900px;
   text-align: center;
@@ -89,8 +89,8 @@
 }
 
 .track-info h2 {
-  font-size: 3rem;
-  margin-bottom: 20px;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
   background: linear-gradient(to right, var(--text-light), var(--secondary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

@@ -41,6 +41,7 @@ function App() {
   const [titleOptions, setTitleOptions] = useState<string[]>([]);
   
   const [isReady, setIsReady] = useState(false);
+  const [hasStarted, setHasStarted] = useState(false);
   const [nextTrackAt, setNextTrackAt] = useState<number | null>(null);
   const [timeLeft, setTimeLeft] = useState<number>(0);
 
@@ -89,6 +90,7 @@ function App() {
     s.on(SocketEvents.ROOM_JOINED, (data) => {
       setRoomCode(data.roomCode);
       setStatus(data.state);
+      if (data.state !== 'WAITING') setHasStarted(true);
       if (data.globalArtists) setGlobalArtists(data.globalArtists);
       if (data.globalTitles) setGlobalTitles(data.globalTitles);
       setHasAnsweredArtist(false);
@@ -123,6 +125,7 @@ function App() {
     s.on(SocketEvents.AUDIO_STARTED, () => {
       setStatus('PLAYING');
       setIsReady(false);
+      setHasStarted(true);
     });
 
     s.on(SocketEvents.SCORE_UPDATE, (data) => {
@@ -222,7 +225,7 @@ function App() {
           {inputName} | Score: --
         </div>
 
-        {status === 'WAITING' && (
+        {status === 'WAITING' && !hasStarted && (
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'stretch', gap: '15px', width: '100%', maxWidth: '400px', margin: '0 auto', paddingBottom: '20px' }}>
             <h2 style={{ textAlign: 'center', marginBottom: 0, textShadow: '1px 1px 0 rgba(0,0,0,0.5)' }}>Salle d'attente</h2>
             <p style={{ textAlign: 'center', fontSize: '0.9rem', color: '#ffb347', margin: 0 }}>Choisis tes règles, la majorité l'emporte !</p>
@@ -301,6 +304,13 @@ function App() {
             >
               🚀 LANCER LA PARTIE
             </button>
+          </div>
+        )}
+
+        {status === 'WAITING' && hasStarted && (
+          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', flex: 1, gap: '20px' }}>
+            <h2 style={{ fontSize: '2rem', animation: 'pulseBuzzer 1s infinite alternate', color: '#00b3ff' }}>Préparez-vous...</h2>
+            <p style={{ opacity: 0.8 }}>La musique va démarrer sur la TV</p>
           </div>
         )}
 
