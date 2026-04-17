@@ -9,7 +9,10 @@ import './App.css';
 
 const LOCAL_IP = typeof __LOCAL_IP__ !== 'undefined' ? __LOCAL_IP__ : window.location.hostname;
 const SOCKET_URL = import.meta.env.VITE_SERVER_URL || `http://${LOCAL_IP}:3001`;
-const MOBILE_APP_URL = import.meta.env.VITE_MOBILE_APP_URL || `http://${LOCAL_IP}:5174`;
+const MOBILE_APP_URL = import.meta.env.VITE_MOBILE_APP_URL || 
+  (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' || window.location.hostname.startsWith('192.168') 
+    ? `http://${LOCAL_IP}:5173` 
+    : 'https://blindtest-mobile.vercel.app');
 
 function App() {
   const [socket, setSocket] = useState<Socket | null>(null);
