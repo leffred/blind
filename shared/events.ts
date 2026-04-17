@@ -21,4 +21,8 @@ export const SocketEvents = {
     // Lifecycle de piste
     READY_NEXT: 'ready_next', // Bouton "Prêt" pour le Mobile
     TRACK_END: 'track_end', // Fin de piste, affiche 10s de délai
+
+    // Votes
+    VOTE: 'vote', // Un joueur met à jour son bulletin de vote
+    VOTE_UPDATE: 'vote_update', // Le serveur broadcast l'état des votes à la TV
 };

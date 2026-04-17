@@ -6,6 +6,29 @@ export interface Player {
     connected: boolean;
     guessedArtist?: boolean;
     guessedTitle?: boolean;
+    vote?: PlayerVote; // Les votes soumis en salle d'attente
+}
+
+export type GameMode = 
+    | 'CLASSIC' 
+    | 'SUDDEN_DEATH' 
+    | 'SHUFFLE' 
+    | 'RELAY' 
+    | 'CASUAL' 
+    | 'EXPERT_TYPING' 
+    | 'RANDOM_GLOBAL' 
+    | 'CHAOS_PER_TRACK';
+
+export interface PlayerVote {
+    decades: number[];
+    origins: ('FR' | 'INTL')[];
+    modes: GameMode[];
+}
+
+export interface RoomSettings {
+    decades: number[];
+    origins: ('FR' | 'INTL')[];
+    mode: GameMode;
 }
 
 export interface Track {
@@ -29,6 +52,7 @@ export interface GameFilters {
 export interface Room {
     code: string; // 4 caractères
     players: Record<string, Player>;
+    settings?: RoomSettings; // Les réglages finaux décidés au lancer
     currentTrackIndex: number;
     playlist: Track[];
     status: GameStatus;

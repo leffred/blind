@@ -3,7 +3,7 @@ import http from 'http';
 import { Server, Socket } from 'socket.io';
 import cors from 'cors';
 import { SocketEvents } from 'shared';
-import { handlePlayerJoin, handleAnswer, handleDisconnect, handleStartGame, handleReadyNext } from './gameEngine';
+import { handlePlayerJoin, handleAnswer, handleDisconnect, handleStartGame, handleReadyNext, handleVote } from './gameEngine';
 
 import path from 'path';
 
@@ -30,6 +30,10 @@ io.on('connection', (socket: Socket) => {
 
     socket.on(SocketEvents.START_GAME, (data) => {
         handleStartGame(io, socket, data);
+    });
+
+    socket.on(SocketEvents.VOTE, (data) => {
+        handleVote(io, socket, data);
     });
 
     // Événement reçu de la TV quand le son démarre

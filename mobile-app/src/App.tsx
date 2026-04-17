@@ -43,6 +43,20 @@ function App() {
   const [nextTrackAt, setNextTrackAt] = useState<number | null>(null);
   const [timeLeft, setTimeLeft] = useState<number>(0);
 
+  const [voteDecades, setVoteDecades] = useState<number[]>([1980, 1990, 2000, 2010, 2020]);
+  const [voteOrigins, setVoteOrigins] = useState<string[]>(['FR', 'INTL']);
+  const [voteModes, setVoteModes] = useState<string[]>(['CLASSIC']);
+
+  useEffect(() => {
+    if (socket && status === 'WAITING') {
+      socket.emit(SocketEvents.VOTE, {
+        decades: voteDecades,
+        origins: voteOrigins,
+        modes: voteModes
+      });
+    }
+  }, [voteDecades, voteOrigins, voteModes, socket, status]);
+
   useEffect(() => {
     if (status === 'TRACK_END' && nextTrackAt) {
       const interval = setInterval(() => {
@@ -190,24 +204,83 @@ function App() {
         </div>
 
         {status === 'WAITING' && (
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px' }}>
-            <h2>Prépare-toi...</h2>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'stretch', gap: '15px', width: '100%', maxWidth: '400px', margin: '0 auto', paddingBottom: '20px' }}>
+            <h2 style={{ textAlign: 'center', marginBottom: 0, textShadow: '1px 1px 0 rgba(0,0,0,0.5)' }}>Salle d'attente</h2>
+            <p style={{ textAlign: 'center', fontSize: '0.9rem', color: '#ffb347', margin: 0 }}>Choisis tes règles, la majorité l'emporte !</p>
+
+            <div style={{ background: 'rgba(255,255,255,0.1)', padding: '15px', borderRadius: '15px' }}>
+              <h3 style={{ margin: '0 0 10px 0', fontSize: '1.1rem' }}>Années</h3>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+                {[1980, 1990, 2000, 2010, 2020].map(d => (
+                  <button key={d} 
+                    onClick={() => setVoteDecades(prev => prev.includes(d) ? prev.filter(x => x !== d) : [...prev, d])}
+                    style={{
+                      flex: 1, padding: '8px 5px', borderRadius: '8px', border: 'none',
+                      background: voteDecades.includes(d) ? '#00b3ff' : 'rgba(0,0,0,0.3)',
+                      color: 'white', fontWeight: 'bold'
+                    }}
+                  >{d}s</button>
+                ))}
+              </div>
+            </div>
+
+            <div style={{ background: 'rgba(255,255,255,0.1)', padding: '15px', borderRadius: '15px' }}>
+              <h3 style={{ margin: '0 0 10px 0', fontSize: '1.1rem' }}>Origine</h3>
+              <div style={{ display: 'flex', gap: '10px' }}>
+                <button
+                  onClick={() => setVoteOrigins(prev => prev.includes('FR') ? prev.filter(x => x !== 'FR') : [...prev, 'FR'])}
+                  style={{ flex: 1, padding: '10px', borderRadius: '8px', border: 'none', background: voteOrigins.includes('FR') ? '#ff007f' : 'rgba(0,0,0,0.3)', color: 'white', fontWeight: 'bold' }}>FR 🥐</button>
+                <button 
+                  onClick={() => setVoteOrigins(prev => prev.includes('INTL') ? prev.filter(x => x !== 'INTL') : [...prev, 'INTL'])}
+                  style={{ flex: 1, padding: '10px', borderRadius: '8px', border: 'none', background: voteOrigins.includes('INTL') ? '#7f00ff' : 'rgba(0,0,0,0.3)', color: 'white', fontWeight: 'bold' }}>INTL 🌍</button>
+              </div>
+            </div>
+
+            <div style={{ background: 'rgba(255,255,255,0.1)', padding: '15px', borderRadius: '15px' }}>
+              <h3 style={{ margin: '0 0 10px 0', fontSize: '1.1rem' }}>Mode de Jeu Principal</h3>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                {[
+                  { id: 'CLASSIC', label: 'Classique', desc: 'Artiste + Titre' },
+                  { id: 'CASUAL', label: 'Casual', desc: '1 seul choix' },
+                  { id: 'SUDDEN_DEATH', label: 'Mort Subite', desc: '1 erreur = Eliminé' },
+                  { id: 'SHUFFLE', label: 'Mélangeur', desc: 'Saisie déroutante' },
+                  { id: 'RELAY', label: 'Relais Coop', desc: 'En duo' },
+                  { id: 'EXPERT_TYPING', label: 'Expert Saisie', desc: 'Au clavier' },
+                  { id: 'RANDOM_GLOBAL', label: 'Roue Aléatoire', desc: 'Le destin choisit' },
+                  { id: 'CHAOS_PER_TRACK', label: 'Chaos Absolu', desc: 'Change par piste' },
+                ].map(mode => (
+                  <button key={mode.id}
+                    onClick={() => setVoteModes([mode.id])} // Option mutuellement exclusive
+                    style={{
+                      display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+                      padding: '12px', borderRadius: '8px', border: 'none',
+                      background: voteModes.includes(mode.id) ? 'linear-gradient(45deg, #ff007f, #00b3ff)' : 'rgba(0,0,0,0.3)',
+                      color: 'white', cursor: 'pointer'
+                    }}
+                  >
+                    <span style={{ fontWeight: 'bold' }}>{mode.label}</span>
+                    <span style={{ fontSize: '0.8rem', opacity: 0.8 }}>{mode.desc}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
+
             <button 
                onClick={() => socket?.emit(SocketEvents.START_GAME, {})}
                style={{
-                 padding: '15px 30px', 
+                 padding: '15px', 
                  fontSize: '1.2rem', 
                  borderRadius: '50px',
                  border: 'none',
-                 background: 'linear-gradient(45deg, #ff007f, #7f00ff)',
-                 color: 'white',
-                 boxShadow: '0 0 20px rgba(255, 0, 127, 0.5)',
+                 background: 'white',
+                 color: 'black',
+                 boxShadow: '0 0 20px rgba(255, 255, 255, 0.4)',
                  fontWeight: 'bold',
                  cursor: 'pointer',
-                 marginTop: '20px'
+                 marginTop: '10px'
                }}
             >
-              🔥 LANCER LE JEU
+              🚀 LANCER LA PARTIE
             </button>
           </div>
         )}

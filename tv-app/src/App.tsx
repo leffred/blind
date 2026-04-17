@@ -23,6 +23,7 @@ function App() {
   const [timeLeft, setTimeLeft] = useState<number>(0);
   const [winnerName, setWinnerName] = useState<string | null>(null);
   const [isAmbienceMuted, setIsAmbienceMuted] = useState<boolean>(false);
+  const [votes, setVotes] = useState<any[]>([]);
   
   const audioRef = useRef<AudioPlayerRef>(null);
   const elevatorAudioRef = useRef<HTMLAudioElement | null>(null);
@@ -92,11 +93,16 @@ function App() {
       setPlayers(data.players);
     });
 
+    s.on(SocketEvents.VOTE_UPDATE, (data) => {
+      setVotes(data.votes);
+    });
+
     s.on(SocketEvents.NEXT_TRACK, (data) => {
       setTrackInfo(data.track);
       setStatus('WAITING'); // En attente du départ
       setReadyPlayers([]);
       setWinnerName(null);
+      setVotes([]); // Reset votes pour la prochaine fois
     });
 
     s.on(SocketEvents.TRACK_END, (data) => {
@@ -131,22 +137,35 @@ function App() {
     socket?.emit(SocketEvents.AUDIO_STARTED, { roomCode, trackStartedTimestamp: timestamp });
   };
 
-  const [decades, setDecades] = useState<number[]>([1980, 1990, 2000, 2010, 2020]);
-  const [origins, setOrigins] = useState<('FR'|'INTL')[]>(['FR', 'INTL']);
-
-  const toggleDecade = (year: number) => {
-    setDecades(prev => prev.includes(year) ? prev.filter(y => y !== year) : [...prev, year]);
-  };
-
-  const toggleOrigin = (o: 'FR'|'INTL') => {
-    setOrigins(prev => prev.includes(o) ? prev.filter(x => x !== o) : [...prev, o]);
-  };
-
   const handleStartGame = () => {
      if (socket) {
-        socket.emit(SocketEvents.START_GAME, { filters: { decades, origins } });
+        socket.emit(SocketEvents.START_GAME, {});
      }
   };
+
+  const modeLabels: Record<string, string> = {
+    'CLASSIC': 'Classique', 'CASUAL': 'Casual', 'SUDDEN_DEATH': 'Mort Subite',
+    'SHUFFLE': 'Mélangeur', 'RELAY': 'Relais Coop', 'EXPERT_TYPING': 'Expert',
+    'RANDOM_GLOBAL': 'Roue', 'CHAOS_PER_TRACK': 'Chaos'
+  };
+
+  const renderProgressBar = (label: string, votesCount: number, total: number) => {
+    const pct = total === 0 ? 0 : Math.round((votesCount / total) * 100);
+    return (
+      <div key={label} style={{ marginBottom: '12px' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '1rem', marginBottom: '4px' }}>
+          <span>{label}</span>
+          <span style={{ color: '#ffb347', fontWeight: 'bold' }}>{votesCount}</span>
+        </div>
+        <div style={{ width: '100%', height: '14px', background: 'rgba(255,255,255,0.1)', borderRadius: '7px', overflow: 'hidden' }}>
+          <div style={{ width: `${pct}%`, height: '100%', background: 'linear-gradient(90deg, #ff007f, #00b3ff)', transition: 'width 0.4s cubic-bezier(0.4, 0, 0.2, 1)' }} />
+        </div>
+      </div>
+    );
+  };
+
+  const activePlayersCount = Object.values(players).filter((p: any) => p.connected && p.id !== 'TV').length;
+  const isAllVoted = votes.length > 0 && votes.length === activePlayersCount;
 
   return (
     <div className="app-container">
@@ -195,46 +214,64 @@ function App() {
 
           <div className="track-info">
             {status === 'WAITING' && (
-              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '15px', background: 'rgba(0,0,0,0.6)', padding: '20px', borderRadius: '15px', width: '100%' }}>
-                <h2 style={{ fontSize: '1.8rem', margin: 0, textAlign: 'left' }}>Configurations</h2>
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'stretch', gap: '20px', background: 'rgba(0,0,0,0.7)', padding: '30px', borderRadius: '20px', width: '100%' }}>
+                <h2 style={{ fontSize: '2rem', margin: 0, textAlign: 'center', textShadow: '2px 2px 0 rgba(0,0,0,0.5)' }}>Configuration par les Joueurs</h2>
+                {activePlayersCount === 0 ? (
+                  <p style={{ textAlign: 'center' }}>En attente de connexion de joueurs...</p>
+                ) : (
+                  <p style={{ textAlign: 'center', color: isAllVoted ? '#00ff88' : '#ffb347' }}>
+                    {votes.length} / {activePlayersCount} joueurs ont voté
+                  </p>
+                )}
                 
-                <div style={{ display: 'flex', flexDirection: 'row', gap: '30px', width: '100%', flexWrap: 'wrap' }}>
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', textAlign: 'left' }}>
-                    <h3 style={{ margin: 0, textDecoration: 'underline', fontSize: '1.2rem' }}>Origine</h3>
-                    <div style={{ display: 'flex', gap: '15px' }}>
-                      <label><input type="checkbox" checked={origins.includes('FR')} onChange={() => toggleOrigin('FR')} /> Francophone</label>
-                      <label><input type="checkbox" checked={origins.includes('INTL')} onChange={() => toggleOrigin('INTL')} /> International</label>
-                    </div>
+                <div style={{ display: 'flex', flexDirection: 'row', gap: '40px', width: '100%', marginTop: '10px' }}>
+                  
+                  {/* Colonne Modes */}
+                  <div style={{ flex: 1 }}>
+                    <h3 style={{ textTransform: 'uppercase', color: '#ff007f', borderBottom: '1px solid #ff007f', paddingBottom: '10px' }}>Mode de Jeu</h3>
+                    {Object.keys(modeLabels).map(modeId => {
+                      const count = votes.filter(v => v.modes?.includes(modeId)).length;
+                      if (count === 0 && votes.length > 0) return null; // Ne pas afficher les options à 0 si au moins un vote a été fait pour epurer la liste (ou non ? Mieux vaut tout afficher au début)
+                      return renderProgressBar(modeLabels[modeId], count, activePlayersCount);
+                    })}
                   </div>
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', textAlign: 'left', flex: 1 }}>
-                    <h3 style={{ margin: 0, textDecoration: 'underline', fontSize: '1.2rem' }}>Décennies</h3>
-                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '15px' }}>
-                      {[1970, 1980, 1990, 2000, 2010, 2020].map(d => (
-                        <label key={d} style={{ whiteSpace: 'nowrap' }}>
-                          <input type="checkbox" checked={decades.includes(d)} onChange={() => toggleDecade(d)} /> Années {d}
-                        </label>
-                      ))}
-                    </div>
+
+                  {/* Colonne Décennies */}
+                  <div style={{ flex: 1 }}>
+                    <h3 style={{ textTransform: 'uppercase', color: '#00b3ff', borderBottom: '1px solid #00b3ff', paddingBottom: '10px' }}>Années</h3>
+                    {[1980, 1990, 2000, 2010, 2020].map(d => {
+                      const count = votes.filter(v => v.decades?.includes(d)).length;
+                      return renderProgressBar(`${d}s`, count, activePlayersCount);
+                    })}
+                  </div>
+
+                  {/* Colonne Origines */}
+                  <div style={{ flex: 1 }}>
+                    <h3 style={{ textTransform: 'uppercase', color: '#7f00ff', borderBottom: '1px solid #7f00ff', paddingBottom: '10px' }}>Origines</h3>
+                    {renderProgressBar('FR 🥐', votes.filter(v => v.origins?.includes('FR')).length, activePlayersCount)}
+                    {renderProgressBar('INTL 🌍', votes.filter(v => v.origins?.includes('INTL')).length, activePlayersCount)}
                   </div>
                 </div>
 
-                <div style={{ alignSelf: 'flex-start', marginTop: '10px' }}>
+                <div style={{ alignSelf: 'center', marginTop: '20px' }}>
                   <button 
                     onClick={handleStartGame}
+                    disabled={activePlayersCount === 0}
                     style={{
-                      padding: '10px 30px', 
+                      padding: '15px 40px', 
                       fontSize: '1.2rem', 
                       borderRadius: '50px',
                       border: 'none',
-                      background: 'linear-gradient(45deg, #ff007f, #7f00ff)',
-                      color: 'white',
-                      cursor: 'pointer',
-                      boxShadow: '0 0 20px rgba(255, 0, 127, 0.5)',
+                      background: activePlayersCount === 0 ? '#333' : 'linear-gradient(45deg, #ff007f, #7f00ff)',
+                      color: activePlayersCount === 0 ? '#888' : 'white',
+                      cursor: activePlayersCount === 0 ? 'not-allowed' : 'pointer',
+                      boxShadow: activePlayersCount === 0 ? 'none' : '0 0 30px rgba(255, 0, 127, 0.4)',
                       fontWeight: 'bold',
-                      textTransform: 'uppercase'
+                      textTransform: 'uppercase',
+                      transition: 'all 0.2s'
                     }}
                   >
-                    Lancer la Partie
+                    Lancer {votes.length > 0 && !isAllVoted ? '(Démocratie en cours)' : 'la Partie'}
                   </button>
                 </div>
               </div>

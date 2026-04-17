@@ -82,8 +82,69 @@ export const handleStartGame = (io: Server, socket: Socket, data: any) => {
     const room = rooms.get(roomCode);
     if (!room || room.status !== 'WAITING') return;
 
-    // Récupération des filtres
-    const filters = data.filters || { decades: [1980, 1990, 2000, 2010, 2020], origins: ['FR', 'INTL'] };
+    // Aggregation des votes
+    const allVotes = Object.values(room.players).map(p => p.vote).filter(v => v !== undefined);
+    
+    let finalDecades = [1980, 1990, 2000, 2010, 2020];
+    let finalOrigins: ('FR' | 'INTL')[] = ['FR', 'INTL'];
+    let finalMode: any = 'CLASSIC';
+
+    if (allVotes.length > 0) {
+        // --- Modes ---
+        const modeTallies: Record<string, number> = {};
+        allVotes.forEach(v => {
+            v?.modes?.forEach((m: string) => {
+                modeTallies[m] = (modeTallies[m] || 0) + 1;
+            });
+        });
+        
+        let maxModeVotes = 0;
+        let topModes: string[] = [];
+        for (const [mode, count] of Object.entries(modeTallies)) {
+            if (count > maxModeVotes) {
+                maxModeVotes = count;
+                topModes = [mode];
+            } else if (count === maxModeVotes) {
+                topModes.push(mode);
+            }
+        }
+        if (topModes.length > 0) {
+            // Choix au hasard parmi les ex-aequo
+            finalMode = topModes[Math.floor(Math.random() * topModes.length)];
+        }
+
+        // --- Decennies ---
+        const decadeTallies: Record<number, number> = {};
+        allVotes.forEach(v => {
+            v?.decades?.forEach((d: number) => {
+                decadeTallies[d] = (decadeTallies[d] || 0) + 1;
+            });
+        });
+        const votedDecades = Object.keys(decadeTallies).map(Number);
+        if (votedDecades.length > 0) {
+            finalDecades = votedDecades; // On accumule toutes les décennies validées par au moins un joueur (plus fun)
+        }
+
+        // --- Origines ---
+        const originTallies: Record<string, number> = {};
+        allVotes.forEach(v => {
+            v?.origins?.forEach((o: string) => {
+                originTallies[o] = (originTallies[o] || 0) + 1;
+            });
+        });
+        const votedOrigins = Object.keys(originTallies) as ('FR' | 'INTL')[];
+        if (votedOrigins.length > 0) {
+            finalOrigins = votedOrigins;
+        }
+    }
+
+    room.settings = {
+        decades: finalDecades,
+        origins: finalOrigins,
+        mode: finalMode
+    };
+
+    const filters = { decades: finalDecades, origins: finalOrigins };
     const allTracks = getDemoPlaylist();
 
     // Filtrage
@@ -294,5 +355,25 @@ export const handleDisconnect = (io: Server, socket: Socket) => {
             }
         }
         activeSockets.delete(socket.id);
+    }
+};
+
+export const handleVote = (io: Server, socket: Socket, data: any) => {
+    const info = activeSockets.get(socket.id);
+    if (!info) return;
+    const { roomCode, playerId } = info;
+    const room = rooms.get(roomCode);
+    if (!room || room.status !== 'WAITING') return;
+
+    if (room.players[playerId]) {
+        room.players[playerId].vote = {
+            decades: data.decades || [],
+            origins: data.origins || [],
+            modes: data.modes || ['CLASSIC']
+        };
+        
+        // Broadcast les votes pour tous les joueurs (pour la TV et autres mobiles)
+        const allVotes = Object.values(room.players).map(p => p.vote).filter(v => v !== undefined);
+        io.to(roomCode).emit(SocketEvents.VOTE_UPDATE, { votes: allVotes });
     }
 };
