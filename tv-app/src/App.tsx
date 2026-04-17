@@ -9,6 +9,7 @@ import './App.css';
 
 const LOCAL_IP = typeof __LOCAL_IP__ !== 'undefined' ? __LOCAL_IP__ : window.location.hostname;
 const SOCKET_URL = import.meta.env.VITE_SERVER_URL || `http://${LOCAL_IP}:3001`;
+const MOBILE_APP_URL = import.meta.env.VITE_MOBILE_APP_URL || `http://${LOCAL_IP}:5174`;
 
 function App() {
   const [socket, setSocket] = useState<Socket | null>(null);
@@ -123,7 +124,7 @@ function App() {
               <p>Rejoins via ton tel</p>
               <div className="room-code">{roomCode}</div>
               <div style={{ marginTop: '15px', background: 'white', padding: '10px', borderRadius: '10px', display: 'inline-block' }}>
-                <QRCodeSVG value={`http://${LOCAL_IP}:5174`} size={120} />
+                <QRCodeSVG value={MOBILE_APP_URL} size={120} />
               </div>
             </div>
           )}
