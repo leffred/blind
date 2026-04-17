@@ -3,7 +3,6 @@ import { io, Socket } from 'socket.io-client';
 import { SocketEvents, Player, GameStatus, Track } from 'shared';
 import { ScoreBoard } from './components/ScoreBoard';
 import { AudioPlayer, AudioPlayerRef } from './components/AudioPlayer';
-import { TVHost } from './components/TVHost';
 import { Glitter } from './components/Glitter';
 import { QRCodeSVG } from 'qrcode.react';
 import './App.css';
