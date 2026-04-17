@@ -70,7 +70,12 @@ export const handlePlayerJoin = (io: Server, socket: Socket, data: any) => {
 
         // Informe la TV qu'un joueur a rejoint
         io.to(code).emit(SocketEvents.PLAYER_JOINED, { player: room.players[pInfo.id], players: room.players });
-        socket.emit(SocketEvents.ROOM_JOINED, { roomCode: code, state: room.status });
+        
+        const allTracks = getDemoPlaylist();
+        const globalArtists = Array.from(new Set(allTracks.map((t: any) => t.artist)));
+        const globalTitles = Array.from(new Set(allTracks.map((t: any) => t.titleAnswer || t.title)));
+
+        socket.emit(SocketEvents.ROOM_JOINED, { roomCode: code, state: room.status, globalArtists, globalTitles });
         console.log(`Joueur ${pInfo.name} a rejoint ${code}`);
     }
 };
@@ -138,10 +143,15 @@ export const handleStartGame = (io: Server, socket: Socket, data: any) => {
         }
     }
 
+    if (finalMode === 'RANDOM_GLOBAL') {
+        const standardModes = ['CLASSIC', 'SUDDEN_DEATH', 'SHUFFLE', 'RELAY', 'CASUAL', 'EXPERT_TYPING'];
+        finalMode = standardModes[Math.floor(Math.random() * standardModes.length)];
+    }
+
     room.settings = {
         decades: finalDecades,
         origins: finalOrigins,
-        mode: finalMode
+        mode: finalMode as any
     };
 
     const filters = { decades: finalDecades, origins: finalOrigins };
@@ -184,8 +194,17 @@ export const handleStartGame = (io: Server, socket: Socket, data: any) => {
     const track = room.playlist[room.currentTrackIndex];
     if(!track) return;
     
+    // Si mode CHAOS_PER_TRACK, on en choisit un au hasard parmi les 6 de base pour CE titre
+    let currentMode = room.settings?.mode || 'CLASSIC';
+    if (currentMode === 'CHAOS_PER_TRACK') {
+        const standardModes: any[] = ['CLASSIC', 'SUDDEN_DEATH', 'SHUFFLE', 'RELAY', 'CASUAL', 'EXPERT_TYPING'];
+        currentMode = standardModes[Math.floor(Math.random() * standardModes.length)];
+    }
+    
+    room.currentTrackMode = currentMode as any;
+
     // Broadcast next track info
-    io.to(roomCode).emit(SocketEvents.NEXT_TRACK, { track });
+    io.to(roomCode).emit(SocketEvents.NEXT_TRACK, { track, currentMode });
     
     // Tell TV to play audio
     io.to(roomCode).emit(SocketEvents.PLAY_AUDIO, {});
@@ -212,6 +231,8 @@ export const handleAnswer = (io: Server, socket: Socket, payload: AnswerPayload)
 
     let isCorrect = false;
     if (type === 'ARTIST') {
+        // En mode expert (saisie libre), l'answer pourrait être vérifiée avec de la tolérance.
+        // Pour l'instant, on suppose que l'app mobile gère ou envoie la chaîne exacte de l'option (car autocomplétion).
         isCorrect = answer === track.answer;
         if (isCorrect) room.artistGuessed = true;
     } else {
@@ -219,13 +240,24 @@ export const handleAnswer = (io: Server, socket: Socket, payload: AnswerPayload)
         if (isCorrect) room.titleGuessed = true;
     }
     
+    const mode = room.currentTrackMode || 'CLASSIC';
+
     // Calcul de points: 1000 - (ms depuis le début) / 10
     let points = 0;
     if (isCorrect && room.trackStartedTimestamp) {
         const delay = timestamp - room.trackStartedTimestamp; // en millisecondes
         points = Math.max(10, 1000 - Math.floor(delay / 10));
     } else if (!isCorrect) {
-        points = -200; // Malus
+        if (mode === 'CASUAL') {
+            points = 0; // Pas de malus
+        } else if (mode === 'SUDDEN_DEATH') {
+            points = -500; // Gros malus
+            // Bloque les deux types de réponses pour ce joueur
+            if (!room.playersAnsweredArtist.includes(playerId)) room.playersAnsweredArtist.push(playerId);
+            if (!room.playersAnsweredTitle.includes(playerId)) room.playersAnsweredTitle.push(playerId);
+        } else {
+            points = -200; // Malus classique
+        }
     }
 
     if(room.players[playerId]){
@@ -312,7 +344,15 @@ const startNextTrack = (io: Server, roomCode: string) => {
     const nextTrack = nextRoom.playlist[nextRoom.currentTrackIndex];
     if(!nextTrack) return;
     
-    io.to(roomCode).emit(SocketEvents.NEXT_TRACK, { track: nextTrack });
+    let currentMode = nextRoom.settings?.mode || 'CLASSIC';
+    if (currentMode === 'CHAOS_PER_TRACK') {
+        const standardModes: any[] = ['CLASSIC', 'SUDDEN_DEATH', 'SHUFFLE', 'RELAY', 'CASUAL', 'EXPERT_TYPING'];
+        currentMode = standardModes[Math.floor(Math.random() * standardModes.length)];
+    }
+    
+    nextRoom.currentTrackMode = currentMode as any;
+
+    io.to(roomCode).emit(SocketEvents.NEXT_TRACK, { track: nextTrack, currentMode });
     io.to(roomCode).emit(SocketEvents.PLAY_AUDIO, {});
     console.log(`Room [${roomCode}] : Piste ${nextRoom.currentTrackIndex} lancée !`);
 };

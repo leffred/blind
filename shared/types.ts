@@ -54,6 +54,7 @@ export interface Room {
     players: Record<string, Player>;
     settings?: RoomSettings; // Les réglages finaux décidés au lancer
     currentTrackIndex: number;
+    currentTrackMode?: GameMode; // <--- ADDED 
     playlist: Track[];
     status: GameStatus;
     trackStartedTimestamp?: number; // Pour le scoring

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { io, Socket } from 'socket.io-client';
 import { SocketEvents, GameStatus, AnswerPayload } from 'shared';
 import { AnswerGrid } from './components/AnswerGrid';
+import { AutocompleteInput } from './components/AutocompleteInput';
 import './App.css';
 
 const LOCAL_IP = typeof __LOCAL_IP__ !== 'undefined' ? __LOCAL_IP__ : window.location.hostname;
@@ -47,6 +48,10 @@ function App() {
   const [voteOrigins, setVoteOrigins] = useState<string[]>(['FR', 'INTL']);
   const [voteModes, setVoteModes] = useState<string[]>(['CLASSIC']);
 
+  const [globalArtists, setGlobalArtists] = useState<string[]>([]);
+  const [globalTitles, setGlobalTitles] = useState<string[]>([]);
+  const [currentMode, setCurrentMode] = useState<string>('CLASSIC');
+
   useEffect(() => {
     if (socket && status === 'WAITING') {
       socket.emit(SocketEvents.VOTE, {
@@ -56,6 +61,17 @@ function App() {
       });
     }
   }, [voteDecades, voteOrigins, voteModes, socket, status]);
+
+  // SHUFFLE MODE: Melange les options toutes les 1.5s
+  useEffect(() => {
+    if (status === 'PLAYING' && currentMode === 'SHUFFLE') {
+      const interval = setInterval(() => {
+        setArtistOptions(prev => [...prev].sort(() => Math.random() - 0.5));
+        setTitleOptions(prev => [...prev].sort(() => Math.random() - 0.5));
+      }, 1500);
+      return () => clearInterval(interval);
+    }
+  }, [status, currentMode]);
 
   useEffect(() => {
     if (status === 'TRACK_END' && nextTrackAt) {
@@ -73,6 +89,8 @@ function App() {
     s.on(SocketEvents.ROOM_JOINED, (data) => {
       setRoomCode(data.roomCode);
       setStatus(data.state);
+      if (data.globalArtists) setGlobalArtists(data.globalArtists);
+      if (data.globalTitles) setGlobalTitles(data.globalTitles);
       setHasAnsweredArtist(false);
       setArtistIncorrect(false);
       setHasAnsweredTitle(false);
@@ -93,6 +111,7 @@ function App() {
       setIsReady(false);
       setArtistOptions(data.track.options || []);
       setTitleOptions(data.track.titleOptions || []);
+      if (data.currentMode) setCurrentMode(data.currentMode);
     });
 
     s.on(SocketEvents.TRACK_END, (data) => {
@@ -292,22 +311,26 @@ function App() {
              <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
                <h3 style={{ textAlign: 'center', marginBottom: '10px', fontSize: '1.2rem', color: '#aaffaa', margin: 0 }}>Qui chante ?</h3>
                {!hasAnsweredArtist ? (
-                 <AnswerGrid options={artistOptions} onSelect={(res) => handleAnswer('ARTIST', res)} />
+                 currentMode === 'EXPERT_TYPING' 
+                   ? <AutocompleteInput options={globalArtists} onSelect={(res) => handleAnswer('ARTIST', res)} placeholder="Ex: Daft Punk" />
+                   : <AnswerGrid options={artistOptions} onSelect={(res) => handleAnswer('ARTIST', res)} />
                ) : (
                  <div style={{ textAlign: 'center', padding: '15px', background: 'rgba(0,0,0,0.5)', borderRadius: '15px', marginTop: 'auto', marginBottom: 'auto' }}>
-                   {artistIncorrect ? "❌ Mauvais artiste (-200 pts)" : "⏳ Réponse Artiste envoyée..."}
+                   {artistIncorrect ? "❌ Mauvais artiste !" : "⏳ Réponse Artiste envoyée..."}
                  </div>
                )}
              </div>
 
              {/* ZONE TITRE */}
              <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
-               <h3 style={{ textAlign: 'center', marginBottom: '10px', fontSize: '1.2rem', color: '#aaffaa', margin: 0 }}>Quel est le titre ?</h3>
+               <h3 style={{ textAlign: 'center', marginBottom: '10px', fontSize: '1.2rem', color: '#00b3ff', margin: 0 }}>Quel titre ?</h3>
                {!hasAnsweredTitle ? (
-                  <AnswerGrid options={titleOptions} onSelect={(res) => handleAnswer('TITLE', res)} isTitle />
+                 currentMode === 'EXPERT_TYPING' 
+                   ? <AutocompleteInput options={globalTitles} onSelect={(res) => handleAnswer('TITLE', res)} placeholder="Ex: Get Lucky" />
+                   : <AnswerGrid options={titleOptions} onSelect={(res) => handleAnswer('TITLE', res)} isTitle />
                ) : (
                  <div style={{ textAlign: 'center', padding: '15px', background: 'rgba(0,0,0,0.5)', borderRadius: '15px', marginTop: 'auto', marginBottom: 'auto' }}>
-                   {titleIncorrect ? "❌ Mauvais titre (-200 pts)" : "⏳ Réponse Titre envoyée..."}
+                   {titleIncorrect ? "❌ Mauvais titre !" : "⏳ Réponse Titre envoyée..."}
                  </div>
                )}
              </div>
