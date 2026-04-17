@@ -8,14 +8,15 @@ import { handlePlayerJoin, handleAnswer, handleDisconnect, handleStartGame, hand
 import path from 'path';
 
 const app = express();
-app.use(cors());
+app.use(cors({ origin: true, credentials: true }));
 app.use('/audio', express.static(path.join(__dirname, '../assets/audio')));
 
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: '*', // Pour le dev
-        methods: ['GET', 'POST']
+        origin: true,
+        methods: ['GET', 'POST'],
+        credentials: true
     }
 });
 
