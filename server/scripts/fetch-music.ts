@@ -23,7 +23,13 @@ const fetchUrl = (url: string): Promise<string> => {
     https.get(url, (res) => {
       let data = '';
       res.on('data', (chunk) => data += chunk);
-      res.on('end', () => resolve(data));
+      res.on('end', () => {
+         if (res.statusCode && res.statusCode !== 200) {
+            reject(new Error(`Status: ${res.statusCode}`));
+         } else {
+            resolve(data);
+         }
+      });
     }).on('error', reject);
   });
 };
@@ -44,48 +50,86 @@ async function run() {
   const targetYear = process.argv[2];
   const listToProcess = targetYear ? songs.filter(s => s.year === parseInt(targetYear)) : songs;
 
-  const playlist = [];
+  let existingPlaylist: any[] = [];
+  if (fs.existsSync(PLAYLIST_PATH)) {
+     try {
+         existingPlaylist = JSON.parse(fs.readFileSync(PLAYLIST_PATH, 'utf-8'));
+         console.log(` Playlist existante trouvée: ${existingPlaylist.length} titres déjà présents.`);
+     } catch (e) {
+         console.log(` Playlist non lisible ou vide, création d'une nouvelle.`);
+     }
+  }
+
+  const playlist = [...existingPlaylist];
+  const alreadyProcessed = new Set(playlist.map(item => `${item.artist.toLowerCase()}--${item.title.toLowerCase()}`));
 
   for (let i = 0; i < listToProcess.length; i++) {
     const song = listToProcess[i];
+    const key = `${song.artist.toLowerCase()}--${song.title.toLowerCase()}`;
+
+    if (alreadyProcessed.has(key)) {
+       console.log(`[${i+1}/${listToProcess.length}] Ignoré (déjà en playlist) : ${song.artist} - ${song.title}`);
+       continue;
+    }
+
     const query = encodeURIComponent(`${song.artist} ${song.title}`);
     console.log(`[${i+1}/${listToProcess.length}] Recherche de : ${song.artist} - ${song.title} (${song.year})`);
 
-    try {
-      // API iTunes Search
-      const searchUrl = `https://itunes.apple.com/search?term=${query}&entity=song&limit=1`;
-      const response = await fetchUrl(searchUrl);
-      const data = JSON.parse(response);
+    let tryAgain = true;
+    let retries = 0;
 
-      if (data.results && data.results.length > 0) {
-        const track = data.results[0];
-        const previewUrl = track.previewUrl; // Toujours un MP3/M4A Mpeg-4 audio de 30 sec !
-        
-        if (previewUrl) {
-          console.log(`   -> Extrait trouvé (API iTunes) !`);
+    while (tryAgain && retries < 3) {
+      try {
+        const searchUrl = `https://itunes.apple.com/search?term=${query}&entity=song&limit=1`;
+        const response = await fetchUrl(searchUrl);
+        const data = JSON.parse(response);
+        tryAgain = false;
 
-          playlist.push({
-            id: `t${Date.now()}_${i}`,
-            title: song.title,
-            artist: song.artist,
-            url_audio: previewUrl,
-            startTime: 0,
-            options: generateDecoys(song.artist),
-            answer: song.artist, // Le jeu consiste à deviner l'artiste pour le MVP
-            year: song.year,
-            origin: song.origin || 'FR'
-          });
-
-          // Petit délai natif pour ne pas être banni par l'API Apple
-          await new Promise(r => setTimeout(r, 500));
+        if (data.results && data.results.length > 0) {
+          const track = data.results[0];
+          const previewUrl = track.previewUrl;
+          
+          if (previewUrl) {
+            console.log(`   -> Extrait trouvé (API iTunes) !`);
+            playlist.push({
+              id: `t${Date.now()}_${i}`,
+              title: song.title,
+              artist: song.artist,
+              url_audio: previewUrl,
+              startTime: 0,
+              options: generateDecoys(song.artist),
+              answer: song.artist,
+              year: song.year,
+              origin: song.origin || 'FR'
+            });
+            // Update processing set
+            alreadyProcessed.add(key);
+          } else {
+              console.log(`   -> Aucun extrait dispo pour ce titre.`);
+          }
         } else {
-            console.log(`   -> Aucun extrait dispo pour ce titre.`);
+          console.log(`   -> Introuvable sur iTunes.`);
         }
-      } else {
-        console.log(`   -> Introuvable sur iTunes.`);
+
+        // Sauvegarde progressive pour ne rien perdre au cas où ça plante (toutes les 5 chansons)
+        if ((i + 1) % 5 === 0) {
+            fs.writeFileSync(PLAYLIST_PATH, JSON.stringify(playlist, null, 4));
+        }
+
+        // Délai aléatoire (1500ms à 3500ms) pour ne pas être banni
+        const delay = Math.floor(Math.random() * 2000) + 1500;
+        await new Promise(r => setTimeout(r, delay));
+
+      } catch (e: any) {
+        if (e.message && (e.message.includes('403') || e.message.includes('429'))) {
+           console.log(`   -> Rate Limit atteint par iTunes. Pause forcée de 10 secondes... (essai ${retries+1}/3)`);
+           await new Promise(r => setTimeout(r, 10000));
+           retries++;
+        } else {
+           console.error(`   -> Erreur réseau/API pour ${song.title}: `, e.message);
+           tryAgain = false;
+        }
       }
-    } catch (e) {
-      console.error(`Erreur pour ${song.title}: `, e);
     }
   }
 
