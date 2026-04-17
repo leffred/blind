@@ -140,6 +140,20 @@ function App() {
     };
   }, [playerId]);
 
+  useEffect(() => {
+    if (status === 'WAITING' && socket && roomCode) {
+      socket.emit(SocketEvents.VOTE, {
+        roomCode,
+        playerId,
+        vote: {
+          decades: voteDecades,
+          origins: voteOrigins,
+          modes: voteModes
+        }
+      });
+    }
+  }, [voteDecades, voteOrigins, voteModes, status, socket, roomCode, playerId]);
+
   const handleJoin = (e: React.FormEvent) => {
     e.preventDefault();
     if (!inputCode || !inputName) return;
