@@ -183,33 +183,42 @@ export const handleStartGame = (io: Server, socket: Socket, data: any) => {
         }
         return track;
     });
-    room.currentTrackIndex = 0;
-    room.status = 'PLAYING';
-    room.playersAnswered = [];
-    room.playersAnsweredArtist = [];
-    room.playersAnsweredTitle = [];
-    room.artistGuessed = false;
-    room.titleGuessed = false;
+    room.status = 'STARTING';
     
-    const track = room.playlist[room.currentTrackIndex];
-    if(!track) return;
-    
-    // Si mode CHAOS_PER_TRACK, on en choisit un au hasard parmi les 6 de base pour CE titre
-    let currentMode = room.settings?.mode || 'CLASSIC';
-    if (currentMode === 'CHAOS_PER_TRACK') {
-        const standardModes: any[] = ['CLASSIC', 'SUDDEN_DEATH', 'SHUFFLE', 'RELAY', 'CASUAL', 'EXPERT_TYPING'];
-        currentMode = standardModes[Math.floor(Math.random() * standardModes.length)];
-    }
-    
-    room.currentTrackMode = currentMode as any;
+    // Broadcast STARTING to display the video
+    io.to(roomCode).emit(SocketEvents.GAME_STARTING, { settings: room.settings });
 
-    // Broadcast next track info
-    io.to(roomCode).emit(SocketEvents.NEXT_TRACK, { track, currentMode });
-    
-    // Tell TV to play audio
-    io.to(roomCode).emit(SocketEvents.PLAY_AUDIO, {});
-    
-    console.log(`Room [${roomCode}] : Demande de lancement de piste ${room.currentTrackIndex} envoyée à la TV (Playlist: ${room.playlist.length} titres)`);
+    setTimeout(() => {
+        const roomState = rooms.get(roomCode);
+        if(!roomState || roomState.status !== 'STARTING') return;
+
+        roomState.currentTrackIndex = 0;
+        roomState.status = 'PLAYING';
+        roomState.playersAnswered = [];
+        roomState.playersAnsweredArtist = [];
+        roomState.playersAnsweredTitle = [];
+        roomState.artistGuessed = false;
+        roomState.titleGuessed = false;
+        
+        const track = roomState.playlist[roomState.currentTrackIndex];
+        if(!track) return;
+        
+        let currentMode = roomState.settings?.mode || 'CLASSIC';
+        if (currentMode === 'CHAOS_PER_TRACK') {
+            const standardModes: any[] = ['CLASSIC', 'SUDDEN_DEATH', 'SHUFFLE', 'RELAY', 'CASUAL', 'EXPERT_TYPING'];
+            currentMode = standardModes[Math.floor(Math.random() * standardModes.length)];
+        }
+        
+        roomState.currentTrackMode = currentMode as any;
+
+        // Broadcast next track info
+        io.to(roomCode).emit(SocketEvents.NEXT_TRACK, { track, currentMode });
+        
+        // Tell TV to play audio
+        io.to(roomCode).emit(SocketEvents.PLAY_AUDIO, {});
+        
+        console.log(`Room [${roomCode}] : Demande de lancement de piste ${roomState.currentTrackIndex} envoyée à la TV (Playlist: ${roomState.playlist.length} titres)`);
+    }, 10000); // 10 secondes de wheel video
 };
 
 

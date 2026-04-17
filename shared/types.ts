@@ -67,7 +67,7 @@ export interface Room {
     titleGuessed?: boolean;
 }
 
-export type GameStatus = 'WAITING' | 'PLAYING' | 'SCORES' | 'TRACK_END' | 'FINISHED';
+export type GameStatus = 'WAITING' | 'STARTING' | 'PLAYING' | 'SCORES' | 'TRACK_END' | 'FINISHED';
 
 
 export interface AnswerPayload {

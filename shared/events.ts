@@ -7,6 +7,7 @@ export const SocketEvents = {
 
     // Game Flow (Serveur -> TV & Mobiles)
     START_GAME: 'start_game', // Modérateur ou TV demande le lancement
+    GAME_STARTING: 'game_starting', // Transition video
     GAME_STARTED: 'game_started',
     NEXT_TRACK: 'next_track', // Envoie les infos de la piste suivante
     PLAY_AUDIO: 'play_audio', // Ordre à la TV de lancer le son

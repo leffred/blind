@@ -100,6 +100,10 @@ function App() {
       setVotes(data.votes);
     });
 
+    s.on(SocketEvents.GAME_STARTING, () => {
+      setStatus('STARTING');
+    });
+
     s.on(SocketEvents.NEXT_TRACK, (data) => {
       setTrackInfo(data.track);
       setStatus('WAITING'); // En attente du départ
@@ -217,6 +221,21 @@ function App() {
           <ScoreBoard players={players} />
 
           <div className="track-info">
+            
+            {status === 'STARTING' && (
+               <video 
+                 src="/roue.mp4" 
+                 autoPlay 
+                 playsInline
+                 style={{
+                   position: 'fixed',
+                   top: 0, left: 0, width: '100vw', height: '100vh',
+                   objectFit: 'cover',
+                   zIndex: 1000
+                 }}
+               />
+            )}
+
             {status === 'WAITING' && (
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'stretch', gap: '20px', background: 'rgba(0,0,0,0.7)', padding: '30px', borderRadius: '20px', width: '100%' }}>
                 <h2 style={{ fontSize: '2rem', margin: 0, textAlign: 'center', textShadow: '2px 2px 0 rgba(0,0,0,0.5)' }}>Configuration par les Joueurs</h2>

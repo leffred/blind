@@ -104,6 +104,10 @@ function App() {
       s.disconnect();
     });
 
+    s.on(SocketEvents.GAME_STARTING, () => {
+      setStatus('STARTING');
+    });
+
     s.on(SocketEvents.NEXT_TRACK, (data) => {
       setStatus('WAITING');
       setHasAnsweredArtist(false);
@@ -318,6 +322,13 @@ function App() {
             >
               🚀 LANCER LA PARTIE
             </button>
+          </div>
+        )}
+
+        {status === 'STARTING' && (
+          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', flex: 1, gap: '20px' }}>
+            <h2 style={{ fontSize: '2rem', animation: 'pulseBuzzer 1s infinite alternate', color: '#ffb347', textAlign: 'center' }}>Le destin choisit...</h2>
+            <p style={{ opacity: 0.8, textAlign: 'center' }}>Regardez l'écran de la Télévision !</p>
           </div>
         )}
 

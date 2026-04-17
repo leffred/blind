@@ -1086,5 +1086,5317 @@
         "answer": "Pharrell Williams",
         "year": 2013,
         "origin": "INTL"
+    },
+    {
+        "id": "t1776429285892_0",
+        "title": "Et maintenant",
+        "artist": "Gilbert Bécaud",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/9d/c7/4a/9dc74a61-cc61-2aa5-b151-2f1dd91337b1/mzaf_8621968307697504602.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Gilbert Bécaud",
+            "Orelsan",
+            "Stromae",
+            "Serge Gainsbourg"
+        ],
+        "answer": "Gilbert Bécaud",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429287857_1",
+        "title": "Souvenirs, souvenirs",
+        "artist": "Johnny Hallyday",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/5c/92/6b/5c926b78-b8f6-c774-f225-49006b651b67/mzaf_11227840632716266217.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Johnny Hallyday",
+            "Ed Sheeran",
+            "Mylène Farmer",
+            "Beyoncé"
+        ],
+        "answer": "Johnny Hallyday",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429290195_2",
+        "title": "Non, je ne regrette rien",
+        "artist": "Édith Piaf",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a6/62/1d/a6621d82-89d8-4486-809f-df789dd06d9c/mzaf_11079119627866807894.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Édith Piaf",
+            "ABBA",
+            "Beyoncé",
+            "Julien Clerc"
+        ],
+        "answer": "Édith Piaf",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429293259_3",
+        "title": "Retiens la nuit",
+        "artist": "Johnny Hallyday",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/c8/58/84/c85884ce-76f3-374e-b7e5-27fe2add5044/mzaf_4866494069693960920.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Kendji Girac",
+            "Angèle",
+            "Stromae",
+            "Johnny Hallyday"
+        ],
+        "answer": "Johnny Hallyday",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429299734_5",
+        "title": "J'entends siffler le train",
+        "artist": "Richard Anthony",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/be/13/2c/be132c94-67f3-d32c-b38a-55ce7dfed52d/mzaf_4895144678124402191.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Beyoncé",
+            "Richard Anthony",
+            "Katy Perry",
+            "Louane"
+        ],
+        "answer": "Richard Anthony",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429303244_6",
+        "title": "Belles ! Belles ! Belles !",
+        "artist": "Claude François",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/31/f2/c6/31f2c692-398f-a33b-8ba8-b67a54e2c87a/mzaf_2763860918062635356.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "ABBA",
+            "Eminem",
+            "Claude François",
+            "The Weeknd"
+        ],
+        "answer": "Claude François",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429306627_7",
+        "title": "Tous les garçons et les filles",
+        "artist": "Françoise Hardy",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3e/03/34/3e0334a3-217c-16a0-7877-2cf0556d4b46/mzaf_14314564099905028159.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Beyoncé",
+            "Alain Souchon",
+            "Céline Dion",
+            "Françoise Hardy"
+        ],
+        "answer": "Françoise Hardy",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429308715_8",
+        "title": "La leçon de twist",
+        "artist": "Richard Anthony",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/f4/fe/24/f4fe242f-6cbd-b487-e643-63c1457e2a7a/mzaf_1566480577897675784.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Richard Anthony",
+            "Renaud",
+            "Louane",
+            "Orelsan"
+        ],
+        "answer": "Richard Anthony",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429311365_9",
+        "title": "Da dou ron ron",
+        "artist": "Johnny Hallyday",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/4d/01/ee/4d01ee8a-c031-05f9-29f9-1ceaa050d7ab/mzaf_370993049959585885.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Johnny Hallyday",
+            "Jul",
+            "M. Pokora",
+            "Madonna"
+        ],
+        "answer": "Johnny Hallyday",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429315099_10",
+        "title": "L'école est finie",
+        "artist": "Sheila",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/49/5a/25/495a2522-7ab0-c400-e424-cf280c47c0f2/mzaf_169621533954347690.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Sheila",
+            "Jean-Jacques Goldman",
+            "Alain Souchon",
+            "Eminem"
+        ],
+        "answer": "Sheila",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429317696_11",
+        "title": "La plus belle pour aller danser",
+        "artist": "Sylvie Vartan",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/89/77/e4/8977e4b9-766e-d471-2b6d-3593ed2cd132/mzaf_14399295074850699482.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Madonna",
+            "The Beatles",
+            "Sylvie Vartan",
+            "Jean-Jacques Goldman"
+        ],
+        "answer": "Sylvie Vartan",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429319750_12",
+        "title": "Tombe la neige",
+        "artist": "Adamo",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b6/77/f5/b677f56d-f828-db00-d962-49d38ab95497/mzaf_9538885277090948358.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Lady Gaga",
+            "The Weeknd",
+            "Adamo",
+            "Angèle"
+        ],
+        "answer": "Adamo",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429323327_13",
+        "title": "Laisse tomber les filles",
+        "artist": "France Gall",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/49/67/3b/49673b5b-bd37-06c5-cdea-da2e49da0b4b/mzaf_5619748361406520729.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "France Gall",
+            "Florent Pagny",
+            "Katy Perry",
+            "Julien Clerc"
+        ],
+        "answer": "France Gall",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429326192_14",
+        "title": "Mon amie la rose",
+        "artist": "Françoise Hardy",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/42/99/45/4299450d-f863-2ac4-b1a8-878588efc5c8/mzaf_5358355940216782804.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Françoise Hardy",
+            "Michel Sardou",
+            "Soprano",
+            "Johnny Hallyday"
+        ],
+        "answer": "Françoise Hardy",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429328420_15",
+        "title": "Mes mains sur tes hanches",
+        "artist": "Adamo",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7d/cf/92/7dcf9278-4947-9be8-63e1-4b1c5c115415/mzaf_3327255818970561255.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Adamo",
+            "Madonna",
+            "Jul",
+            "Johnny Hallyday"
+        ],
+        "answer": "Adamo",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429331839_16",
+        "title": "Aline",
+        "artist": "Christophe",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/98/19/c8/9819c8b3-da91-d2be-ade2-03dd221eadce/mzaf_7185114754780737128.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Johnny Hallyday",
+            "Christophe",
+            "Jul",
+            "Alain Souchon"
+        ],
+        "answer": "Christophe",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429335228_17",
+        "title": "Poupée de cire, poupée de son",
+        "artist": "France Gall",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/bf/ce/b2/bfceb221-bc57-0926-9b1a-10bce5fa34f2/mzaf_3336425514406862158.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "France Gall",
+            "Michael Jackson",
+            "M. Pokora",
+            "Renaud"
+        ],
+        "answer": "France Gall",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429337526_18",
+        "title": "Les élucubrations d'Antoine",
+        "artist": "Antoine",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/07/e7/98/07e798c6-2a09-e536-c1da-fe193f558bff/mzaf_10335907610823877645.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Francis Cabrel",
+            "Antoine",
+            "Ed Sheeran",
+            "Renaud"
+        ],
+        "answer": "Antoine",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429339585_19",
+        "title": "Et moi, et moi, et moi",
+        "artist": "Jacques Dutronc",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/de/ab/16/deab168b-d22b-6a35-3ab6-8ab7c8399ee7/mzaf_14451931502432057164.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Queen",
+            "Céline Dion",
+            "Jacques Dutronc",
+            "Madonna"
+        ],
+        "answer": "Jacques Dutronc",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429342835_20",
+        "title": "Love Me, Please Love Me",
+        "artist": "Michel Polnareff",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/59/bc/23/59bc23ca-6113-741e-b49d-4022f3ec7d7e/mzaf_11784011583358776460.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Céline Dion",
+            "Eminem",
+            "Michel Polnareff",
+            "Orelsan"
+        ],
+        "answer": "Michel Polnareff",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429346373_21",
+        "title": "Comme d'habitude",
+        "artist": "Claude François",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/32/c0/11/32c01188-161e-1444-ee42-8382edb95dd1/mzaf_536241988035474313.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Céline Dion",
+            "Patrick Bruel",
+            "Indochine",
+            "Claude François"
+        ],
+        "answer": "Claude François",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429349714_22",
+        "title": "J'aime les filles",
+        "artist": "Jacques Dutronc",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ae/52/dc/ae52dc53-2219-69fe-f2d1-3c372daf2a2e/mzaf_12957951884054026360.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Jacques Dutronc",
+            "Stromae",
+            "Rihanna",
+            "Florent Pagny"
+        ],
+        "answer": "Jacques Dutronc",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429353191_23",
+        "title": "Le téléfon",
+        "artist": "Nino Ferrer",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d5/7f/46/d57f469e-2f69-fcb2-18cf-b0b6921837c2/mzaf_8038087824218823371.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Renaud",
+            "Johnny Hallyday",
+            "Indochine",
+            "Nino Ferrer"
+        ],
+        "answer": "Nino Ferrer",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429356031_24",
+        "title": "Siffler sur la colline",
+        "artist": "Joe Dassin",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1e/1a/7d/1e1a7dbe-851b-d672-82f6-0dd3a5c361a4/mzaf_3567809714647564738.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Lady Gaga",
+            "Soprano",
+            "Johnny Hallyday",
+            "Joe Dassin"
+        ],
+        "answer": "Joe Dassin",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429358768_25",
+        "title": "La cavalerie",
+        "artist": "Julien Clerc",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/c0/29/86/c0298689-a976-2934-a7ba-0ebef47c7163/mzaf_14453930520774097267.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Julien Clerc",
+            "Alain Souchon",
+            "Angèle",
+            "Justin Bieber"
+        ],
+        "answer": "Julien Clerc",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429360834_26",
+        "title": "Le bal des Laze",
+        "artist": "Michel Polnareff",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f4/ec/97/f4ec9788-767b-fc4d-a6cc-26ef725b28e5/mzaf_1374522352232337705.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Michel Polnareff",
+            "The Weeknd",
+            "Julien Clerc",
+            "Stromae"
+        ],
+        "answer": "Michel Polnareff",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429363035_27",
+        "title": "Le métèque",
+        "artist": "Georges Moustaki",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f8/92/4f/f8924f27-23d3-edb9-4bc3-43ea4f5de792/mzaf_11535808531088283336.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Mylène Farmer",
+            "Serge Gainsbourg",
+            "Telephone",
+            "Georges Moustaki"
+        ],
+        "answer": "Georges Moustaki",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429365607_28",
+        "title": "Je t'aime... moi non plus",
+        "artist": "Jane Birkin & Serge Gainsbourg",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1b/4e/52/1b4e5293-6098-7c9b-c6e1-4d2e1f804df2/mzaf_1343527234843145491.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Jane Birkin & Serge Gainsbourg",
+            "Renaud",
+            "Michael Jackson",
+            "Johnny Hallyday"
+        ],
+        "answer": "Jane Birkin & Serge Gainsbourg",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429368787_29",
+        "title": "Les Champs-Élysées",
+        "artist": "Joe Dassin",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/00/e4/32/00e4326a-a3d6-4c85-b7be-8a123f04f6cb/mzaf_10395904914225014080.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Stromae",
+            "Lady Gaga",
+            "Joe Dassin",
+            "Queen"
+        ],
+        "answer": "Joe Dassin",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429372435_30",
+        "title": "L'Amérique",
+        "artist": "Joe Dassin",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ca/cc/59/cacc59a5-30d3-a0bd-fd2b-0de6a6a168ee/mzaf_16960356142381858925.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Kendji Girac",
+            "Joe Dassin",
+            "Madonna",
+            "The Beatles"
+        ],
+        "answer": "Joe Dassin",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429374756_31",
+        "title": "Wight Is Wight",
+        "artist": "Michel Delpech",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/dd/05/fb/dd05fb42-3df4-2967-0596-706895303a5d/mzaf_800320443122554788.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Michel Delpech",
+            "Lady Gaga",
+            "Telephone",
+            "Michael Jackson"
+        ],
+        "answer": "Michel Delpech",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429377637_32",
+        "title": "69 année érotique",
+        "artist": "Serge Gainsbourg & Jane Birkin",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cc/e1/71/cce171e7-33f3-7e40-70c6-434a03373afd/mzaf_5224394735867259860.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Katy Perry",
+            "Queen",
+            "Madonna",
+            "Serge Gainsbourg & Jane Birkin"
+        ],
+        "answer": "Serge Gainsbourg & Jane Birkin",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429379899_33",
+        "title": "Pour un flirt",
+        "artist": "Michel Delpech",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0b/1b/54/0b1b5404-109a-8814-658f-51b71c8637d3/mzaf_4461611362335731660.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "The Beatles",
+            "ABBA",
+            "Patrick Bruel",
+            "Michel Delpech"
+        ],
+        "answer": "Michel Delpech",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429383041_34",
+        "title": "La maison près de la fontaine",
+        "artist": "Nino Ferrer",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4c/aa/59/4caa5916-821c-c1ad-3862-4b46e0085403/mzaf_13167670145460882348.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Nino Ferrer",
+            "Justin Bieber",
+            "Beyoncé",
+            "Michel Sardou"
+        ],
+        "answer": "Nino Ferrer",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429386800_35",
+        "title": "Ballade de Melody Nelson",
+        "artist": "Serge Gainsbourg",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9f/f6/7f/9ff67ffc-acdd-277a-4ec9-e1dc6ab96531/mzaf_16272122818915134122.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Johnny Hallyday",
+            "Lady Gaga",
+            "Florent Pagny",
+            "Serge Gainsbourg"
+        ],
+        "answer": "Serge Gainsbourg",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429390010_37",
+        "title": "Une belle histoire",
+        "artist": "Michel Fugain",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/d1/06/db/d106db0f-d9b4-b099-8903-6cf99ea0751e/mzaf_6124228540803110106.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Michel Fugain",
+            "Rihanna",
+            "M. Pokora",
+            "Alain Souchon"
+        ],
+        "answer": "Michel Fugain",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429392055_38",
+        "title": "Besoin de personne",
+        "artist": "Véronique Sanson",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/94/e9/e0/94e9e0ad-f367-9e07-1ea6-1e26929c6573/mzaf_15024358166857360713.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Johnny Hallyday",
+            "Véronique Sanson",
+            "Vianney",
+            "Katy Perry"
+        ],
+        "answer": "Véronique Sanson",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429395378_39",
+        "title": "San Francisco",
+        "artist": "Maxime Le Forestier",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/35/bd/2d/35bd2dac-f999-18d0-24ec-d22122aca393/mzaf_5013751489803094505.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Florent Pagny",
+            "Alain Souchon",
+            "Maxime Le Forestier",
+            "Serge Gainsbourg"
+        ],
+        "answer": "Maxime Le Forestier",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429398910_40",
+        "title": "Laisse-moi t'aimer",
+        "artist": "Mike Brant",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/2b/85/2c/2b852c88-90ae-9ccf-6143-6660ee2b8b9b/mzaf_1358734862906179121.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Eminem",
+            "Indochine",
+            "Rihanna",
+            "Mike Brant"
+        ],
+        "answer": "Mike Brant",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429401438_41",
+        "title": "Hexagone",
+        "artist": "Renaud",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/46/4a/9d/464a9d10-56bf-ac1c-9e45-f59f1304a4f8/mzaf_7111464826346798759.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Mylène Farmer",
+            "Madonna",
+            "Francis Cabrel",
+            "Renaud"
+        ],
+        "answer": "Renaud",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429404351_42",
+        "title": "She",
+        "artist": "Charles Aznavour",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d4/96/04/d4960411-40d6-da13-4c4e-970803a2dbf0/mzaf_16078419683553578646.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Charles Aznavour",
+            "Angèle",
+            "Vianney",
+            "Orelsan"
+        ],
+        "answer": "Charles Aznavour",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429407642_43",
+        "title": "Le mal-aimé",
+        "artist": "Claude François",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/3e/a5/3f/3ea53fee-e1a0-4cfc-2380-4d938b290a10/mzaf_17150807512426111905.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Soprano",
+            "Patrick Bruel",
+            "Claude François",
+            "Johnny Hallyday"
+        ],
+        "answer": "Claude François",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429410183_44",
+        "title": "Si tu t'appelles mélancolie",
+        "artist": "Joe Dassin",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/44/5b/49/445b49a9-cbb0-0aed-02b2-90a06a59db8b/mzaf_10051091592357609246.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Joe Dassin",
+            "Stromae",
+            "Beyoncé",
+            "ABBA"
+        ],
+        "answer": "Joe Dassin",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429413149_45",
+        "title": "Ce n'est rien",
+        "artist": "Julien Clerc",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/bc/4e/3f/bc4e3fee-05f8-2eca-b79e-a963849fb134/mzaf_406976768013216406.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Julien Clerc",
+            "Francis Cabrel",
+            "Stromae",
+            "Michael Jackson"
+        ],
+        "answer": "Julien Clerc",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429415703_46",
+        "title": "La maladie d'amour",
+        "artist": "Michel Sardou",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/11/a6/2d/11a62df4-0df9-42a8-17d9-bd14454d0710/mzaf_15304717356684733884.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Kendji Girac",
+            "ABBA",
+            "Angèle",
+            "Michel Sardou"
+        ],
+        "answer": "Michel Sardou",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429418490_47",
+        "title": "Parlez-moi de lui",
+        "artist": "Nicole Croisille",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0f/eb/24/0feb2446-b05c-a860-5896-b70754b9106a/mzaf_6147231235417129450.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Nicole Croisille",
+            "Eminem",
+            "Patrick Bruel",
+            "Alain Souchon"
+        ],
+        "answer": "Nicole Croisille",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429420556_48",
+        "title": "Cette année-là",
+        "artist": "Claude François",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/39/ae/59/39ae5908-b942-6eff-1620-50cec53c4851/mzaf_7398267146514414853.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Vianney",
+            "Beyoncé",
+            "Orelsan",
+            "Claude François"
+        ],
+        "answer": "Claude François",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429423942_49",
+        "title": "Voici les clés",
+        "artist": "Gérard Lenorman",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/e8/fb/b7/e8fbb7b8-9bf0-467b-104a-518b55e47c78/mzaf_13467511053629315056.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Florent Pagny",
+            "Julien Clerc",
+            "Renaud",
+            "Gérard Lenorman"
+        ],
+        "answer": "Gérard Lenorman",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429427703_50",
+        "title": "Quand j'étais chanteur",
+        "artist": "Michel Delpech",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/30/d5/45/30d5456a-c5f0-131a-b789-c49a3ebf9db2/mzaf_11914349713154664469.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Michel Delpech",
+            "Katy Perry",
+            "Soprano",
+            "Julien Clerc"
+        ],
+        "answer": "Michel Delpech",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429429511_51",
+        "title": "Et si tu n'existais pas",
+        "artist": "Joe Dassin",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/17/a3/b3/17a3b37b-d2b1-e3ea-1f6e-95bad856babf/mzaf_15775571844146279494.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Johnny Hallyday",
+            "Joe Dassin",
+            "Lady Gaga",
+            "Angèle"
+        ],
+        "answer": "Joe Dassin",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429433183_52",
+        "title": "L'oiseau et l'enfant",
+        "artist": "Marie Myriam",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/bc/f3/69/bcf369f5-ee59-0828-24a9-f891e8c2c33e/mzaf_653947301778155287.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Indochine",
+            "Louane",
+            "Marie Myriam",
+            "Serge Gainsbourg"
+        ],
+        "answer": "Marie Myriam",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429435971_53",
+        "title": "La java de Broadway",
+        "artist": "Michel Sardou",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d2/ee/91/d2ee911f-7293-7278-dc03-df2908744508/mzaf_14603480123591739694.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "The Beatles",
+            "Michel Sardou",
+            "Renaud",
+            "Vianney"
+        ],
+        "answer": "Michel Sardou",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429438923_55",
+        "title": "Lettre à France",
+        "artist": "Michel Polnareff",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/20/90/a4/2090a43c-6e30-6754-3245-1930c9c1a676/mzaf_649939529463942532.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Telephone",
+            "Michel Polnareff",
+            "The Weeknd",
+            "Madonna"
+        ],
+        "answer": "Michel Polnareff",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429441048_56",
+        "title": "Où sont les femmes ?",
+        "artist": "Patrick Juvet",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/98/f7/8d/98f78d5b-b7bb-8b53-3d4c-6e319d030f08/mzaf_13725532813881599575.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Michael Jackson",
+            "ABBA",
+            "Louane",
+            "Patrick Juvet"
+        ],
+        "answer": "Patrick Juvet",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429444364_57",
+        "title": "Jamais content",
+        "artist": "Alain Souchon",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/6e/67/e9/6e67e902-bcc7-2e33-79e7-5e598266cfd5/mzaf_13897407566368351525.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Angèle",
+            "Alain Souchon",
+            "Michael Jackson",
+            "Jean-Jacques Goldman"
+        ],
+        "answer": "Alain Souchon",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429447045_58",
+        "title": "Je l'aime à mourir",
+        "artist": "Francis Cabrel",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/10/ef/70/10ef70b0-1913-778f-193a-3e4ab4d6dad6/mzaf_11333753815204881015.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Eminem",
+            "Serge Gainsbourg",
+            "Johnny Hallyday",
+            "Francis Cabrel"
+        ],
+        "answer": "Francis Cabrel",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429450123_59",
+        "title": "Il suffira d'un signe",
+        "artist": "Jean-Jacques Goldman",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/14/97/33/1497333e-ae27-2256-9f9a-dc6132dbe845/mzaf_8573692654392306894.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Stromae",
+            "Vianney",
+            "Francis Cabrel",
+            "Jean-Jacques Goldman"
+        ],
+        "answer": "Jean-Jacques Goldman",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429453541_69",
+        "title": "Vivre ou survivre",
+        "artist": "Daniel Balavoine",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ec/e6/75/ece67585-ef73-ae8a-6284-e15f36cc7cac/mzaf_7261886633178596538.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Daniel Balavoine",
+            "Indochine",
+            "Alain Souchon",
+            "Michael Jackson"
+        ],
+        "answer": "Daniel Balavoine",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429456794_70",
+        "title": "Un autre monde",
+        "artist": "Téléphone",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/14/7b/9b/147b9bb5-8478-36a1-14c2-687bc0c99b25/mzaf_3746475773525498263.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Telephone",
+            "Beyoncé",
+            "Jean-Jacques Goldman",
+            "Téléphone"
+        ],
+        "answer": "Téléphone",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429459781_71",
+        "title": "Week-end à Rome",
+        "artist": "Étienne Daho",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/63/18/41/63184154-adcc-07c1-3c49-402efdc61143/mzaf_5558054538010157365.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Julien Clerc",
+            "Stromae",
+            "Rihanna",
+            "Étienne Daho"
+        ],
+        "answer": "Étienne Daho",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429462689_72",
+        "title": "Canary Bay",
+        "artist": "Indochine",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/fd/5f/5a/fd5f5a66-1882-5456-5fab-bc31f02e3aa6/mzaf_7479990589380601831.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Beyoncé",
+            "Telephone",
+            "Orelsan",
+            "Indochine"
+        ],
+        "answer": "Indochine",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429464486_75",
+        "title": "Voyage, voyage",
+        "artist": "Desireless",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ad/36/84/ad3684c1-51ea-ff68-9fd0-b56093f81f57/mzaf_1984832622341059445.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Desireless",
+            "Katy Perry",
+            "Michael Jackson",
+            "Francis Cabrel"
+        ],
+        "answer": "Desireless",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429466925_79",
+        "title": "Capitaine abandonné",
+        "artist": "Gold",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/b4/a8/0f/b4a80fe1-de6d-e88f-5066-9eb8fb1b25d7/mzaf_13827948201747374815.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Dua Lipa",
+            "Rihanna",
+            "Julien Clerc",
+            "Gold"
+        ],
+        "answer": "Gold",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429468669_80",
+        "title": "Les démons de minuit",
+        "artist": "Images",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b5/4d/0b/b54d0b1c-e4e6-56df-7368-2c53fc2dbb07/mzaf_7062653098638320527.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Vianney",
+            "Indochine",
+            "Kendji Girac",
+            "Images"
+        ],
+        "answer": "Images",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429470961_82",
+        "title": "T'en va pas",
+        "artist": "Elsa",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/42/2c/3c/422c3cf3-bf04-29fa-4a7f-87c9362ef8bf/mzaf_2433267508634452771.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Elsa",
+            "Beyoncé",
+            "Dua Lipa",
+            "Katy Perry"
+        ],
+        "answer": "Elsa",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429474553_83",
+        "title": "Libertine",
+        "artist": "Mylène Farmer",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d1/29/02/d12902a8-068b-40a1-62db-d832c6750931/mzaf_7795304736438297893.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "The Weeknd",
+            "Mylène Farmer",
+            "Angèle",
+            "Céline Dion"
+        ],
+        "answer": "Mylène Farmer",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429477786_84",
+        "title": "Mademoiselle chante le blues",
+        "artist": "Patricia Kaas",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/90/9d/33/909d3337-c00e-969a-4811-755412c38e46/mzaf_4068451141100289179.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Madonna",
+            "Jean-Jacques Goldman",
+            "Patricia Kaas",
+            "Justin Bieber"
+        ],
+        "answer": "Patricia Kaas",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429480758_85",
+        "title": "N'importe quoi",
+        "artist": "Florent Pagny",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/4c/ac/8a/4cac8a66-7c4f-30db-bb00-d44deaca5ab0/mzaf_16983832144464209980.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Angèle",
+            "Florent Pagny",
+            "ABBA",
+            "Stromae"
+        ],
+        "answer": "Florent Pagny",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429482810_86",
+        "title": "Pourvu qu'elles soient douces",
+        "artist": "Mylène Farmer",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/98/13/92/981392bf-bf0f-6398-b452-7d9c8cb8dcde/mzaf_7103658126851152184.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Vianney",
+            "Mylène Farmer",
+            "Francis Cabrel",
+            "Renaud"
+        ],
+        "answer": "Mylène Farmer",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429484978_87",
+        "title": "Joe le taxi",
+        "artist": "Vanessa Paradis",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/cb/52/05/cb5205ee-dad2-a592-9c8b-754e7bc706b0/mzaf_9715068249922870321.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Vanessa Paradis",
+            "Eminem",
+            "Orelsan",
+            "Beyoncé"
+        ],
+        "answer": "Vanessa Paradis",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429488354_88",
+        "title": "Puisque tu pars",
+        "artist": "Jean-Jacques Goldman",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/65/3b/89/653b89f9-7581-d618-6452-19d671ca5edb/mzaf_2182544255466129158.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Telephone",
+            "Jean-Jacques Goldman",
+            "Indochine",
+            "Madonna"
+        ],
+        "answer": "Jean-Jacques Goldman",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429491658_89",
+        "title": "Mirador",
+        "artist": "Johnny Hallyday",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/eb/b6/60/ebb66040-8585-f166-4f35-b20ce98b8efd/mzaf_14329991421004135838.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Indochine",
+            "Johnny Hallyday",
+            "Vianney",
+            "Soprano"
+        ],
+        "answer": "Johnny Hallyday",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429494241_90",
+        "title": "Voilà l'été",
+        "artist": "Les Négresses Vertes",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/cb/0f/5e/cb0f5e8b-5122-55b5-3831-313909ab8f9c/mzaf_8328920794696949206.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Les Négresses Vertes",
+            "Rihanna",
+            "Michel Sardou",
+            "Julien Clerc"
+        ],
+        "answer": "Les Négresses Vertes",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429497790_91",
+        "title": "Vous êtes fous !",
+        "artist": "Benny B",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/fb/87/2e/fb872e6d-1413-f236-e2ea-70f453a893b8/mzaf_2912779215706753413.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "ABBA",
+            "Rihanna",
+            "Beyoncé",
+            "Benny B"
+        ],
+        "answer": "Benny B",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429501098_92",
+        "title": "Bouge de là",
+        "artist": "MC Solaar",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/c1/0e/aa/c10eaa3b-5de1-fcca-53e5-25f76512ed6a/mzaf_14291372096951338959.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Indochine",
+            "MC Solaar",
+            "Michael Jackson",
+            "ABBA"
+        ],
+        "answer": "MC Solaar",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429503207_94",
+        "title": "Caroline",
+        "artist": "MC Solaar",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/08/af/95/08af95d1-e5a0-809e-90d6-ab169dba24f6/mzaf_1840784111885054633.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "MC Solaar",
+            "Rihanna",
+            "Alain Souchon",
+            "Katy Perry"
+        ],
+        "answer": "MC Solaar",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429505393_95",
+        "title": "Je t'aime mélancolie",
+        "artist": "Mylène Farmer",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d6/36/90/d63690ad-bbeb-ff13-5c3c-cef2e0ef9ad7/mzaf_12922238104734859355.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Jul",
+            "Mylène Farmer",
+            "Indochine",
+            "M. Pokora"
+        ],
+        "answer": "Mylène Farmer",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429508250_96",
+        "title": "Maldòn",
+        "artist": "Zouk Machine",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/51/af/aa/51afaae3-dc95-d995-db8d-a0790cb879c5/mzaf_16918848207907046561.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Zouk Machine",
+            "Ed Sheeran",
+            "Angèle",
+            "Beyoncé"
+        ],
+        "answer": "Zouk Machine",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429510392_97",
+        "title": "Tam-Tam de l'Afrique",
+        "artist": "IAM",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/dc/2b/5d/dc2b5d9b-ce6a-cd43-83b7-41e0df9c5d1b/mzaf_6412438585329669013.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Florent Pagny",
+            "IAM",
+            "Justin Bieber",
+            "Céline Dion"
+        ],
+        "answer": "IAM",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429512312_98",
+        "title": "Diego libre dans sa tête",
+        "artist": "Johnny Hallyday",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/70/77/49/70774989-7690-54fa-5c21-33a87370b061/mzaf_17694380901234571109.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Ed Sheeran",
+            "Rihanna",
+            "Indochine",
+            "Johnny Hallyday"
+        ],
+        "answer": "Johnny Hallyday",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429515250_99",
+        "title": "Le chat",
+        "artist": "Pow woW",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/b0/2b/f7/b02bf708-a54a-e5f0-7d08-ac884930111b/mzaf_6484732748967384521.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Pow woW",
+            "Michel Sardou",
+            "Francis Cabrel",
+            "Johnny Hallyday"
+        ],
+        "answer": "Pow woW",
+        "year": 1960,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429518973_100",
+        "title": "It's Now or Never",
+        "artist": "Elvis Presley",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/63/27/ab/6327ab9c-6f11-e2b8-f2ca-3f8d0b224c28/mzaf_4045547648735675381.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Alain Souchon",
+            "Elvis Presley",
+            "Céline Dion",
+            "Johnny Hallyday"
+        ],
+        "answer": "Elvis Presley",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429521727_101",
+        "title": "Only the Lonely",
+        "artist": "Roy Orbison",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/2f/50/54/2f505407-1b44-bf59-bb75-6bbbdb70805b/mzaf_4917987302317376325.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Roy Orbison",
+            "Angèle",
+            "Beyoncé",
+            "Stromae"
+        ],
+        "answer": "Roy Orbison",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429524956_102",
+        "title": "Save the Last Dance for Me",
+        "artist": "The Drifters",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/93/d6/6a/93d66ac4-03b0-fb4f-63fc-8ee99bb8f1e5/mzaf_17508266433696986075.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Jul",
+            "Justin Bieber",
+            "ABBA",
+            "The Drifters"
+        ],
+        "answer": "The Drifters",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429528068_103",
+        "title": "Stand by Me",
+        "artist": "Ben E. King",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/18/ad/fb/18adfbac-3fbd-756c-d259-6daf41f902f2/mzaf_12768986125082088263.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "The Weeknd",
+            "Louane",
+            "Indochine",
+            "Ben E. King"
+        ],
+        "answer": "Ben E. King",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429531565_104",
+        "title": "Runaway",
+        "artist": "Del Shannon",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/32/e5/6d/32e56d0c-617a-d7ec-d181-46486c0b177f/mzaf_17975838868445177214.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Ed Sheeran",
+            "Eminem",
+            "Rihanna",
+            "Del Shannon"
+        ],
+        "answer": "Del Shannon",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429534683_105",
+        "title": "Hit the Road Jack",
+        "artist": "Ray Charles",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/cf/1e/9a/cf1e9a3a-42c9-07a7-ed31-fa77969a62d8/mzaf_15565412750101856381.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Ray Charles",
+            "ABBA",
+            "Julien Clerc",
+            "Alain Souchon"
+        ],
+        "answer": "Ray Charles",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429537487_106",
+        "title": "Let's Dance",
+        "artist": "Chris Montez",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/63/55/bd/6355bd71-98b7-560a-226c-893f86e98244/mzaf_14961301319842152342.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Michael Jackson",
+            "Chris Montez",
+            "Katy Perry",
+            "Rihanna"
+        ],
+        "answer": "Chris Montez",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429540540_107",
+        "title": "Love Me Do",
+        "artist": "The Beatles",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b5/a6/3e/b5a63e22-06be-ef83-1a67-3158b9621feb/mzaf_2262042268434669837.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "The Beatles",
+            "Orelsan",
+            "Julien Clerc",
+            "Telephone"
+        ],
+        "answer": "The Beatles",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429542922_108",
+        "title": "Do You Love Me",
+        "artist": "The Contours",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/05/8c/be/058cbe97-61e7-1407-b7d7-a2c070a3f027/mzaf_8032978290945488636.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "The Contours",
+            "Florent Pagny",
+            "Soprano",
+            "Alain Souchon"
+        ],
+        "answer": "The Contours",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429546026_109",
+        "title": "Surfin' U.S.A.",
+        "artist": "The Beach Boys",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7a/52/3c/7a523c91-952d-e847-c8b6-9a2645b4583e/mzaf_15248344319460929349.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Jul",
+            "The Beach Boys",
+            "Serge Gainsbourg",
+            "Julien Clerc"
+        ],
+        "answer": "The Beach Boys",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429548363_110",
+        "title": "She Loves You",
+        "artist": "The Beatles",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/4d/1f/4c/4d1f4cee-94e9-8d6a-3dac-05e3de7646b4/mzaf_18220486438898903135.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Michael Jackson",
+            "Telephone",
+            "The Beatles",
+            "Patrick Bruel"
+        ],
+        "answer": "The Beatles",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429550419_111",
+        "title": "Be My Baby",
+        "artist": "The Ronettes",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/39/73/ea/3973eafe-1e7a-dd24-b9b3-53cceb0fe79c/mzaf_8861345508410574952.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Vianney",
+            "The Weeknd",
+            "Mylène Farmer",
+            "The Ronettes"
+        ],
+        "answer": "The Ronettes",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429553410_112",
+        "title": "House of the Rising Sun",
+        "artist": "The Animals",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/44/79/4c/44794c50-1a5f-17c9-3425-f3dc237a77d8/mzaf_16013920997882405001.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "The Animals",
+            "The Weeknd",
+            "The Beatles",
+            "Florent Pagny"
+        ],
+        "answer": "The Animals",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429556979_113",
+        "title": "A Hard Day's Night",
+        "artist": "The Beatles",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0a/22/5b/0a225bfc-abe6-fc96-a0a8-162994acb53b/mzaf_4304530183120225878.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Soprano",
+            "Rihanna",
+            "The Beatles",
+            "Alain Souchon"
+        ],
+        "answer": "The Beatles",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429559033_114",
+        "title": "Baby Love",
+        "artist": "The Supremes",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/91/9f/72/919f7248-1796-36a8-f85b-27d3c0107d7c/mzaf_8989939591988961158.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "The Supremes",
+            "Lady Gaga",
+            "Johnny Hallyday",
+            "Stromae"
+        ],
+        "answer": "The Supremes",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429561280_115",
+        "title": "Like a Rolling Stone",
+        "artist": "Bob Dylan",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/0d/07/ce/0d07cef9-c7a5-013c-1414-aa9f9370ebfe/mzaf_10130407559827284152.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Bob Dylan",
+            "Jean-Jacques Goldman",
+            "Lady Gaga",
+            "Serge Gainsbourg"
+        ],
+        "answer": "Bob Dylan",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429563912_116",
+        "title": "Mr. Tambourine Man",
+        "artist": "The Byrds",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/cd/50/c0/cd50c091-adbd-2f7c-3238-e447bc65d293/mzaf_6178470553441443661.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Ed Sheeran",
+            "The Byrds",
+            "Serge Gainsbourg",
+            "Telephone"
+        ],
+        "answer": "The Byrds",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429565992_117",
+        "title": "(I Can't Get No) Satisfaction",
+        "artist": "The Rolling Stones",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/18/be/a2/18bea29d-c999-0366-b423-071c5ef5a0f2/mzaf_10269667874365468180.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Louane",
+            "Alain Souchon",
+            "Eminem",
+            "The Rolling Stones"
+        ],
+        "answer": "The Rolling Stones",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429567733_118",
+        "title": "These Boots Are Made for Walkin'",
+        "artist": "Nancy Sinatra",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/7d/f3/45/7df34590-f02f-ddd0-7028-787f56f3f94a/mzaf_15939055623813701965.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Ed Sheeran",
+            "Nancy Sinatra",
+            "Indochine",
+            "Eminem"
+        ],
+        "answer": "Nancy Sinatra",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429571096_119",
+        "title": "Good Vibrations",
+        "artist": "The Beach Boys",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/19/81/d4/1981d49b-0843-2b4c-7ead-752489a1b401/mzaf_16571628849823631950.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Jean-Jacques Goldman",
+            "Florent Pagny",
+            "Céline Dion",
+            "The Beach Boys"
+        ],
+        "answer": "The Beach Boys",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429573016_120",
+        "title": "California Dreamin'",
+        "artist": "The Mamas & the Papas",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5e/6e/4c/5e6e4c89-b1dc-f2a5-56f7-3bc5adfcaeb6/mzaf_11405280371921111445.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Mylène Farmer",
+            "ABBA",
+            "Angèle",
+            "The Mamas & the Papas"
+        ],
+        "answer": "The Mamas & the Papas",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429575522_121",
+        "title": "Respect",
+        "artist": "Aretha Franklin",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/ee/3d/73/ee3d7366-bdcb-1370-a807-e9a138345974/mzaf_8633168135836320660.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Aretha Franklin",
+            "Patrick Bruel",
+            "Alain Souchon",
+            "Johnny Hallyday"
+        ],
+        "answer": "Aretha Franklin",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429578545_122",
+        "title": "All You Need Is Love",
+        "artist": "The Beatles",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d8/5e/48/d85e48bb-faa1-83c4-acfd-9579483eadd8/mzaf_6692474015681258829.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Renaud",
+            "Johnny Hallyday",
+            "Stromae",
+            "The Beatles"
+        ],
+        "answer": "The Beatles",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429580863_123",
+        "title": "Light My Fire",
+        "artist": "The Doors",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/3d/cd/ce/3dcdceab-7458-a9dd-7c3f-72b69a9fffc6/mzaf_9831581320710671416.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Eminem",
+            "Beyoncé",
+            "Angèle",
+            "The Doors"
+        ],
+        "answer": "The Doors",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429582770_124",
+        "title": "I Heard It Through the Grapevine",
+        "artist": "Marvin Gaye",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3b/7f/61/3b7f6109-9dda-c5e2-d228-18035e25fc7a/mzaf_15307067509964036717.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Michel Sardou",
+            "Soprano",
+            "Marvin Gaye",
+            "Alain Souchon"
+        ],
+        "answer": "Marvin Gaye",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429585006_125",
+        "title": "Mrs. Robinson",
+        "artist": "Simon & Garfunkel",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/01/30/47/01304766-38c3-0dee-aadf-32714e3255e3/mzaf_2127747875464233654.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Orelsan",
+            "Simon & Garfunkel",
+            "Patrick Bruel",
+            "Serge Gainsbourg"
+        ],
+        "answer": "Simon & Garfunkel",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429586791_126",
+        "title": "Hey Jude",
+        "artist": "The Beatles",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3d/08/f5/3d08f5d7-1e0a-99d9-1085-d50ecc972bb9/mzaf_1689604474306790314.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Orelsan",
+            "Serge Gainsbourg",
+            "Jean-Jacques Goldman",
+            "The Beatles"
+        ],
+        "answer": "The Beatles",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429588741_127",
+        "title": "Proud Mary",
+        "artist": "Creedence Clearwater Revival",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/c8/92/1c/c8921c27-06de-899e-09d8-132dc01c0716/mzaf_1729122006615423660.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Indochine",
+            "M. Pokora",
+            "Patrick Bruel",
+            "Creedence Clearwater Revival"
+        ],
+        "answer": "Creedence Clearwater Revival",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429590505_128",
+        "title": "My Way",
+        "artist": "Frank Sinatra",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/52/5d/26/525d26d3-47c8-e895-2ecb-b450c237b66c/mzaf_5951957958540383333.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Dua Lipa",
+            "Alain Souchon",
+            "Vianney",
+            "Frank Sinatra"
+        ],
+        "answer": "Frank Sinatra",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429594021_129",
+        "title": "Honky Tonk Women",
+        "artist": "The Rolling Stones",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/81/b1/33/81b133ef-cb9a-10da-6e51-a64d6108c38f/mzaf_2988773462439004684.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Beyoncé",
+            "The Rolling Stones",
+            "Dua Lipa",
+            "Johnny Hallyday"
+        ],
+        "answer": "The Rolling Stones",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429596199_130",
+        "title": "Layla",
+        "artist": "Derek and the Dominos",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/94/e8/01/94e80130-1c56-d474-d742-d5925eb76725/mzaf_4915490710680006786.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Beyoncé",
+            "ABBA",
+            "Derek and the Dominos",
+            "Stromae"
+        ],
+        "answer": "Derek and the Dominos",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429599894_131",
+        "title": "Bridge Over Troubled Water",
+        "artist": "Simon & Garfunkel",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/02/a2/17/02a21703-ed00-e68a-2411-104437c2a7e4/mzaf_11284201080504456602.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Stromae",
+            "Queen",
+            "Mylène Farmer",
+            "Simon & Garfunkel"
+        ],
+        "answer": "Simon & Garfunkel",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429603413_132",
+        "title": "I'll Be There",
+        "artist": "The Jackson 5",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c1/37/41/c13741fd-f17b-c17a-02ae-17b235c9ec15/mzaf_13742615843259893234.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Jean-Jacques Goldman",
+            "Stromae",
+            "Rihanna",
+            "The Jackson 5"
+        ],
+        "answer": "The Jackson 5",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429605309_133",
+        "title": "It's Too Late",
+        "artist": "Carole King",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f6/a0/94/f6a094c9-88e9-6704-9cb3-683b5e95fe6b/mzaf_15196208198353131288.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Ed Sheeran",
+            "Michael Jackson",
+            "Carole King",
+            "Johnny Hallyday"
+        ],
+        "answer": "Carole King",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429607688_134",
+        "title": "Imagine",
+        "artist": "John Lennon",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7d/4e/8c/7d4e8ced-a37b-fab9-c66a-f3b4d6f043cb/mzaf_1566428042492234227.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Soprano",
+            "Eminem",
+            "John Lennon",
+            "Angèle"
+        ],
+        "answer": "John Lennon",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429610991_135",
+        "title": "Stairway to Heaven",
+        "artist": "Led Zeppelin",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/60/61/5f/60615fd1-7425-78b3-21ab-fed7411a89ea/mzaf_7178841208140363975.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Led Zeppelin",
+            "Julien Clerc",
+            "Jean-Jacques Goldman",
+            "Jul"
+        ],
+        "answer": "Led Zeppelin",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429613683_136",
+        "title": "Starman",
+        "artist": "David Bowie",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/78/5d/be/785dbe59-1fe3-cf29-0292-50e9ee944354/mzaf_5639770502612710333.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "David Bowie",
+            "Serge Gainsbourg",
+            "Jean-Jacques Goldman",
+            "Renaud"
+        ],
+        "answer": "David Bowie",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429616579_137",
+        "title": "The First Time Ever I Saw Your Face",
+        "artist": "Roberta Flack",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/45/87/bd/4587bdb8-2401-2564-51cc-688e05c65d39/mzaf_14032172550467718508.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Roberta Flack",
+            "Beyoncé",
+            "Michael Jackson",
+            "Jul"
+        ],
+        "answer": "Roberta Flack",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429618472_138",
+        "title": "Tumbling Dice",
+        "artist": "The Rolling Stones",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bb/43/3b/bb433bd8-0e6d-3a50-10c3-20fb72ebf4a7/mzaf_18343300222474991255.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "The Rolling Stones",
+            "Michel Sardou",
+            "Jean-Jacques Goldman",
+            "Lady Gaga"
+        ],
+        "answer": "The Rolling Stones",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429621252_139",
+        "title": "Crocodile Rock",
+        "artist": "Elton John",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a9/80/15/a98015e5-06c2-101f-5c8d-7c5c627a1d9c/mzaf_6788803206095592994.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Elton John",
+            "Michel Sardou",
+            "Renaud",
+            "Angèle"
+        ],
+        "answer": "Elton John",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429624572_140",
+        "title": "Money",
+        "artist": "Pink Floyd",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/34/87/de/3487de29-7188-04d9-1f5d-3bc113aec69a/mzaf_17953706114080313317.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Pink Floyd",
+            "Renaud",
+            "Angèle",
+            "Michel Sardou"
+        ],
+        "answer": "Pink Floyd",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429627045_141",
+        "title": "Superstition",
+        "artist": "Stevie Wonder",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/ff/a3/1a/ffa31a9f-8d91-68a8-e85c-cf8e74284079/mzaf_15951061299338017971.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Soprano",
+            "Lady Gaga",
+            "Johnny Hallyday",
+            "Stevie Wonder"
+        ],
+        "answer": "Stevie Wonder",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429629190_142",
+        "title": "Waterloo",
+        "artist": "ABBA",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/32/ca/2b/32ca2b0a-79a1-77ad-4746-07a83639d3ce/mzaf_9127813743185986422.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Ed Sheeran",
+            "ABBA",
+            "Angèle",
+            "Orelsan"
+        ],
+        "answer": "ABBA",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429631706_143",
+        "title": "Rebel Rebel",
+        "artist": "David Bowie",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/6b/9b/3f/6b9b3f04-5e8f-07ae-68e6-13b33552cef5/mzaf_1518430714649909690.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "David Bowie",
+            "Patrick Bruel",
+            "Jean-Jacques Goldman",
+            "The Beatles"
+        ],
+        "answer": "David Bowie",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429634814_144",
+        "title": "Killer Queen",
+        "artist": "Queen",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bd/32/75/bd32755f-2020-d5a9-afcc-f53287a28d64/mzaf_1101497254849466369.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Serge Gainsbourg",
+            "Alain Souchon",
+            "Queen",
+            "Julien Clerc"
+        ],
+        "answer": "Queen",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429638336_145",
+        "title": "Love to Love You Baby",
+        "artist": "Donna Summer",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/0c/7d/f4/0c7df44f-48c4-dfec-c5b0-f52e45ffa147/mzaf_12652561749622879754.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Michael Jackson",
+            "Vianney",
+            "Julien Clerc",
+            "Donna Summer"
+        ],
+        "answer": "Donna Summer",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429642094_146",
+        "title": "One of These Nights",
+        "artist": "Eagles",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a5/5f/97/a55f97ca-ed67-7296-115c-8ebce522d75a/mzaf_15051658680169068366.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Céline Dion",
+            "Lady Gaga",
+            "Johnny Hallyday",
+            "Eagles"
+        ],
+        "answer": "Eagles",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429645886_148",
+        "title": "Dancing Queen",
+        "artist": "ABBA",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1a/47/93/1a4793fc-1586-87bc-00d2-dc4916a61c7c/mzaf_13920610926910283055.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Queen",
+            "The Weeknd",
+            "Justin Bieber",
+            "ABBA"
+        ],
+        "answer": "ABBA",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429648430_149",
+        "title": "More Than a Feeling",
+        "artist": "Boston",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a9/8a/47/a98a4799-aab6-5c88-f7fe-16177ef1dbee/mzaf_17159634430799833374.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Jean-Jacques Goldman",
+            "Beyoncé",
+            "Louane",
+            "Boston"
+        ],
+        "answer": "Boston",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429652089_150",
+        "title": "Hotel California",
+        "artist": "The Eagles",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a7/1b/f0/a71bf07d-f498-05c9-2c8a-d12af7d019d8/mzaf_11402952498213508559.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "The Eagles",
+            "Madonna",
+            "ABBA",
+            "Alain Souchon"
+        ],
+        "answer": "The Eagles",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429654544_152",
+        "title": "Dreams",
+        "artist": "Fleetwood Mac",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cb/87/29/cb872937-bebb-f309-821e-5459a873f1b6/mzaf_13232595752463797281.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Fleetwood Mac",
+            "Dua Lipa",
+            "Johnny Hallyday",
+            "Vianney"
+        ],
+        "answer": "Fleetwood Mac",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429656856_153",
+        "title": "We Are the Champions",
+        "artist": "Queen",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8c/b9/38/8cb93818-d1d3-7093-8679-5a42c261b429/mzaf_826149797423692231.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Queen",
+            "Céline Dion",
+            "Beyoncé",
+            "Michael Jackson"
+        ],
+        "answer": "Queen",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429658902_154",
+        "title": "Heart of Glass",
+        "artist": "Blondie",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/46/46/d8/4646d8fd-86d7-fbaa-c1e2-8e41fbe92618/mzaf_4475341847035934850.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Telephone",
+            "Blondie",
+            "Rihanna",
+            "Justin Bieber"
+        ],
+        "answer": "Blondie",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429661990_156",
+        "title": "Y.M.C.A.",
+        "artist": "Village People",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/35/cc/73/35cc73ff-e066-6508-5da6-ff7388c5218b/mzaf_1097522515788886155.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Village People",
+            "Michel Sardou",
+            "Dua Lipa",
+            "Céline Dion"
+        ],
+        "answer": "Village People",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429665638_157",
+        "title": "Don't Stop 'Til You Get Enough",
+        "artist": "Michael Jackson",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/72/26/09/72260919-0e9c-6d74-7898-ef92e2867e3d/mzaf_16775183321703742233.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Eminem",
+            "Michael Jackson",
+            "Lady Gaga",
+            "Julien Clerc"
+        ],
+        "answer": "Michael Jackson",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429667790_158",
+        "title": "Another Brick in the Wall, Part 2",
+        "artist": "Pink Floyd",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f8/a2/cd/f8a2cd4a-2af9-f34f-3684-89e3304c102c/mzaf_376000686139681175.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Alain Souchon",
+            "Beyoncé",
+            "ABBA",
+            "Pink Floyd"
+        ],
+        "answer": "Pink Floyd",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429669666_159",
+        "title": "My Sharona",
+        "artist": "The Knack",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/de/73/13/de731300-7556-e180-37c8-f30a3613b336/mzaf_564511142664259300.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Alain Souchon",
+            "The Knack",
+            "Indochine",
+            "Céline Dion"
+        ],
+        "answer": "The Knack",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429673111_161",
+        "title": "Call Me",
+        "artist": "Blondie",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b1/13/b5/b113b569-8639-b071-9199-3c8f8fb0d3a9/mzaf_2541938402474802623.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Beyoncé",
+            "Angèle",
+            "Céline Dion",
+            "Blondie"
+        ],
+        "answer": "Blondie",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429676586_162",
+        "title": "Another One Bites the Dust",
+        "artist": "Queen",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/47/61/3c/47613c3e-de3e-b2a0-8d36-d05a6619f1d3/mzaf_16109120005998758960.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Louane",
+            "Renaud",
+            "Johnny Hallyday",
+            "Queen"
+        ],
+        "answer": "Queen",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429678904_163",
+        "title": "Don't You Want Me",
+        "artist": "Human League",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/59/01/2c/59012c96-3e72-3c32-3193-fd72de799bcc/mzaf_3416399182024015094.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Human League",
+            "Jean-Jacques Goldman",
+            "M. Pokora",
+            "Telephone"
+        ],
+        "answer": "Human League",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429681565_164",
+        "title": "Bette Davis Eyes",
+        "artist": "Kim Carnes",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/99/d1/8e/99d18e28-5494-b125-6bd0-fbca0da5ece5/mzaf_683708805787933984.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Francis Cabrel",
+            "Mylène Farmer",
+            "Kim Carnes",
+            "M. Pokora"
+        ],
+        "answer": "Kim Carnes",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429684903_165",
+        "title": "Tainted Love",
+        "artist": "Soft Cell",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/59/ad/28/59ad2888-2b61-7f07-a779-b18cc013c698/mzaf_5227993960460210837.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Florent Pagny",
+            "ABBA",
+            "Michael Jackson",
+            "Soft Cell"
+        ],
+        "answer": "Soft Cell",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429687498_167",
+        "title": "Eye of the Tiger",
+        "artist": "Survivor",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fe/fa/9e/fefa9edd-c023-4d1c-1012-08bfb0ec69e6/mzaf_4651653238471209843.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Michael Jackson",
+            "Johnny Hallyday",
+            "Survivor",
+            "Queen"
+        ],
+        "answer": "Survivor",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429690304_168",
+        "title": "Africa",
+        "artist": "Toto",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/12/e5/ba/12e5ba45-05c1-7060-25a8-c9b718e7f6e8/mzaf_4488601364870711408.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Toto",
+            "Johnny Hallyday",
+            "Katy Perry",
+            "Indochine"
+        ],
+        "answer": "Toto",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429692115_173",
+        "title": "Purple Rain",
+        "artist": "Prince",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4a/70/9b/4a709b41-3c29-626a-ca69-44aa907f4705/mzaf_14388295257133509788.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Telephone",
+            "ABBA",
+            "The Beatles",
+            "Prince"
+        ],
+        "answer": "Prince",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429695595_174",
+        "title": "Wake Me Up Before You Go-Go",
+        "artist": "Wham!",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/59/d0/df/59d0df1f-b9b0-c1f0-d27e-ad59ee9fe1fa/mzaf_15629855503092199047.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Jean-Jacques Goldman",
+            "Johnny Hallyday",
+            "Soprano",
+            "Wham!"
+        ],
+        "answer": "Wham!",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429697805_176",
+        "title": "Shout",
+        "artist": "Tears for Fears",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2e/6d/a6/2e6da667-f040-acde-16a5-99da2387a76a/mzaf_17227335804321987349.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Francis Cabrel",
+            "Soprano",
+            "Justin Bieber",
+            "Tears for Fears"
+        ],
+        "answer": "Tears for Fears",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429700408_177",
+        "title": "Saving All My Love for You",
+        "artist": "Whitney Houston",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/33/5c/be/335cbef4-8e29-6ad1-a8c3-6980f23c6a1a/mzaf_193191834202900621.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Beyoncé",
+            "Whitney Houston",
+            "Johnny Hallyday",
+            "Eminem"
+        ],
+        "answer": "Whitney Houston",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429703653_179",
+        "title": "Livin' on a Prayer",
+        "artist": "Bon Jovi",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fc/64/6c/fc646cf8-6322-09d6-c6b7-0cd148f6a47f/mzaf_14973517811432335325.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Céline Dion",
+            "Michel Sardou",
+            "Madonna",
+            "Bon Jovi"
+        ],
+        "answer": "Bon Jovi",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429706240_181",
+        "title": "Papa Don't Preach",
+        "artist": "Madonna",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e1/80/3c/e1803c42-db93-4da3-d988-151838f1d873/mzaf_3597073023748094520.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Madonna",
+            "Queen",
+            "Justin Bieber",
+            "Céline Dion"
+        ],
+        "answer": "Madonna",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429709012_185",
+        "title": "Faith",
+        "artist": "George Michael",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a5/a0/b9/a5a0b9b5-25c0-eea4-aff5-e653eb2144a5/mzaf_12972342335011969375.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "George Michael",
+            "Jean-Jacques Goldman",
+            "Angèle",
+            "Renaud"
+        ],
+        "answer": "George Michael",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429711346_186",
+        "title": "Sweet Child o' Mine",
+        "artist": "Guns N' Roses",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a5/82/2d/a5822d67-2e65-fe95-511e-1f785d23e5cc/mzaf_8619467974951398014.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Soprano",
+            "Lady Gaga",
+            "Johnny Hallyday",
+            "Guns N' Roses"
+        ],
+        "answer": "Guns N' Roses",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429714729_187",
+        "title": "Smooth Criminal",
+        "artist": "Michael Jackson",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/38/7d/84/387d847b-0a17-d7d0-81fa-3d1e2036a0e3/mzaf_1148403634523455455.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Johnny Hallyday",
+            "Céline Dion",
+            "Michael Jackson",
+            "Rihanna"
+        ],
+        "answer": "Michael Jackson",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429717040_188",
+        "title": "Like a Prayer",
+        "artist": "Madonna",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0b/23/82/0b238289-52e2-2107-5531-181836267ed2/mzaf_6726729811402686020.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Kendji Girac",
+            "Stromae",
+            "Serge Gainsbourg",
+            "Madonna"
+        ],
+        "answer": "Madonna",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429720574_189",
+        "title": "The Look",
+        "artist": "Roxette",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/85/d3/92/85d39281-ca4d-65fd-a5df-9215917c7fd6/mzaf_486798224914660866.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Angèle",
+            "The Weeknd",
+            "Roxette",
+            "Michel Sardou"
+        ],
+        "answer": "Roxette",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429722401_190",
+        "title": "Lullaby",
+        "artist": "The Cure",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/0d/9f/83/0d9f8362-9aad-9eb0-3903-b550e4aa4bf7/mzaf_17639901377879544376.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "ABBA",
+            "Justin Bieber",
+            "Telephone",
+            "The Cure"
+        ],
+        "answer": "The Cure",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429724983_191",
+        "title": "Groove Is in the Heart",
+        "artist": "Deee-Lite",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2b/11/98/2b11988f-5cdf-97b5-8cbd-8ed8d49fd6f0/mzaf_9425573898167217549.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Deee-Lite",
+            "Alain Souchon",
+            "Madonna",
+            "Julien Clerc"
+        ],
+        "answer": "Deee-Lite",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429727184_192",
+        "title": "Vogue",
+        "artist": "Madonna",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f5/4d/26/f54d265c-1d43-6d64-7798-d1b8e6db2fda/mzaf_10996471418538527772.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Angèle",
+            "Vianney",
+            "Madonna",
+            "Soprano"
+        ],
+        "answer": "Madonna",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429730340_193",
+        "title": "Nothing Compares 2 U",
+        "artist": "Sinead O'Connor",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/db/8c/ae/db8cae40-3b74-0406-2f63-8759a8414935/mzaf_12328590676083323672.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Angèle",
+            "Patrick Bruel",
+            "Sinead O'Connor",
+            "Lady Gaga"
+        ],
+        "answer": "Sinead O'Connor",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429733070_194",
+        "title": "(Everything I Do) I Do It for You",
+        "artist": "Bryan Adams",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b6/1b/ef/b61befa0-78e2-302e-6e11-61b9b1ccfb4a/mzaf_6549192166299634383.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Bryan Adams",
+            "Orelsan",
+            "Patrick Bruel",
+            "Indochine"
+        ],
+        "answer": "Bryan Adams",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429736381_196",
+        "title": "Losing My Religion",
+        "artist": "R.E.M.",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/af/be/f5/afbef592-8f00-fe28-8ab4-5c070827b2f8/mzaf_4959761764791628207.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Johnny Hallyday",
+            "Angèle",
+            "Jul",
+            "R.E.M."
+        ],
+        "answer": "R.E.M.",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429739595_197",
+        "title": "Nuthin' but a 'G' Thang",
+        "artist": "Dr. Dre",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/d6/b5/44/d6b5444e-a736-25e0-1ab8-b7b84c06aa97/mzaf_959189292152238851.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Lady Gaga",
+            "Dr. Dre",
+            "Michael Jackson",
+            "The Weeknd"
+        ],
+        "answer": "Dr. Dre",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429743022_198",
+        "title": "Rhythm Is a Dancer",
+        "artist": "Snap!",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/49/f9/de/49f9de8b-5a9e-0968-d172-e9f279140093/mzaf_12906468792138234672.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "The Beatles",
+            "Snap!",
+            "Alain Souchon",
+            "Ed Sheeran"
+        ],
+        "answer": "Snap!",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429746190_199",
+        "title": "I Will Always Love You",
+        "artist": "Whitney Houston",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/03/d2/1a/03d21aca-c69e-09af-03ef-118004e68ab5/mzaf_17408932698913708736.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Whitney Houston",
+            "Stromae",
+            "Patrick Bruel",
+            "Michel Sardou"
+        ],
+        "answer": "Whitney Houston",
+        "year": 1960,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429791280_3498",
+        "title": "L'autre Finistère",
+        "artist": "Les Innocents",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/06/fa/06/06fa0689-f83c-1780-d757-3ea1669547ee/mzaf_2194089989867600975.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Céline Dion",
+            "Serge Gainsbourg",
+            "Les Innocents",
+            "Katy Perry"
+        ],
+        "answer": "Les Innocents",
+        "year": 1977,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429793651_3499",
+        "title": "Ouragan",
+        "artist": "Stéphanie de Monaco",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/73/ab/c6/73abc60b-859e-fc11-f36e-0090ce9d8d11/mzaf_1998981176508006338.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Michael Jackson",
+            "Alain Souchon",
+            "Stéphanie de Monaco",
+            "Ed Sheeran"
+        ],
+        "answer": "Stéphanie de Monaco",
+        "year": 1977,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429795848_3597",
+        "title": "What's Up?",
+        "artist": "4 Non Blondes",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/98/75/9c/98759c02-2df1-460d-cfdb-1124bdea43db/mzaf_1455737164722872043.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Renaud",
+            "Angèle",
+            "4 Non Blondes",
+            "Serge Gainsbourg"
+        ],
+        "answer": "4 Non Blondes",
+        "year": 1977,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429798097_3598",
+        "title": "The Sign",
+        "artist": "Ace of Base",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/50/d1/8f/50d18f80-466d-3044-3045-769cd045b582/mzaf_145168018015310017.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Ace of Base",
+            "Soprano",
+            "Orelsan",
+            "The Beatles"
+        ],
+        "answer": "Ace of Base",
+        "year": 1977,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429800983_3599",
+        "title": "What Is Love",
+        "artist": "Haddaway",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/89/ea/52/89ea5203-802f-2158-614c-8c7d5cedd3df/mzaf_13828661315018209252.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Renaud",
+            "Johnny Hallyday",
+            "Haddaway",
+            "Serge Gainsbourg"
+        ],
+        "answer": "Haddaway",
+        "year": 1977,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429802819_3697",
+        "title": "Une femme avec une femme",
+        "artist": "Mecano",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2d/e2/b9/2de2b986-c36c-4fb1-b37d-347e628030cb/mzaf_17446317982476848387.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Serge Gainsbourg",
+            "Mylène Farmer",
+            "Renaud",
+            "Mecano"
+        ],
+        "answer": "Mecano",
+        "year": 1978,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429805431_3698",
+        "title": "Seine-Saint-Denis Style",
+        "artist": "NTM",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b7/09/7a/b7097a7e-1a6b-5729-3f71-a534952861f0/mzaf_11139436154300055591.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Soprano",
+            "Michael Jackson",
+            "Renaud",
+            "NTM"
+        ],
+        "answer": "NTM",
+        "year": 1978,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429807344_3699",
+        "title": "Place des grands hommes",
+        "artist": "Patrick Bruel",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/45/7d/76/457d7605-c49c-8300-5496-1be74540d587/mzaf_1638861376450913060.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Telephone",
+            "Renaud",
+            "Patrick Bruel",
+            "ABBA"
+        ],
+        "answer": "Patrick Bruel",
+        "year": 1978,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429810308_3797",
+        "title": "I Swear",
+        "artist": "All-4-One",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3b/78/e5/3b78e587-ac97-a67b-7248-e9601597790e/mzaf_4303932103866681902.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Francis Cabrel",
+            "All-4-One",
+            "Beyoncé",
+            "Queen"
+        ],
+        "answer": "All-4-One",
+        "year": 1978,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429812691_3798",
+        "title": "Live Forever",
+        "artist": "Oasis",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/16/f1/ac/16f1ac05-b12f-fd37-d862-ae5cd9772187/mzaf_16674267505849232959.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Indochine",
+            "Justin Bieber",
+            "Vianney",
+            "Oasis"
+        ],
+        "answer": "Oasis",
+        "year": 1978,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429814598_3799",
+        "title": "Zombie",
+        "artist": "The Cranberries",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/35/bb/65/35bb6532-1abe-59e4-9ced-8bee2742ea24/mzaf_15102830936602294569.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "The Cranberries",
+            "Kendji Girac",
+            "Justin Bieber",
+            "Michel Sardou"
+        ],
+        "answer": "The Cranberries",
+        "year": 1978,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429816744_3899",
+        "title": "Un jour en France",
+        "artist": "Noir Désir",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/8b/bb/e1/8bbbe173-a0fc-32c9-9115-17f47815c0b3/mzaf_12029538937374909767.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Noir Désir",
+            "Alain Souchon",
+            "Eminem",
+            "Angèle"
+        ],
+        "answer": "Noir Désir",
+        "year": 1979,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429819744_3998",
+        "title": "Wonderwall",
+        "artist": "Oasis",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ab/16/93/ab16933c-6203-3db9-9da9-513ff1c8496d/mzaf_16993612140334549994.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Oasis",
+            "Michel Sardou",
+            "Queen",
+            "Jean-Jacques Goldman"
+        ],
+        "answer": "Oasis",
+        "year": 1979,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429822182_3999",
+        "title": "Waterfalls",
+        "artist": "TLC",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e9/81/4e/e9814ecd-7282-e0cf-6a19-70ea78117382/mzaf_10928185948311762507.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Céline Dion",
+            "Alain Souchon",
+            "Kendji Girac",
+            "TLC"
+        ],
+        "answer": "TLC",
+        "year": 1979,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429823930_4097",
+        "title": "Viens voir le docteur",
+        "artist": "Doc Gynéco",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3d/3e/96/3d3e9680-8a6b-538f-19ed-77fa5b72716e/mzaf_15685784879025435620.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Jean-Jacques Goldman",
+            "Doc Gynéco",
+            "Dua Lipa",
+            "Patrick Bruel"
+        ],
+        "answer": "Doc Gynéco",
+        "year": 1980,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429825732_4098",
+        "title": "Lucie",
+        "artist": "Pascal Obispo",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/e6/12/8a/e6128aca-9df6-0e1b-2235-483fe0a582a4/mzaf_14620934968117766788.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Florent Pagny",
+            "Pascal Obispo",
+            "Vianney",
+            "Michael Jackson"
+        ],
+        "answer": "Pascal Obispo",
+        "year": 1980,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429829348_4099",
+        "title": "Zen",
+        "artist": "Zazie",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3b/ac/98/3bac98af-3daf-1ff2-0325-f1b42eb7db71/mzaf_5516399825154313023.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Justin Bieber",
+            "Patrick Bruel",
+            "The Beatles",
+            "Zazie"
+        ],
+        "answer": "Zazie",
+        "year": 1980,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429832014_4197",
+        "title": "Killing Me Softly",
+        "artist": "Fugees",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/fa/27/9e/fa279e3c-c344-ff8d-58d2-5db3c7f5c7d6/mzaf_3011910104000614995.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Soprano",
+            "Fugees",
+            "Angèle",
+            "Alain Souchon"
+        ],
+        "answer": "Fugees",
+        "year": 1980,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429834936_4198",
+        "title": "Don't Speak",
+        "artist": "No Doubt",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/eb/d3/dd/ebd3dd7b-ef82-0855-54b0-3c978e7f1594/mzaf_13350123702531292562.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Johnny Hallyday",
+            "Kendji Girac",
+            "No Doubt",
+            "Francis Cabrel"
+        ],
+        "answer": "No Doubt",
+        "year": 1980,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429838278_4297",
+        "title": "Around the World",
+        "artist": "Daft Punk",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ee/22/1a/ee221ab0-02dd-7290-47e7-383ad9c81e3b/mzaf_912969547193259322.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Patrick Bruel",
+            "Daft Punk",
+            "Mylène Farmer",
+            "Florent Pagny"
+        ],
+        "answer": "Daft Punk",
+        "year": 1981,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429840487_4298",
+        "title": "Je t'aime",
+        "artist": "Lara Fabian",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c6/0e/b9/c60eb995-d9cf-0c89-9331-4f9d6bebbdaf/mzaf_8638365635883240187.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Johnny Hallyday",
+            "Katy Perry",
+            "Lara Fabian",
+            "Renaud"
+        ],
+        "answer": "Lara Fabian",
+        "year": 1981,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429842338_4299",
+        "title": "Prenons notre temps",
+        "artist": "Poetic Lover",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/07/57/20/07572043-f8b8-a842-fa2a-8de438822452/mzaf_10673475704194028631.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Jean-Jacques Goldman",
+            "ABBA",
+            "Poetic Lover",
+            "Telephone"
+        ],
+        "answer": "Poetic Lover",
+        "year": 1981,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429845031_4397",
+        "title": "Tubthumping",
+        "artist": "Chumbawamba",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b6/85/a8/b685a898-b48e-14a3-50d3-43009162fa0d/mzaf_5688414155772340127.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Chumbawamba",
+            "Francis Cabrel",
+            "Justin Bieber",
+            "Jean-Jacques Goldman"
+        ],
+        "answer": "Chumbawamba",
+        "year": 1981,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429848340_4497",
+        "title": "Abdel Kader",
+        "artist": "Faudel, Khaled, Rachid Taha",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c2/f0/36/c2f0361d-808a-1a00-41fe-8a3f85ac5e54/mzaf_13422337397396243511.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Queen",
+            "Mylène Farmer",
+            "Florent Pagny",
+            "Faudel, Khaled, Rachid Taha"
+        ],
+        "answer": "Faudel, Khaled, Rachid Taha",
+        "year": 1982,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429851451_4498",
+        "title": "La tribu de Dana",
+        "artist": "Manau",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/7c/69/91/7c6991b1-08e0-c19a-a09c-82a95dcce488/mzaf_1186840686276822242.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Manau",
+            "Jean-Jacques Goldman",
+            "Rihanna",
+            "Lady Gaga"
+        ],
+        "answer": "Manau",
+        "year": 1982,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429854661_4598",
+        "title": "Save Tonight",
+        "artist": "Eagle-Eye Cherry",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/49/7a/57/497a5712-00b8-256d-525b-3fbd471c7cde/mzaf_2886300882115641848.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Ed Sheeran",
+            "Eagle-Eye Cherry",
+            "Florent Pagny",
+            "Michael Jackson"
+        ],
+        "answer": "Eagle-Eye Cherry",
+        "year": 1982,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429856619_4599",
+        "title": "Doo Wop (That Thing)",
+        "artist": "Lauryn Hill",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d9/2c/70/d92c708f-1a4a-d022-e188-a75ecd762b75/mzaf_926740419110213225.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Lady Gaga",
+            "Justin Bieber",
+            "Lauryn Hill",
+            "Indochine"
+        ],
+        "answer": "Lauryn Hill",
+        "year": 1982,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429859276_4697",
+        "title": "Chanter pour ceux qui sont loin de chez eux",
+        "artist": "Lââm",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/c9/49/1d/c9491da0-8a12-c521-0967-bb23312cb21e/mzaf_5144896364188778441.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Lââm",
+            "Beyoncé",
+            "Julien Clerc",
+            "The Beatles"
+        ],
+        "answer": "Lââm",
+        "year": 1983,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429862154_4698",
+        "title": "L'Âme-Stram-Gram",
+        "artist": "Mylène Farmer",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cb/ea/05/cbea05f7-f2ff-dce5-dca8-addc6e1a6e02/mzaf_10538209868369716727.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Florent Pagny",
+            "Dua Lipa",
+            "Mylène Farmer",
+            "Justin Bieber"
+        ],
+        "answer": "Mylène Farmer",
+        "year": 1983,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429864075_4898",
+        "title": "Sous le vent",
+        "artist": "Garou & Céline Dion",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7f/e8/f6/7fe8f68a-c7be-a35f-bbe4-25780729ce84/mzaf_18147640563089103661.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "ABBA",
+            "Garou & Céline Dion",
+            "Louane",
+            "Serge Gainsbourg"
+        ],
+        "answer": "Garou & Céline Dion",
+        "year": 1984,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429867277_4994",
+        "title": "Mambo No. 5",
+        "artist": "Lou Bega",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/95/12/14/951214ff-a3f2-7b9c-094c-385b382b5a14/mzaf_6010878480642586774.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Telephone",
+            "Mylène Farmer",
+            "Beyoncé",
+            "Lou Bega"
+        ],
+        "answer": "Lou Bega",
+        "year": 1984,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429870538_4995",
+        "title": "Livin' la Vida Loca",
+        "artist": "Ricky Martin",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/08/a7/cb/08a7cb6d-0618-3c01-6b80-2b92aaca7406/mzaf_15654413058067067771.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Louane",
+            "Ricky Martin",
+            "Michel Sardou",
+            "Telephone"
+        ],
+        "answer": "Ricky Martin",
+        "year": 1984,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429872329_4996",
+        "title": "No Scrubs",
+        "artist": "TLC",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c9/64/38/c964385e-f18a-fd99-638c-76d4f9bdd4e2/mzaf_4744709234124158764.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Justin Bieber",
+            "Johnny Hallyday",
+            "Florent Pagny",
+            "TLC"
+        ],
+        "answer": "TLC",
+        "year": 1984,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429874869_5097",
+        "title": "Près de moi",
+        "artist": "Lorie",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/51/6c/9c/516c9cb8-ad18-2aa9-319a-f1e07e7e1646/mzaf_2029093799988766702.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "M. Pokora",
+            "Lorie",
+            "Michel Sardou",
+            "Julien Clerc"
+        ],
+        "answer": "Lorie",
+        "year": 1985,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429876980_5098",
+        "title": "Le vent nous portera",
+        "artist": "Noir Désir",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/0e/85/bc/0e85bc0c-7dd8-709f-b2d0-ac5368a82f10/mzaf_7427903516331091560.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Julien Clerc",
+            "Indochine",
+            "Ed Sheeran",
+            "Noir Désir"
+        ],
+        "answer": "Noir Désir",
+        "year": 1985,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429880413_5099",
+        "title": "La musique",
+        "artist": "Star Academy",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/0f/f2/fa/0ff2fae0-7c87-dd7a-e8bb-1a7f5ae0a0be/mzaf_2480131071564095271.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Ed Sheeran",
+            "Star Academy",
+            "Jean-Jacques Goldman",
+            "Johnny Hallyday"
+        ],
+        "answer": "Star Academy",
+        "year": 1985,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429883272_5194",
+        "title": "Yellow",
+        "artist": "Coldplay",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/66/f3/1a/66f31a76-a6ed-cb4c-f353-23310a7ae9a8/mzaf_10593596652344378873.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Coldplay",
+            "Telephone",
+            "Johnny Hallyday",
+            "Stromae"
+        ],
+        "answer": "Coldplay",
+        "year": 1985,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429885500_5196",
+        "title": "Music",
+        "artist": "Madonna",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f7/3a/72/f73a728e-5e89-8c8d-69f2-578e6e2d1819/mzaf_6039980339395716833.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Angèle",
+            "Madonna",
+            "ABBA",
+            "The Beatles"
+        ],
+        "answer": "Madonna",
+        "year": 1985,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429887317_5297",
+        "title": "J'attends l'amour",
+        "artist": "Jenifer",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/98/27/d3/9827d302-b09e-d246-08d1-fc67f2ff5a88/mzaf_1426765609248592346.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "ABBA",
+            "Jenifer",
+            "Stromae",
+            "Angèle"
+        ],
+        "answer": "Jenifer",
+        "year": 1986,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429889998_5298",
+        "title": "J'ai confiance en toi",
+        "artist": "Nâdiya",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/2b/d7/eb/2bd7eb58-09c9-b3ee-2014-0e6e1816150a/mzaf_10927822477643641100.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Serge Gainsbourg",
+            "Johnny Hallyday",
+            "M. Pokora",
+            "Nâdiya"
+        ],
+        "answer": "Nâdiya",
+        "year": 1986,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429891903_5394",
+        "title": "Fallin'",
+        "artist": "Alicia Keys",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9a/12/79/9a1279b9-57a5-2ae9-bb32-5029a2d116f7/mzaf_7701118438917111127.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "M. Pokora",
+            "Stromae",
+            "Jean-Jacques Goldman",
+            "Alicia Keys"
+        ],
+        "answer": "Alicia Keys",
+        "year": 1986,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429894798_5395",
+        "title": "Can't Get You Out of My Head",
+        "artist": "Kylie Minogue",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/22/4d/82/224d82d2-4c73-8e99-5d4b-63117210e98e/mzaf_17599978749685887459.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Kylie Minogue",
+            "Dua Lipa",
+            "Céline Dion",
+            "Louane"
+        ],
+        "answer": "Kylie Minogue",
+        "year": 1986,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429897406_5396",
+        "title": "Whenever, Wherever",
+        "artist": "Shakira",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/26/fe/51/26fe51d8-3c58-ade1-875d-c8039032a0c2/mzaf_17178870652877611759.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Shakira",
+            "Jean-Jacques Goldman",
+            "Mylène Farmer",
+            "Madonna"
+        ],
+        "answer": "Shakira",
+        "year": 1986,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429900364_5496",
+        "title": "Dernière danse",
+        "artist": "Kyo",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/fc/88/f4/fc88f474-3485-a30e-ce09-7f81194cb026/mzaf_16839303439721223224.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Céline Dion",
+            "ABBA",
+            "Lady Gaga",
+            "Kyo"
+        ],
+        "answer": "Kyo",
+        "year": 1987,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429903799_5497",
+        "title": "Sur un air latino",
+        "artist": "Lorie",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/cd/6e/38/cd6e3898-6d65-474d-08e3-7371999a7e23/mzaf_5635236153607488022.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Telephone",
+            "Florent Pagny",
+            "Michael Jackson",
+            "Lorie"
+        ],
+        "answer": "Lorie",
+        "year": 1987,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429905846_5498",
+        "title": "Hey Oh",
+        "artist": "Tragédie",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/fe/64/84/fe648467-0338-60e2-684d-f42af748e8b4/mzaf_9595453177763701352.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Tragédie",
+            "Florent Pagny",
+            "Lady Gaga",
+            "Orelsan"
+        ],
+        "answer": "Tragédie",
+        "year": 1987,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429909231_5594",
+        "title": "Lose Yourself",
+        "artist": "Eminem",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/62/0a/a5/620aa56f-189e-708a-80f0-cebdada3872e/mzaf_7131619873177773332.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Stromae",
+            "Louane",
+            "Céline Dion",
+            "Eminem"
+        ],
+        "answer": "Eminem",
+        "year": 1987,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429911810_5595",
+        "title": "The Ketchup Song (Aserejé)",
+        "artist": "Las Ketchup",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/9a/eb/16/9aeb163a-a21e-c03d-e531-ecf7e5df4bfd/mzaf_9241223793952383631.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Céline Dion",
+            "Michael Jackson",
+            "Las Ketchup",
+            "Louane"
+        ],
+        "answer": "Las Ketchup",
+        "year": 1987,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429914506_5596",
+        "title": "Hot in Herre",
+        "artist": "Nelly",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1b/ce/48/1bce48bf-49c2-eca0-7ca5-2cd614e12e2d/mzaf_7912378696661820444.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Nelly",
+            "Beyoncé",
+            "Queen",
+            "Florent Pagny"
+        ],
+        "answer": "Nelly",
+        "year": 1987,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429917214_5696",
+        "title": "Ma philosophie",
+        "artist": "Amel Bent",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/29/b6/75/29b6750f-ce3e-314b-e71b-3eeaf979e738/mzaf_14316466642583754819.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Amel Bent",
+            "Angèle",
+            "Justin Bieber",
+            "Stromae"
+        ],
+        "answer": "Amel Bent",
+        "year": 1988,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429920542_5697",
+        "title": "Femme Like U",
+        "artist": "K-Maro",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/dd/c5/d0/ddc5d0dc-bd2e-09a1-17eb-6f6eaa2ab624/mzaf_4761448496335135467.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Serge Gainsbourg",
+            "Angèle",
+            "Orelsan",
+            "K-Maro"
+        ],
+        "answer": "K-Maro",
+        "year": 1988,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429927352_5795",
+        "title": "Crazy in Love",
+        "artist": "Beyoncé",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/b5/2a/4f/b52a4fcd-0628-cb38-c8ab-a697c11a9175/mzaf_1541321636664021445.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Michel Sardou",
+            "M. Pokora",
+            "Stromae",
+            "Beyoncé"
+        ],
+        "answer": "Beyoncé",
+        "year": 1988,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429929070_5796",
+        "title": "Dragostea Din Tei",
+        "artist": "O-Zone",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/84/fb/3a/84fb3a50-2b6e-9c9e-96c1-c3f7410f0b1b/mzaf_982804505229788807.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Eminem",
+            "Beyoncé",
+            "Jean-Jacques Goldman",
+            "O-Zone"
+        ],
+        "answer": "O-Zone",
+        "year": 1988,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429930877_5797",
+        "title": "Hey Ya!",
+        "artist": "OutKast",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ce/98/c0/ce98c0e5-afa5-f746-032a-fa56ad057762/mzaf_8802440392972724196.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Vianney",
+            "OutKast",
+            "Kendji Girac",
+            "Jul"
+        ],
+        "answer": "OutKast",
+        "year": 1988,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429934382_5896",
+        "title": "DJ",
+        "artist": "Diam's",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/96/54/ea/9654ea72-dfab-b7cc-c626-a1d12b03a5d7/mzaf_3541519092451896197.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Diam's",
+            "Orelsan",
+            "Indochine",
+            "Céline Dion"
+        ],
+        "answer": "Diam's",
+        "year": 1989,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429938034_5897",
+        "title": "Je cours",
+        "artist": "Kyo",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/8a/56/d4/8a56d411-3bb6-8019-1ae5-54c1fa284226/mzaf_16457817685752750858.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Kyo",
+            "Mylène Farmer",
+            "Michael Jackson",
+            "Julien Clerc"
+        ],
+        "answer": "Kyo",
+        "year": 1989,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429941321_5898",
+        "title": "Femme de couleur",
+        "artist": "Shy'm",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/bc/4d/28/bc4d28c6-e3a8-52cb-668e-b83f67be63fd/mzaf_5162150713445379459.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Katy Perry",
+            "The Beatles",
+            "Shy'm",
+            "Angèle"
+        ],
+        "answer": "Shy'm",
+        "year": 1989,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429944675_5995",
+        "title": "What You Waiting For?",
+        "artist": "Gwen Stefani",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/09/85/28/09852804-4b24-0d08-a33e-5169c14751ee/mzaf_12987429391701890416.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Gwen Stefani",
+            "Johnny Hallyday",
+            "ABBA",
+            "Renaud"
+        ],
+        "answer": "Gwen Stefani",
+        "year": 1989,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429947763_5996",
+        "title": "This Love",
+        "artist": "Maroon 5",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/79/0b/8d/790b8d2f-dae6-9380-87ec-6acd52806e49/mzaf_4263648516794463383.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Maroon 5",
+            "Rihanna",
+            "Jean-Jacques Goldman",
+            "Johnny Hallyday"
+        ],
+        "answer": "Maroon 5",
+        "year": 1989,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429950527_5997",
+        "title": "Yeah!",
+        "artist": "Usher",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/94/52/3c/94523c88-f5f9-16f4-dbd7-f284ca168048/mzaf_7184891920196479048.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Usher",
+            "The Beatles",
+            "Telephone",
+            "Lady Gaga"
+        ],
+        "answer": "Usher",
+        "year": 1989,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429955161_6096",
+        "title": "La boulette",
+        "artist": "Diam's",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/78/26/c6/7826c67e-6029-68fa-87d2-06627883df8f/mzaf_11565277544236867714.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Serge Gainsbourg",
+            "Ed Sheeran",
+            "Diam's",
+            "Stromae"
+        ],
+        "answer": "Diam's",
+        "year": 1990,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429958104_6098",
+        "title": "Marly-Gomont",
+        "artist": "Kamini",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/96/c6/5f/96c65f10-27d5-c6f5-0d8d-70f2dcb00425/mzaf_15181298123740501589.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Kamini",
+            "Louane",
+            "Céline Dion",
+            "ABBA"
+        ],
+        "answer": "Kamini",
+        "year": 1990,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429960543_6195",
+        "title": "You're Beautiful",
+        "artist": "James Blunt",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/ac/13/8a/ac138a70-c7de-c1a8-6f04-1f16b10fc8a6/mzaf_14519433729243866927.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Telephone",
+            "Louane",
+            "James Blunt",
+            "Jean-Jacques Goldman"
+        ],
+        "answer": "James Blunt",
+        "year": 1990,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429964065_6196",
+        "title": "Pon de Replay",
+        "artist": "Rihanna",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0e/71/b8/0e71b840-af6b-5fb0-3b3c-324fa26c62ff/mzaf_2719173417825269311.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Louane",
+            "Johnny Hallyday",
+            "Rihanna",
+            "Madonna"
+        ],
+        "answer": "Rihanna",
+        "year": 1990,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429967755_6197",
+        "title": "Don't Cha",
+        "artist": "The Pussycat Dolls",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/20/1d/8f/201d8f57-c996-144a-6b2c-077cc7d0b22f/mzaf_10025115707791783553.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "The Pussycat Dolls",
+            "Katy Perry",
+            "Alain Souchon",
+            "Beyoncé"
+        ],
+        "answer": "The Pussycat Dolls",
+        "year": 1990,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429973717_6296",
+        "title": "On s'attache",
+        "artist": "Christophe Maé",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a6/55/41/a6554194-2e24-6815-47d6-fee8d31ba119/mzaf_4343212706729146943.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Christophe Maé",
+            "Louane",
+            "Serge Gainsbourg",
+            "Johnny Hallyday"
+        ],
+        "answer": "Christophe Maé",
+        "year": 1991,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429976961_6297",
+        "title": "Relax, Take It Easy",
+        "artist": "Mika",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/14/17/15/14171529-d1c4-b90e-8d0a-a17545836852/mzaf_2174941844453777813.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Mika",
+            "Serge Gainsbourg",
+            "Justin Bieber",
+            "Céline Dion"
+        ],
+        "answer": "Mika",
+        "year": 1991,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429978975_6298",
+        "title": "À fleur de toi",
+        "artist": "Vitaa",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f6/c3/80/f6c3807f-585c-db6f-20af-2d2847d5b3f1/mzaf_15538375422841096261.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Vitaa",
+            "Stromae",
+            "Renaud",
+            "Rihanna"
+        ],
+        "answer": "Vitaa",
+        "year": 1991,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429981964_6395",
+        "title": "Crazy",
+        "artist": "Gnarls Barkley",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/38/67/b2/3867b24c-8af6-4d26-d014-42c9912a782a/mzaf_12466923089499072047.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Lady Gaga",
+            "Gnarls Barkley",
+            "M. Pokora",
+            "Eminem"
+        ],
+        "answer": "Gnarls Barkley",
+        "year": 1991,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429985105_6396",
+        "title": "SexyBack",
+        "artist": "Justin Timberlake",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1a/f4/7b/1af47ba3-a363-5716-4dd9-6aea4fe35e3f/mzaf_13609262275263691829.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Vianney",
+            "Rihanna",
+            "Michael Jackson",
+            "Justin Timberlake"
+        ],
+        "answer": "Justin Timberlake",
+        "year": 1991,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429987990_6397",
+        "title": "Hips Don't Lie",
+        "artist": "Shakira",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ac/c7/61/acc7619f-c1e3-e0a5-df9b-0329a35af062/mzaf_13106936727189536738.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Shakira",
+            "Beyoncé",
+            "Serge Gainsbourg",
+            "Johnny Hallyday"
+        ],
+        "answer": "Shakira",
+        "year": 1991,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776429994399_6496",
+        "title": "Dis-moi",
+        "artist": "BB Brunes",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/19/14/58/191458c6-4965-d188-9a2a-a2ea89ad4eb7/mzaf_13667819554964988088.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "BB Brunes",
+            "Michael Jackson",
+            "Alain Souchon",
+            "Justin Bieber"
+        ],
+        "answer": "BB Brunes",
+        "year": 1992,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429996652_6497",
+        "title": "Les limites",
+        "artist": "Julien Doré",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e5/34/d1/e534d197-04dd-3b0e-9b90-73155ab0d247/mzaf_4968046475406456525.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Julien Doré",
+            "Jean-Jacques Goldman",
+            "Johnny Hallyday",
+            "Renaud"
+        ],
+        "answer": "Julien Doré",
+        "year": 1992,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776429998711_6498",
+        "title": "C'est chelou",
+        "artist": "Zaho",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/d1/35/37/d13537db-b551-0921-b5aa-fa6f98507efa/mzaf_262600160895318143.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Serge Gainsbourg",
+            "Ed Sheeran",
+            "Indochine",
+            "Zaho"
+        ],
+        "answer": "Zaho",
+        "year": 1992,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430001298_6595",
+        "title": "Rehab",
+        "artist": "Amy Winehouse",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c0/7f/37/c07f37f1-a8e1-b093-f643-9e3bae02589b/mzaf_10374144630525520706.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Orelsan",
+            "Johnny Hallyday",
+            "Amy Winehouse",
+            "Serge Gainsbourg"
+        ],
+        "answer": "Amy Winehouse",
+        "year": 1992,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430004982_6597",
+        "title": "The Way I Are",
+        "artist": "Timbaland",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/71/ce/2a/71ce2a5e-2acd-39d1-cb54-ef9938678311/mzaf_6484476824811164849.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Timbaland",
+            "Stromae",
+            "Dua Lipa",
+            "Johnny Hallyday"
+        ],
+        "answer": "Timbaland",
+        "year": 1992,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430010938_6696",
+        "title": "Comme des enfants",
+        "artist": "Coeur de Pirate",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/58/50/b8/5850b8c4-f3d1-83b6-88d8-ddbf974efed3/mzaf_12445175682449393151.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Dua Lipa",
+            "Louane",
+            "ABBA",
+            "Coeur de Pirate"
+        ],
+        "answer": "Coeur de Pirate",
+        "year": 1993,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430014295_6697",
+        "title": "L'assasymphonie",
+        "artist": "Mozart l'Opéra Rock",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c2/62/b3/c262b38e-e34a-9167-7112-5b9a4923656f/mzaf_17531295713583011155.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Mozart l'Opéra Rock",
+            "Katy Perry",
+            "Mylène Farmer",
+            "Soprano"
+        ],
+        "answer": "Mozart l'Opéra Rock",
+        "year": 1993,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430017457_6698",
+        "title": "Alison",
+        "artist": "Ycare",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ab/a2/1b/aba21b30-7a97-660d-62f8-c7fad9090138/mzaf_16494692162031912826.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Katy Perry",
+            "Ycare",
+            "Telephone",
+            "The Beatles"
+        ],
+        "answer": "Ycare",
+        "year": 1993,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430019961_6796",
+        "title": "Use Somebody",
+        "artist": "Kings of Leon",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ae/78/eb/ae78eb81-01e0-a02a-1442-eea0cff76f41/mzaf_17219616663227158625.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Indochine",
+            "Kings of Leon",
+            "Lady Gaga",
+            "Soprano"
+        ],
+        "answer": "Kings of Leon",
+        "year": 1993,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430025973_6896",
+        "title": "Désolé",
+        "artist": "Sexion d'Assaut",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7c/50/3a/7c503af3-3fbb-e1d5-dbb0-29b6e6a7a057/mzaf_4038692029422391476.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Johnny Hallyday",
+            "Sexion d'Assaut",
+            "Renaud",
+            "Justin Bieber"
+        ],
+        "answer": "Sexion d'Assaut",
+        "year": 1994,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430028304_6995",
+        "title": "When Love Takes Over",
+        "artist": "David Guetta feat. Kelly Rowland",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/de/13/8b/de138bdc-8af3-70a3-2cd8-156aecb5585a/mzaf_15695360145004101520.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "David Guetta feat. Kelly Rowland",
+            "Serge Gainsbourg",
+            "Stromae",
+            "Indochine"
+        ],
+        "answer": "David Guetta feat. Kelly Rowland",
+        "year": 1994,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430029932_6996",
+        "title": "Bad Romance",
+        "artist": "Lady Gaga",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1b/54/f0/1b54f0b7-db6a-1a40-6af8-4ae4650d8d6d/mzaf_2782647211171496826.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Lady Gaga",
+            "Jean-Jacques Goldman",
+            "Vianney",
+            "Louane"
+        ],
+        "answer": "Lady Gaga",
+        "year": 1994,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430034821_7096",
+        "title": "Adieu",
+        "artist": "Cœur de Pirate",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/6d/8a/f1/6d8af197-793f-fa93-9c3d-5098015e8a19/mzaf_9762659304199303914.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Katy Perry",
+            "The Beatles",
+            "Mylène Farmer",
+            "Cœur de Pirate"
+        ],
+        "answer": "Cœur de Pirate",
+        "year": 1995,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430037167_7097",
+        "title": "À nos actes manqués",
+        "artist": "M. Pokora",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/77/7d/f9/777df944-2b02-0f3a-c473-974e34b4118b/mzaf_5384933241236303084.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Francis Cabrel",
+            "M. Pokora",
+            "Indochine",
+            "Jean-Jacques Goldman"
+        ],
+        "answer": "M. Pokora",
+        "year": 1995,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430039418_7098",
+        "title": "Je sais",
+        "artist": "Shy'm",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/52/e7/02/52e7028e-cb8c-3451-ad87-7ac1d6baa9aa/mzaf_4771613907401092792.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Beyoncé",
+            "Shy'm",
+            "Céline Dion",
+            "Katy Perry"
+        ],
+        "answer": "Shy'm",
+        "year": 1995,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430042711_7196",
+        "title": "Just the Way You Are",
+        "artist": "Bruno Mars",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/0c/9d/26/0c9d266f-632d-dbda-770d-55cdded795f8/mzaf_18078867637438469059.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Alain Souchon",
+            "Soprano",
+            "Bruno Mars",
+            "Mylène Farmer"
+        ],
+        "answer": "Bruno Mars",
+        "year": 1995,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430045931_7197",
+        "title": "Teenage Dream",
+        "artist": "Katy Perry",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5d/1a/ef/5d1aefa2-4683-4c6d-5d69-c8c8fb5dcc81/mzaf_3081418224702484801.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Julien Clerc",
+            "Justin Bieber",
+            "Patrick Bruel",
+            "Katy Perry"
+        ],
+        "answer": "Katy Perry",
+        "year": 1995,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430049849_7296",
+        "title": "Down the Road",
+        "artist": "C2C",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7d/89/ea/7d89ea64-1021-d80a-85c9-c24c8e506fe3/mzaf_8362848289502429242.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "C2C",
+            "Florent Pagny",
+            "Johnny Hallyday",
+            "Michael Jackson"
+        ],
+        "answer": "C2C",
+        "year": 1996,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430053465_7297",
+        "title": "Ma direction",
+        "artist": "Sexion d'Assaut",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/80/83/1a/80831a39-d117-820f-bc23-a97987271a3e/mzaf_7959578807979893073.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Kendji Girac",
+            "Johnny Hallyday",
+            "Sexion d'Assaut",
+            "Katy Perry"
+        ],
+        "answer": "Sexion d'Assaut",
+        "year": 1996,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430056850_7298",
+        "title": "Le sens de la vie",
+        "artist": "Tal",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/aa/a7/25/aaa725d5-4c68-12e0-e495-0f3f92de2bd4/mzaf_12908507273628575010.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Tal",
+            "ABBA",
+            "Angèle",
+            "Renaud"
+        ],
+        "answer": "Tal",
+        "year": 1996,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430059046_7376",
+        "title": "I Kissed a Girl",
+        "artist": "Katy Perry",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/88/15/a2/8815a2ff-3857-ec31-3538-0cc5a1401097/mzaf_11101215659500238091.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Katy Perry",
+            "Ed Sheeran",
+            "Jean-Jacques Goldman",
+            "Michel Sardou"
+        ],
+        "answer": "Katy Perry",
+        "year": 1996,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430061489_7395",
+        "title": "Somebody That I Used to Know",
+        "artist": "Gotye",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f9/9c/55/f99c553e-7be1-91dc-b55e-3da1aad29bba/mzaf_5038171343466446420.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Rihanna",
+            "ABBA",
+            "Johnny Hallyday",
+            "Gotye"
+        ],
+        "answer": "Gotye",
+        "year": 1996,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430063558_7396",
+        "title": "Party Rock Anthem",
+        "artist": "LMFAO",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fe/63/a1/fe63a1b8-091f-9d45-594f-bb982166297f/mzaf_8877172162075707701.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Johnny Hallyday",
+            "LMFAO",
+            "Jean-Jacques Goldman",
+            "Beyoncé"
+        ],
+        "answer": "LMFAO",
+        "year": 1996,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430065916_7397",
+        "title": "Moves Like Jagger",
+        "artist": "Maroon 5",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1a/e8/be/1ae8bea8-8962-8168-80d5-65bf3b1478ba/mzaf_471500839444486606.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Dua Lipa",
+            "Mylène Farmer",
+            "Jean-Jacques Goldman",
+            "Maroon 5"
+        ],
+        "answer": "Maroon 5",
+        "year": 1996,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430071277_7496",
+        "title": "J'me tire",
+        "artist": "Maître Gims",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2b/59/0c/2b590cab-4c5d-c19d-c226-376cb1bdd4a4/mzaf_15304039627240098472.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Alain Souchon",
+            "Michael Jackson",
+            "Jul",
+            "Maître Gims"
+        ],
+        "answer": "Maître Gims",
+        "year": 1997,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430073209_7497",
+        "title": "Papaoutai",
+        "artist": "Stromae",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f6/20/69/f6206921-106b-5f68-ea61-2329050cd306/mzaf_4001545940005169400.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Queen",
+            "Jean-Jacques Goldman",
+            "Louane",
+            "Stromae"
+        ],
+        "answer": "Stromae",
+        "year": 1997,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430076148_7595",
+        "title": "Call Me Maybe",
+        "artist": "Carly Rae Jepsen",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5e/0b/c4/5e0bc4b4-51fb-c992-4953-8cc13ecfb773/mzaf_4904797060238555261.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Dua Lipa",
+            "Queen",
+            "Stromae",
+            "Carly Rae Jepsen"
+        ],
+        "answer": "Carly Rae Jepsen",
+        "year": 1997,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430078608_7596",
+        "title": "We Are Young",
+        "artist": "Fun.",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/63/a9/ed/63a9ede2-1823-d75f-7ae3-061b91790395/mzaf_17932545875589323048.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Fun.",
+            "Lady Gaga",
+            "Beyoncé",
+            "Francis Cabrel"
+        ],
+        "answer": "Fun.",
+        "year": 1997,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430081625_7597",
+        "title": "Gangnam Style",
+        "artist": "PSY",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3d/65/ae/3d65ae0a-7b2c-f14d-5680-cdafaa8cfb2d/mzaf_11206445915046452880.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Telephone",
+            "Florent Pagny",
+            "Rihanna",
+            "PSY"
+        ],
+        "answer": "PSY",
+        "year": 1997,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430087653_7695",
+        "title": "Sur ma route",
+        "artist": "Black M",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/e6/0c/21/e60c21ce-6e24-8365-9a0b-3dff9e77a55e/mzaf_6564455361326138043.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Black M",
+            "Michel Sardou",
+            "Telephone",
+            "Justin Bieber"
+        ],
+        "answer": "Black M",
+        "year": 1998,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430090465_7696",
+        "title": "Andalouse",
+        "artist": "Kendji Girac",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/53/21/a4/5321a442-0362-8334-fd8a-b18f37347a83/mzaf_7391889575178834404.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Kendji Girac",
+            "Indochine",
+            "Johnny Hallyday",
+            "Renaud"
+        ],
+        "answer": "Kendji Girac",
+        "year": 1998,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430092605_7697",
+        "title": "Pas là",
+        "artist": "Vianney",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/75/21/5c/75215c8b-df32-3c79-5135-4fddb9645524/mzaf_10394877153568177379.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Alain Souchon",
+            "Vianney",
+            "Eminem",
+            "The Beatles"
+        ],
+        "answer": "Vianney",
+        "year": 1998,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430095186_7795",
+        "title": "Get Lucky",
+        "artist": "Daft Punk",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/d4/d3/1e/d4d31eb4-7405-b806-8346-3c52ad5b4cf4/mzaf_8095545455942962509.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Mylène Farmer",
+            "Daft Punk",
+            "Katy Perry",
+            "Orelsan"
+        ],
+        "answer": "Daft Punk",
+        "year": 1998,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430097987_7796",
+        "title": "Royals",
+        "artist": "Lorde",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4c/50/2e/4c502ee4-d63e-3f7c-11cc-61b2e0c92656/mzaf_4849324024240261165.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Serge Gainsbourg",
+            "Céline Dion",
+            "Soprano",
+            "Lorde"
+        ],
+        "answer": "Lorde",
+        "year": 1998,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430102678_7895",
+        "title": "Wesh alors",
+        "artist": "Jul",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/09/43/14/094314be-76ee-99dd-2a88-3f4e6abd7d8c/mzaf_13156673718863569033.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Mylène Farmer",
+            "Orelsan",
+            "Ed Sheeran",
+            "Jul"
+        ],
+        "answer": "Jul",
+        "year": 1999,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430105962_7896",
+        "title": "Avenir",
+        "artist": "Louane",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c4/a5/42/c4a542ab-d73b-350d-b361-5ceded0b9863/mzaf_10555323784208335927.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Julien Clerc",
+            "Soprano",
+            "Stromae",
+            "Louane"
+        ],
+        "answer": "Louane",
+        "year": 1999,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430108700_7897",
+        "title": "Sapés comme jamais",
+        "artist": "Maître Gims",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/13/6a/6e/136a6ea0-e010-8737-ca21-1da795bc63ed/mzaf_16239423657969391650.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Johnny Hallyday",
+            "Renaud",
+            "Maître Gims",
+            "Jean-Jacques Goldman"
+        ],
+        "answer": "Maître Gims",
+        "year": 1999,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430111277_7994",
+        "title": "Uptown Funk",
+        "artist": "Mark Ronson feat. Bruno Mars",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/55/80/d6/5580d6ff-01a5-2501-c889-46213b6a8187/mzaf_15634744809860343801.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Patrick Bruel",
+            "Mark Ronson feat. Bruno Mars",
+            "Johnny Hallyday",
+            "Renaud"
+        ],
+        "answer": "Mark Ronson feat. Bruno Mars",
+        "year": 1999,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430114656_7995",
+        "title": "Chandelier",
+        "artist": "Sia",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f0/de/66/f0de661c-299a-b7ae-80d9-4f35f79875b1/mzaf_10598240417031133475.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Mylène Farmer",
+            "Jean-Jacques Goldman",
+            "Indochine",
+            "Sia"
+        ],
+        "answer": "Sia",
+        "year": 1999,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430116451_7996",
+        "title": "Shake It Off",
+        "artist": "Taylor Swift",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/11/d5/6d/11d56d4a-ce23-e793-8681-70dc4d35d931/mzaf_5886436202259848624.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Vianney",
+            "Céline Dion",
+            "Jul",
+            "Taylor Swift"
+        ],
+        "answer": "Taylor Swift",
+        "year": 1999,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430121710_8095",
+        "title": "J'ai cherché",
+        "artist": "Amir",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7a/8d/da/7a8dda1c-5c18-390b-9131-4c166f03ad3a/mzaf_10547691492214215781.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Amir",
+            "Jean-Jacques Goldman",
+            "Céline Dion",
+            "Kendji Girac"
+        ],
+        "answer": "Amir",
+        "year": 2000,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430125196_8096",
+        "title": "Tchikita",
+        "artist": "Jul",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/e4/6a/c3/e46ac3ff-d67b-a212-5442-783e41205cc9/mzaf_15281544440280015276.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Stromae",
+            "Michael Jackson",
+            "Jul",
+            "Alain Souchon"
+        ],
+        "answer": "Jul",
+        "year": 2000,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430128243_8097",
+        "title": "Le diable ne s'habille plus en Prada",
+        "artist": "Soprano",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/5b/08/aa/5b08aaa7-0e5e-f375-38b8-7d46640c80d7/mzaf_15270467437283486748.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Soprano",
+            "Louane",
+            "Lady Gaga",
+            "ABBA"
+        ],
+        "answer": "Soprano",
+        "year": 2000,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430130158_8194",
+        "title": "Hello",
+        "artist": "Adele",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/93/22/22/93222271-8d55-d923-e0ff-b2964a5abefe/mzaf_3513742103157153222.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Angèle",
+            "Alain Souchon",
+            "Michel Sardou",
+            "Adele"
+        ],
+        "answer": "Adele",
+        "year": 2000,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430133078_8195",
+        "title": "Sorry",
+        "artist": "Justin Bieber",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/66/eb/29/66eb29c0-c2f9-d9df-8af3-3bf2562c9d7c/mzaf_4099789285264521999.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Ed Sheeran",
+            "Patrick Bruel",
+            "Justin Bieber",
+            "Madonna"
+        ],
+        "answer": "Justin Bieber",
+        "year": 2000,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430136758_8196",
+        "title": "Lean On",
+        "artist": "Major Lazer & DJ Snake feat. MØ",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e9/c0/83/e9c0838a-f9b7-a01b-4584-96fc38f7fcaa/mzaf_2723029957561025168.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Angèle",
+            "Major Lazer & DJ Snake feat. MØ",
+            "M. Pokora",
+            "Johnny Hallyday"
+        ],
+        "answer": "Major Lazer & DJ Snake feat. MØ",
+        "year": 2000,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430143078_8295",
+        "title": "Dommage",
+        "artist": "Bigflo & Oli",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/3e/77/d5/3e77d551-e493-3692-132d-e2e5bb5b39df/mzaf_16358952320590761319.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Katy Perry",
+            "Céline Dion",
+            "Bigflo & Oli",
+            "Francis Cabrel"
+        ],
+        "answer": "Bigflo & Oli",
+        "year": 2001,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430145756_8296",
+        "title": "Basique",
+        "artist": "Orelsan",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b2/e7/e4/b2e7e489-c2e8-666e-3bca-1e988ef93d06/mzaf_15987103636360373191.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Indochine",
+            "Alain Souchon",
+            "Julien Clerc",
+            "Orelsan"
+        ],
+        "answer": "Orelsan",
+        "year": 2001,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430149300_8394",
+        "title": "One Dance",
+        "artist": "Drake",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/a8/bd/68/a8bd68a2-dcd2-9024-3859-3a9fd6d53576/mzaf_16864609147187531487.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Florent Pagny",
+            "Francis Cabrel",
+            "Drake",
+            "Patrick Bruel"
+        ],
+        "answer": "Drake",
+        "year": 2001,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430151064_8395",
+        "title": "Closer",
+        "artist": "The Chainsmokers feat. Halsey",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bd/f9/b9/bdf9b9b2-eaa4-4461-6079-aaacc6df7316/mzaf_17327312786932455493.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Telephone",
+            "The Chainsmokers feat. Halsey",
+            "Johnny Hallyday",
+            "M. Pokora"
+        ],
+        "answer": "The Chainsmokers feat. Halsey",
+        "year": 2001,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430154347_8396",
+        "title": "Stressed Out",
+        "artist": "Twenty One Pilots",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a9/74/e8/a974e8f2-0693-9371-bb6c-87047a486254/mzaf_1898989387861959316.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Florent Pagny",
+            "Telephone",
+            "Twenty One Pilots",
+            "Céline Dion"
+        ],
+        "answer": "Twenty One Pilots",
+        "year": 2001,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430159139_8493",
+        "title": "Tout oublier",
+        "artist": "Angèle",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4e/cf/0f/4ecf0f3a-b397-f111-3852-bd618548ed86/mzaf_5570329344078232887.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Angèle",
+            "Jean-Jacques Goldman",
+            "Louane",
+            "Queen"
+        ],
+        "answer": "Angèle",
+        "year": 2002,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430161463_8494",
+        "title": "Djadja",
+        "artist": "Aya Nakamura",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ff/c1/fa/ffc1faa2-506d-4c5b-3e09-b7067959adf3/mzaf_3563312867774255295.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Julien Clerc",
+            "Angèle",
+            "Queen",
+            "Aya Nakamura"
+        ],
+        "answer": "Aya Nakamura",
+        "year": 2002,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430165033_8495",
+        "title": "Reine",
+        "artist": "Dadju",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/4b/b1/b1/4bb1b107-b401-8f6e-78d9-0367abce9f95/mzaf_3219556299897358867.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "ABBA",
+            "Dadju",
+            "M. Pokora",
+            "Serge Gainsbourg"
+        ],
+        "answer": "Dadju",
+        "year": 2002,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430168150_8594",
+        "title": "Havana",
+        "artist": "Camila Cabello",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7d/42/fe/7d42fe40-78b9-c546-861e-bda5788bba4e/mzaf_7434858341023410545.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Julien Clerc",
+            "Kendji Girac",
+            "Orelsan",
+            "Camila Cabello"
+        ],
+        "answer": "Camila Cabello",
+        "year": 2002,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430171220_8595",
+        "title": "Shape of You",
+        "artist": "Ed Sheeran",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/44/c7/4f/44c74f0d-72dc-6143-d4d0-ba14d661ca0d/mzaf_9566898362556366703.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "ABBA",
+            "Céline Dion",
+            "Eminem",
+            "Ed Sheeran"
+        ],
+        "answer": "Ed Sheeran",
+        "year": 2002,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430173846_8596",
+        "title": "Despacito",
+        "artist": "Luis Fonsi & Daddy Yankee",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/40/5b/e7/405be722-3ec9-ba27-7469-002182d57b39/mzaf_14120258742032474456.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Stromae",
+            "Lady Gaga",
+            "Luis Fonsi & Daddy Yankee",
+            "Johnny Hallyday"
+        ],
+        "answer": "Luis Fonsi & Daddy Yankee",
+        "year": 2002,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430179415_8694",
+        "title": "La vie qu'on mène",
+        "artist": "Ninho",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d9/c5/2e/d9c52e35-7efb-a758-3ed2-c89ae36a9998/mzaf_11505344214483300391.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "ABBA",
+            "Ninho",
+            "Eminem",
+            "Patrick Bruel"
+        ],
+        "answer": "Ninho",
+        "year": 2003,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430185502_8699",
+        "title": "Jolie nana",
+        "artist": "Aya Nakamura",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7b/63/4c/7b634ca0-071b-3682-19bf-9095cb99aa17/mzaf_15358042643097160111.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Aya Nakamura",
+            "The Beatles",
+            "Soprano",
+            "Beyoncé"
+        ],
+        "answer": "Aya Nakamura",
+        "year": 2003,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430188065_8794",
+        "title": "thank u, next",
+        "artist": "Ariana Grande",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/89/96/16/8996169e-2309-a298-f6f0-e7c52fe8e176/mzaf_590631660224715451.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Eminem",
+            "Katy Perry",
+            "Kendji Girac",
+            "Ariana Grande"
+        ],
+        "answer": "Ariana Grande",
+        "year": 2003,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430191891_8795",
+        "title": "One Kiss",
+        "artist": "Dua Lipa",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7b/51/0a/7b510a93-10b2-530f-71fb-2462f7606e6d/mzaf_907293082198573368.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Mylène Farmer",
+            "Julien Clerc",
+            "Louane",
+            "Dua Lipa"
+        ],
+        "answer": "Dua Lipa",
+        "year": 2003,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430194407_8796",
+        "title": "Shallow",
+        "artist": "Lady Gaga & Bradley Cooper",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2b/dc/bd/2bdcbdfd-d1e0-c5df-1b95-5f9606259926/mzaf_14520879503518608736.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Beyoncé",
+            "Queen",
+            "Lady Gaga & Bradley Cooper",
+            "Telephone"
+        ],
+        "answer": "Lady Gaga & Bradley Cooper",
+        "year": 2003,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430203069_8895",
+        "title": "Anissa",
+        "artist": "Wejdene",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/48/92/cb/4892cb75-38e5-add2-4015-24eaff46c2c1/mzaf_5084212075694251125.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Michael Jackson",
+            "Alain Souchon",
+            "Céline Dion",
+            "Wejdene"
+        ],
+        "answer": "Wejdene",
+        "year": 2004,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430206252_8899",
+        "title": "Le reste",
+        "artist": "Clara Luciani",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f6/8e/d1/f68ed106-42cb-4323-8f30-fd0ee79a4abb/mzaf_9210098233325064771.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Beyoncé",
+            "Ed Sheeran",
+            "Telephone",
+            "Clara Luciani"
+        ],
+        "answer": "Clara Luciani",
+        "year": 2004,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430208264_8994",
+        "title": "bad guy",
+        "artist": "Billie Eilish",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c3/87/1f/c3871f7e-3260-d615-1c66-5fdca2c3a48f/mzaf_10721331211699880949.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Patrick Bruel",
+            "The Beatles",
+            "Billie Eilish",
+            "Soprano"
+        ],
+        "answer": "Billie Eilish",
+        "year": 2004,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430211215_8995",
+        "title": "Don't Start Now",
+        "artist": "Dua Lipa",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/24/3d/34/243d3413-a0fc-b229-f54a-1715ebd3a9ca/mzaf_11578996572221800393.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Orelsan",
+            "Telephone",
+            "Dua Lipa",
+            "Beyoncé"
+        ],
+        "answer": "Dua Lipa",
+        "year": 2004,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430213200_8996",
+        "title": "Old Town Road",
+        "artist": "Lil Nas X",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/9b/1f/b9/9b1fb99c-9111-91da-9296-5ab8d82028ee/mzaf_11237315064991720435.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Lil Nas X",
+            "Jul",
+            "Francis Cabrel",
+            "Angèle"
+        ],
+        "answer": "Lil Nas X",
+        "year": 2004,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430219520_9094",
+        "title": "Drill FR 4",
+        "artist": "Gazo",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/80/6f/87/806f875f-93c1-901c-d73d-60bb1fdb2152/mzaf_8294289604423857976.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Justin Bieber",
+            "Renaud",
+            "Gazo",
+            "Michael Jackson"
+        ],
+        "answer": "Gazo",
+        "year": 2005,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430221540_9095",
+        "title": "L'odeur de l'essence",
+        "artist": "Orelsan",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2b/ee/c7/2beec7a4-f60b-bf71-8937-d2a442162d3b/mzaf_3530130610382837491.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Orelsan",
+            "Johnny Hallyday",
+            "Francis Cabrel",
+            "Patrick Bruel"
+        ],
+        "answer": "Orelsan",
+        "year": 2005,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430224612_9099",
+        "title": "Décrescendo",
+        "artist": "Lomepal",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/05/d2/bd/05d2bdf0-a4d5-bf34-3a12-1cc6fa5a2a0b/mzaf_17491592907620536233.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Michel Sardou",
+            "Julien Clerc",
+            "Lomepal",
+            "Orelsan"
+        ],
+        "answer": "Lomepal",
+        "year": 2005,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430226950_9196",
+        "title": "drivers license",
+        "artist": "Olivia Rodrigo",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/36/62/61/366261be-0996-d73d-de6f-03417867c800/mzaf_8201528327761821135.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Olivia Rodrigo",
+            "Renaud",
+            "Johnny Hallyday",
+            "Ed Sheeran"
+        ],
+        "answer": "Olivia Rodrigo",
+        "year": 2005,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430228737_9197",
+        "title": "Save Your Tears",
+        "artist": "The Weeknd",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8b/38/17/8b3817e4-c0e9-7e02-2654-3e2ecee93603/mzaf_18415642125637540903.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "ABBA",
+            "Angèle",
+            "Johnny Hallyday",
+            "The Weeknd"
+        ],
+        "answer": "The Weeknd",
+        "year": 2005,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430236636_9294",
+        "title": "Un jour je marierai un ange",
+        "artist": "Pierre de Maere",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/ce/53/dd/ce53ddaa-d783-00fe-79e9-f2a8c989d7b0/mzaf_3810800630965014400.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Jul",
+            "Pierre de Maere",
+            "Jean-Jacques Goldman",
+            "Michael Jackson"
+        ],
+        "answer": "Pierre de Maere",
+        "year": 2006,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430240137_9295",
+        "title": "L'enfer",
+        "artist": "Stromae",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/15/5d/66/155d66a7-8f8e-b0c1-cc03-aa2a3e7226f4/mzaf_18086849539702278796.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Stromae",
+            "Soprano",
+            "Orelsan",
+            "Jean-Jacques Goldman"
+        ],
+        "answer": "Stromae",
+        "year": 2006,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430241975_9299",
+        "title": "Baby",
+        "artist": "Aya Nakamura",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ba/2f/51/ba2f5150-2dad-4464-0299-ab92032a53fb/mzaf_10340776074037082850.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Alain Souchon",
+            "Serge Gainsbourg",
+            "Michael Jackson",
+            "Aya Nakamura"
+        ],
+        "answer": "Aya Nakamura",
+        "year": 2006,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430245026_9395",
+        "title": "Woman",
+        "artist": "Doja Cat",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f8/39/61/f839618e-f56a-0c18-db43-200166f0a333/mzaf_2535473982320077367.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Julien Clerc",
+            "Beyoncé",
+            "Madonna",
+            "Doja Cat"
+        ],
+        "answer": "Doja Cat",
+        "year": 2006,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430247684_9396",
+        "title": "Cold Heart",
+        "artist": "Elton John & Dua Lipa",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cd/77/9a/cd779a0e-1763-24ec-a316-ef63be00f149/mzaf_15536077081789183929.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "The Beatles",
+            "Vianney",
+            "Julien Clerc",
+            "Elton John & Dua Lipa"
+        ],
+        "answer": "Elton John & Dua Lipa",
+        "year": 2006,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430250361_9397",
+        "title": "Heat Waves",
+        "artist": "Glass Animals",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a3/4c/b9/a34cb911-40fc-5f0c-e862-14bd171a77aa/mzaf_384792072030970151.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Jul",
+            "Lady Gaga",
+            "The Weeknd",
+            "Glass Animals"
+        ],
+        "answer": "Glass Animals",
+        "year": 2006,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430259470_9499",
+        "title": "Beau",
+        "artist": "Joseph Kamel & Julien Doré",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/6a/20/43/6a2043a7-dd1a-0495-d181-13f70dc37929/mzaf_8682836376644542580.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "The Weeknd",
+            "Joseph Kamel & Julien Doré",
+            "Francis Cabrel",
+            "Jean-Jacques Goldman"
+        ],
+        "answer": "Joseph Kamel & Julien Doré",
+        "year": 2007,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430261848_9595",
+        "title": "As It Was",
+        "artist": "Harry Styles",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/67/10/16/67101606-3869-ca44-6c03-e13d6322cb51/mzaf_1135399237022217274.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Harry Styles",
+            "Madonna",
+            "Stromae",
+            "Patrick Bruel"
+        ],
+        "answer": "Harry Styles",
+        "year": 2007,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430264302_9596",
+        "title": "About Damn Time",
+        "artist": "Lizzo",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/91/7f/d0/917fd0db-a269-6fab-b0e6-301dd111a5b3/mzaf_14061156704503787029.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Lizzo",
+            "Serge Gainsbourg",
+            "Johnny Hallyday",
+            "M. Pokora"
+        ],
+        "answer": "Lizzo",
+        "year": 2007,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430266146_9597",
+        "title": "Calm Down",
+        "artist": "Rema",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3c/7e/3b/3c7e3b1d-c005-91cb-51d1-2d86effd9990/mzaf_6788794088599474630.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Rema",
+            "Céline Dion",
+            "Stromae",
+            "Renaud"
+        ],
+        "answer": "Rema",
+        "year": 2007,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430277108_9694",
+        "title": "Ceux qu'on était",
+        "artist": "Pierre Garnier",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/dc/00/6a/dc006ac0-1882-034a-e2e9-4e8d7e1362e2/mzaf_4717427117376077465.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Stromae",
+            "Rihanna",
+            "Vianney",
+            "Pierre Garnier"
+        ],
+        "answer": "Pierre Garnier",
+        "year": 2008,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430279709_9695",
+        "title": "Recommence-moi",
+        "artist": "Santa",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cd/5c/07/cd5c073f-d78b-774e-af70-ac9aa97fd527/mzaf_5006529165579169087.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Ed Sheeran",
+            "Santa",
+            "Johnny Hallyday",
+            "Mylène Farmer"
+        ],
+        "answer": "Santa",
+        "year": 2008,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430282624_9699",
+        "title": "Feel Good",
+        "artist": "Charlotte Cardin",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/fb/9a/57/fb9a5757-44e6-9c32-3c4a-4adec5854651/mzaf_14238913602775099570.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Serge Gainsbourg",
+            "ABBA",
+            "Charlotte Cardin",
+            "Patrick Bruel"
+        ],
+        "answer": "Charlotte Cardin",
+        "year": 2008,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430284212_9795",
+        "title": "Flowers",
+        "artist": "Miley Cyrus",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/68/9e/f7/689ef7fe-14fe-a846-c87f-7d3b2d6344b1/mzaf_4167137058064023087.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Orelsan",
+            "Miley Cyrus",
+            "Renaud",
+            "ABBA"
+        ],
+        "answer": "Miley Cyrus",
+        "year": 2008,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430286096_9796",
+        "title": "(It Goes Like) Nanana",
+        "artist": "Peggy Gou",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/23/d9/32/23d93263-a2d6-0ae3-6d41-ce801f4e7900/mzaf_6378555746646043520.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Peggy Gou",
+            "Michael Jackson",
+            "Jean-Jacques Goldman",
+            "Queen"
+        ],
+        "answer": "Peggy Gou",
+        "year": 2008,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430295814_9894",
+        "title": "Ciel",
+        "artist": "Gims",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e9/e5/d5/e9e5d586-e1a0-939f-7021-d57a7c9c0178/mzaf_11452817585657624006.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Jul",
+            "Gims",
+            "Queen",
+            "Mylène Farmer"
+        ],
+        "answer": "Gims",
+        "year": 2009,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430298583_9895",
+        "title": "Mood",
+        "artist": "KeBlack",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7e/8e/f6/7e8ef649-7816-6e56-692a-e4eb436076e7/mzaf_372067631867997099.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "KeBlack",
+            "Kendji Girac",
+            "ABBA",
+            "Céline Dion"
+        ],
+        "answer": "KeBlack",
+        "year": 2009,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430301263_9899",
+        "title": "Ordinary",
+        "artist": "Alex Warren",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f4/2f/82/f42f82e5-e164-dd14-4f9a-2767d0215bae/mzaf_2512873933120069750.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Alex Warren",
+            "Eminem",
+            "Renaud",
+            "Louane"
+        ],
+        "answer": "Alex Warren",
+        "year": 2009,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430304369_9995",
+        "title": "Beautiful Things",
+        "artist": "Benson Boone",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4d/d5/00/4dd5006f-ee02-c3f1-94db-0ed4b8dd68f1/mzaf_14250561294796027079.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Benson Boone",
+            "Patrick Bruel",
+            "Renaud",
+            "Johnny Hallyday"
+        ],
+        "answer": "Benson Boone",
+        "year": 2009,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430307412_9996",
+        "title": "Espresso",
+        "artist": "Sabrina Carpenter",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/99/da/ff/99daffce-cdde-59c6-5ae0-7f922ce411a8/mzaf_5621292401829922816.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Sabrina Carpenter",
+            "Dua Lipa",
+            "Kendji Girac",
+            "Jean-Jacques Goldman"
+        ],
+        "answer": "Sabrina Carpenter",
+        "year": 2009,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430309812_9997",
+        "title": "A Bar Song (Tipsy)",
+        "artist": "Shaboozey",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bf/39/4d/bf394d1e-7bc8-dda0-1dd0-d01175c73ddf/mzaf_13090445381602668403.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Jean-Jacques Goldman",
+            "Rihanna",
+            "Shaboozey",
+            "Angèle"
+        ],
+        "answer": "Shaboozey",
+        "year": 2009,
+        "origin": "INTL"
+    },
+    {
+        "id": "t1776430319828_10094",
+        "title": "Spider",
+        "artist": "Gims & Dystinct",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b0/9c/cb/b09ccb01-b016-9928-94b8-1ece0b275d02/mzaf_17520789315862495338.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "M. Pokora",
+            "Gims & Dystinct",
+            "Rihanna",
+            "Serge Gainsbourg"
+        ],
+        "answer": "Gims & Dystinct",
+        "year": 2010,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430322789_10095",
+        "title": "APT.",
+        "artist": "Rosé & Bruno Mars",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/22/8a/a1/228aa1a0-cbfd-ac14-ae99-09ca59bcc80b/mzaf_12121445588963961343.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Rosé & Bruno Mars",
+            "Beyoncé",
+            "Jean-Jacques Goldman",
+            "M. Pokora"
+        ],
+        "answer": "Rosé & Bruno Mars",
+        "year": 2010,
+        "origin": "FR"
+    },
+    {
+        "id": "t1776430326141_10196",
+        "title": "Anxiety",
+        "artist": "Doechii",
+        "url_audio": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/63/df/48/63df486c-aef0-7566-ccdb-c9c2e32b1f9d/mzaf_7023862088313900289.plus.aac.p.m4a",
+        "startTime": 0,
+        "options": [
+            "Soprano",
+            "Jean-Jacques Goldman",
+            "The Weeknd",
+            "Doechii"
+        ],
+        "answer": "Doechii",
+        "year": 2010,
+        "origin": "INTL"
     }
 ]
