@@ -3,7 +3,6 @@ import path from 'path';
 import https from 'https';
 
 const DB_PATH = path.join(__dirname, 'songs-database.json');
-const AUDIO_DIR = path.join(__dirname, '../assets/audio');
 const PLAYLIST_PATH = path.join(__dirname, '../assets/playlist.json');
 
 const FAKE_ARTISTS = [
@@ -29,21 +28,7 @@ const fetchUrl = (url: string): Promise<string> => {
   });
 };
 
-const downloadAudio = (url: string, destPath: string): Promise<void> => {
-  return new Promise((resolve, reject) => {
-    const file = fs.createWriteStream(destPath);
-    https.get(url, (res) => {
-      res.pipe(file);
-      file.on('finish', () => {
-        file.close();
-        resolve();
-      });
-    }).on('error', (err) => {
-      fs.unlinkSync(destPath);
-      reject(err);
-    });
-  });
-};
+
 
 const generateDecoys = (realArtist: string): string[] => {
   const possibleDecoys = FAKE_ARTISTS.filter(a => a !== realArtist);
@@ -52,9 +37,6 @@ const generateDecoys = (realArtist: string): string[] => {
 };
 
 async function run() {
-  if (!fs.existsSync(AUDIO_DIR)) {
-    fs.mkdirSync(AUDIO_DIR, { recursive: true });
-  }
 
   const songs: { year: number, artist: string, title: string, origin?: string }[] = JSON.parse(fs.readFileSync(DB_PATH, 'utf-8'));
   
@@ -80,17 +62,13 @@ async function run() {
         const previewUrl = track.previewUrl; // Toujours un MP3/M4A Mpeg-4 audio de 30 sec !
         
         if (previewUrl) {
-          const ext = path.extname(new URL(previewUrl).pathname) || '.m4a';
-          const filename = `${song.year}-${song.artist.replace(/[^a-zA-Z]/g, '')}-${song.title.replace(/[^a-zA-Z]/g, '')}${ext}`;
-          
-          console.log(`   -> Extrait trouvé ! Téléchargement vers ${filename}`);
-          await downloadAudio(previewUrl, path.join(AUDIO_DIR, filename));
+          console.log(`   -> Extrait trouvé (API iTunes) !`);
 
           playlist.push({
             id: `t${Date.now()}_${i}`,
             title: song.title,
             artist: song.artist,
-            url_audio: `/audio/${filename}`,
+            url_audio: previewUrl,
             startTime: 0,
             options: generateDecoys(song.artist),
             answer: song.artist, // Le jeu consiste à deviner l'artiste pour le MVP

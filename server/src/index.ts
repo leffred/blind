@@ -9,7 +9,6 @@ import path from 'path';
 
 const app = express();
 app.use(cors({ origin: true, credentials: true }));
-app.use('/audio', express.static(path.join(__dirname, '../assets/audio')));
 
 const server = http.createServer(app);
 const io = new Server(server, {
