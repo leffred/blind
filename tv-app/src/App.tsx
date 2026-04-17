@@ -155,12 +155,12 @@ function App() {
   const renderProgressBar = (label: string, votesCount: number, total: number) => {
     const pct = total === 0 ? 0 : Math.round((votesCount / total) * 100);
     return (
-      <div key={label} style={{ marginBottom: '12px' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '1rem', marginBottom: '4px' }}>
+      <div key={label} style={{ marginBottom: '8px' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.9rem', marginBottom: '2px' }}>
           <span>{label}</span>
           <span style={{ color: '#ffb347', fontWeight: 'bold' }}>{votesCount}</span>
         </div>
-        <div style={{ width: '100%', height: '14px', background: 'rgba(255,255,255,0.1)', borderRadius: '7px', overflow: 'hidden' }}>
+        <div style={{ width: '100%', height: '10px', background: 'rgba(255,255,255,0.1)', borderRadius: '5px', overflow: 'hidden' }}>
           <div style={{ width: `${pct}%`, height: '100%', background: 'linear-gradient(90deg, #ff007f, #00b3ff)', transition: 'width 0.4s cubic-bezier(0.4, 0, 0.2, 1)' }} />
         </div>
       </div>
@@ -230,19 +230,29 @@ function App() {
                 
                 <div style={{ display: 'flex', flexDirection: 'row', gap: '40px', width: '100%', marginTop: '10px' }}>
                   
-                  {/* Colonne Modes */}
-                  <div style={{ flex: 1, paddingRight: '20px' }}>
-                    <h3 style={{ textTransform: 'uppercase', color: '#ff007f', borderBottom: '1px solid #ff007f', paddingBottom: '5px', marginBottom: '10px', fontSize: '1.2rem' }}>Mode de Jeu</h3>
-                    {Object.keys(modeLabels).map(modeId => {
+                  {/* Colonne Modes 1 */}
+                  <div style={{ flex: 1, paddingRight: '15px' }}>
+                    <h3 style={{ textTransform: 'uppercase', color: '#ff007f', borderBottom: '1px solid #ff007f', paddingBottom: '5px', marginBottom: '10px', fontSize: '1.2rem', whiteSpace: 'nowrap' }}>Mode 1/2</h3>
+                    {Object.keys(modeLabels).slice(0, 4).map(modeId => {
                       const count = votes.filter(v => v.modes?.includes(modeId)).length;
-                      if (count === 0 && votes.length > 0) return null; // Ne pas afficher les options à 0 si au moins un vote a été fait pour epurer la liste (ou non ? Mieux vaut tout afficher au début)
+                      if (count === 0 && votes.length > 0) return null;
+                      return renderProgressBar(modeLabels[modeId], count, activePlayersCount);
+                    })}
+                  </div>
+
+                  {/* Colonne Modes 2 */}
+                  <div style={{ flex: 1, borderLeft: '1px solid rgba(255,255,255,0.1)', paddingLeft: '15px', paddingRight: '15px' }}>
+                    <h3 style={{ textTransform: 'uppercase', color: '#ff007f', borderBottom: '1px solid #ff007f', paddingBottom: '5px', marginBottom: '10px', fontSize: '1.2rem', whiteSpace: 'nowrap' }}>Mode 2/2</h3>
+                    {Object.keys(modeLabels).slice(4).map(modeId => {
+                      const count = votes.filter(v => v.modes?.includes(modeId)).length;
+                      if (count === 0 && votes.length > 0) return null;
                       return renderProgressBar(modeLabels[modeId], count, activePlayersCount);
                     })}
                   </div>
 
                   {/* Colonne Décennies */}
-                  <div style={{ flex: 1, borderLeft: '1px solid rgba(255,255,255,0.1)', paddingLeft: '20px' }}>
-                    <h3 style={{ textTransform: 'uppercase', color: '#00b3ff', borderBottom: '1px solid #00b3ff', paddingBottom: '5px', marginBottom: '10px', fontSize: '1.2rem' }}>Années</h3>
+                  <div style={{ flex: 1, borderLeft: '1px solid rgba(255,255,255,0.1)', paddingLeft: '15px', paddingRight: '15px' }}>
+                    <h3 style={{ textTransform: 'uppercase', color: '#00b3ff', borderBottom: '1px solid #00b3ff', paddingBottom: '5px', marginBottom: '10px', fontSize: '1.2rem', whiteSpace: 'nowrap' }}>Années</h3>
                     {[1980, 1990, 2000, 2010, 2020].map(d => {
                       const count = votes.filter(v => v.decades?.includes(d)).length;
                       return renderProgressBar(`${d}s`, count, activePlayersCount);
@@ -250,14 +260,14 @@ function App() {
                   </div>
 
                   {/* Colonne Origines */}
-                  <div style={{ flex: 1, borderLeft: '1px solid rgba(255,255,255,0.1)', paddingLeft: '20px' }}>
-                    <h3 style={{ textTransform: 'uppercase', color: '#7f00ff', borderBottom: '1px solid #7f00ff', paddingBottom: '5px', marginBottom: '10px', fontSize: '1.2rem' }}>Origines</h3>
+                  <div style={{ flex: 1, borderLeft: '1px solid rgba(255,255,255,0.1)', paddingLeft: '15px' }}>
+                    <h3 style={{ textTransform: 'uppercase', color: '#7f00ff', borderBottom: '1px solid #7f00ff', paddingBottom: '5px', marginBottom: '10px', fontSize: '1.2rem', whiteSpace: 'nowrap' }}>Origines</h3>
                     {renderProgressBar('FR 🥐', votes.filter(v => v.origins?.includes('FR')).length, activePlayersCount)}
                     {renderProgressBar('INTL 🌍', votes.filter(v => v.origins?.includes('INTL')).length, activePlayersCount)}
                   </div>
                 </div>
 
-                <div style={{ alignSelf: 'center', marginTop: '20px' }}>
+                <div style={{ alignSelf: 'center', marginTop: '10px' }}>
                   <button 
                     onClick={handleStartGame}
                     disabled={activePlayersCount === 0}

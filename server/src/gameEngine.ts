@@ -406,10 +406,11 @@ export const handleVote = (io: Server, socket: Socket, data: any) => {
     if (!room || room.status !== 'WAITING') return;
 
     if (room.players[playerId]) {
+        const vote = data.vote || data;
         room.players[playerId].vote = {
-            decades: data.decades || [],
-            origins: data.origins || [],
-            modes: data.modes || ['CLASSIC']
+            decades: vote.decades || [],
+            origins: vote.origins || [],
+            modes: vote.modes || ['CLASSIC']
         };
         
         // Broadcast les votes pour tous les joueurs (pour la TV et autres mobiles)
