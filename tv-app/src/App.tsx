@@ -24,6 +24,39 @@ function App() {
   const [winnerName, setWinnerName] = useState<string | null>(null);
   
   const audioRef = useRef<AudioPlayerRef>(null);
+  const elevatorAudioRef = useRef<HTMLAudioElement | null>(null);
+
+  useEffect(() => {
+    if (!elevatorAudioRef.current) {
+      elevatorAudioRef.current = new Audio('/elevator.mp3');
+      elevatorAudioRef.current.loop = true;
+      elevatorAudioRef.current.volume = 0.3;
+    }
+
+    const playElevator = () => {
+      elevatorAudioRef.current?.play().catch(() => {
+        // Ignorer l'erreur d'autoplay
+      });
+    };
+
+    const handleInteract = () => {
+      if (status === 'WAITING' || status === 'TRACK_END') {
+        playElevator();
+      }
+      document.removeEventListener('click', handleInteract);
+    };
+
+    if (status === 'WAITING' || status === 'TRACK_END') {
+      playElevator();
+      document.addEventListener('click', handleInteract);
+    } else {
+      elevatorAudioRef.current?.pause();
+    }
+
+    return () => {
+      document.removeEventListener('click', handleInteract);
+    };
+  }, [status]);
 
   useEffect(() => {
     if (status === 'TRACK_END' && nextTrackAt) {
